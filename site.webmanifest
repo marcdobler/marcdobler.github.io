@@ -1,47 +1,39 @@
-{
-    "name": "Marc Dobler",
+"name": "Marc Dobler",
     "short_name": "MD",
-    "categories": ["education", "diy", "reef tank", "3D printer"],
+    "categories": [
+        "education",
+        "diy",
+        "reef tank",
+        "3D printer"
+    ],
     "theme_color": "#2196f3",
     "background_color": "#2196f3",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://marcdobler.github.io/",
     "orientation": "portrait",
     "prefer_related_applications": false,
     "icons": [
-      {
-        "src": "assets/icon/lowres.webp",
-        "sizes": "48x48",
-        "type": "image/webp"
-      },
-      {
-        "src": "assets/icon/lowres",
-        "sizes": "48x48"
-      },
-      {
-        "src": "assets/icon/hd_hi.ico",
-        "sizes": "72x72 96x96 128x128 256x256"
-      },
-      {
-        "src": "assets/icon/hd_hi.svg",
-        "sizes": "72x72"
-      }
+        {
+            "src": "https://marcdobler.github.io/assets/icon/lowres.webp",
+            "sizes": "48x48",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://marcdobler.github.io/assets/icon/lowres",
+            "sizes": "48x48"
+        },
+        {
+            "src": "https://marcdobler.github.io/assets/icon/hd_hi.ico",
+            "sizes": "72x72 96x96 128x128 256x256"
+        },
+        {
+            "src": "https://marcdobler.github.io/assets/icon/hd_hi.svg",
+            "sizes": "72x72"
+        }
     ],
-    "shortcuts": [
-      {
-        "name": "Read last blog post",
-        "short_name": "Read blog",
-        "description": "View the list of podcasts you saved for later",
-        "url": "/blog/?utm_source=homescreen",
-        "icons": [{ "src": "/icons/play-later.png", "sizes": "192x192" }]
-      },
-      {
-        "name": "View projects",
-        "short_name": "Projects",
-        "description": "View the list of podcasts you listen to",
-        "url": "/projects/?utm_source=homescreen",
-        "icons": [{ "src": "/icons/subscriptions.png", "sizes": "192x192" }]
-      }
-    ]
-  }
+    "url": "https://marcdobler.github.io/",
+    "lang": "English",
+    "screenshots": [],
+    "description": "Making thing it an art, let do something beautiful!"
+}
