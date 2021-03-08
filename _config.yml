@@ -36,7 +36,7 @@ plugins:
 
 # Google Analytics
 google_analytics: UA-108639938-3
-
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -59,22 +59,25 @@ google_analytics: UA-108639938-3
 
 minima:
   social_links:
-    twitter: jekyllrb
-    github: jekyll
-    stackoverflow: "11111"
-    dribbble: jekyll
-    facebook: jekyll
-    flickr: jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    telegram: jekyll
-    microdotblog: jekyll
-    keybase: jekyll
-    youtube: jekyll
-    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    youtube_channel_name: CloudCannon
+    twitter: marcdobler
+    github: marcdobler
+    #stackoverflow: "11111"
+    #dribbble: jekyll
+    facebook: marcdoblermaker
+    #flickr: jekyll
+    instagram: marcdobler_maker
+    linkedin: marcdobler
+    #pinterest: jekyll
+    #telegram: jekyll
+    #microdotblog: jekyll
+    #keybase: jekyll
+    youtube: UCm4nKwBw6IfdwJQvIVE0uLg
+    #youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    #youtube_channel_name: CloudCannon
 
 collections:
   projects:
     output: true
+  tags:
+    output: true
+    permalink: tags/:path/

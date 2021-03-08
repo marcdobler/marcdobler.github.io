@@ -4,72 +4,82 @@ layout: default-hero
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%} {{ content }} {% assign projects = site.projects %} {%- if
+  projects.size > 0 -%}
+  <section class="section">
+    <h2 class="section-heading">Projects.</h2>
 
-  {{ content }}
-
-  <h2>Last Projects</h2>
-
-  {% assign projects = site.projects %}
-
-  {%- if projects.size > 0 -%}
-    {%- if projects.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for project in projects -%}
-      <li>
-        <span class="post-meta">{{ project.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ project.url | relative_url }}">
-            {{ project.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ project.excerpt }}
-        {%- endif -%}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+      -%} {%- for project in projects -%}
+      <li class="color-bg {{ project.color }}">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <span class="read-more">View project</span>
+          <h3 class="post-title">{{ project.title | escape }}</h3>
+          {%- if site.show_excerpts -%} {{ project.excerpt }} {%- endif -%}
+          <span class="post-meta">{{ project.date | date: date_format }}</span>
+        </a>
       </li>
       {%- endfor -%}
     </ul>
-
+  </section>
+  {%- endif -%} {% assign works = site.works %} {%- if works.size > 0 -%}
+  <section class="section">
+    <h2 class="post-list-heading">Blog.</h2>
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+      -%} {%- for work in works -%}
+      <li class="color-bg {{ work.color }}">
+        <a class="post-link" href="{{ work.url | relative_url }}">
+          <span class="read-more">Read more</span>
+          <h3 class="post-title">{{ work.title | escape }}</h3>
+          {%- if site.show_excerpts -%}
+          <div class="post-excerpt">{{ work.excerpt }}</div>
+          {%- endif -%}
+          <span class="post-meta">{{ work.date | date: date_format }}</span>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
   {%- endif -%}
 
-  <h2>Don’t let DIY become DIY</h2>
+  <!-- <h2>Don’t let DIY become DIY</h2>
   <p>“Do it yourself” (“DIY”) is the method of building, modifying, or repairing things without the direct aid of experts or professionals.</p>
 
   <p>Academic research has described DIY as behaviors where “individuals engage raw and semi-raw materials and parts to produce, transform, or reconstruct material possessions, including those drawn from the natural environment (e.g., landscaping).”</p>
 
   <p>DIY behavior can be triggering by various motivations previously categorized as marketplace motivations (economic benefits, lack of product availability, lack of product quality, need for customization), and identity enhancement (craftsmanship, empowerment, community seeking, uniqueness).</p>
 
-  <p><a href="https://en.wikipedia.org/wiki/Do_it_yourself">Wikipedia</a><p>
+  <p><a href="https://en.wikipedia.org/wiki/Do_it_yourself">Wikipedia</a><p> -->
 
-  <h2>Last Posts</h2>
-  
-  {% assign posts = site.posts %}
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
+  {% assign posts = site.posts %} {%- if posts.size > 0 -%}
+  <section class="section">
+    <h2 class="post-list-heading">Blog.</h2>
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+      -%} {%- for post in posts -%}
+      <li class="color-bg {{ post.color }}">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <span class="read-more">Read more</span>
+          <h3 class="post-title">{{ post.title | escape }}</h3>
+          {%- if site.show_excerpts -%}
+          <div class="post-excerpt">{{ post.excerpt }}</div>
+          {%- endif -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </a>
       </li>
       {%- endfor -%}
+      <li class="color-bg bluelight">
+        <a href="#">
+          <h3 class="post-title">Read all posts</h3>
+          <p class="post-excerpt">
+            I wrote about programming, IoT, 3D printer and Reef Tank
+          </p>
+        </a>
+      </li>
     </ul>
-
+  </section>
   {%- endif -%}
-
 </div>

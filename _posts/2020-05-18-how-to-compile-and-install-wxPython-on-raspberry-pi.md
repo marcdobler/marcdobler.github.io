@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "How to compile and install wxPython on Raspberry Pi?"
-categories: 3D Printer
+excerpt: If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.
+tags: [Programming, Python, Arduino]
+color: green
 image: "/assets/images/wxPython-RaspberryPi-1-1536x1152.jpg"
 image-desc: "Illustration Computer with Python logo"
 author:

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch"
-categories: 3D Printer
+tags: [3D Printer, Ender]
+color: bluegrey
 image: "/assets/images/ender-3-pro-desktop-1536x1152.jpg"
 image-desc: "My personnal desktop with 3d printer ender3 pro"
 author:
