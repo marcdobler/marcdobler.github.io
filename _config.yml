@@ -79,9 +79,9 @@ minima:
 # Build PWA settings
 
 pwa:
-  sw_src_filepath: service-worker.js # Optional
-  sw_dest_filename: service-worker.js # Optional
-  dest_js_directory: assets/js # Required
+  sw_src_filepath: sw-register.js # Optional
+  sw_dest_filename: sw-register.js # Optional
+  dest_js_directory: assets/script # Required
   precache_recent_posts_num: 5 # Optional
   precache_glob_directory: / # Optional
   precache_glob_patterns: # Optional
