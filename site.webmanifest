@@ -1,7 +1,7 @@
 {
   "name": "Marc Dobler",
   "short_name": "MD",
-  "categories": ["education", "diy", "reef tank", "3D printer"],
+  "categories": ["education", "lifestyle"],
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
