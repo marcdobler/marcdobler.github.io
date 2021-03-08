@@ -1,12 +1,7 @@
 {
   "name": "Marc Dobler",
   "short_name": "MD",
-  "categories": [
-    "education",
-    "diy",
-    "reef tank",
-    "3D printer"
-  ],
+  "categories": ["education", "diy", "reef tank", "3D printer"],
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
@@ -16,25 +11,155 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "https://marcdobler.github.io/assets/icon/lowres.webp",
-      "sizes": "48x48",
+      "src": "[Embedded]",
+      "sizes": "44x44",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "1240x600",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "300x300",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "88x88",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "50x50",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "620x300",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://marcdobler.github.io/assets/icon/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://marcdobler.github.io/assets/screenshot1.webp",
+      "sizes": "1280x720",
       "type": "image/webp"
     },
     {
-      "src": "https://marcdobler.github.io/assets/icon/lowres",
-      "sizes": "48x48"
+      "src": "https://marcdobler.github.io/assets/screenshot2.webp",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Feel blue",
+      "short_name": "Blue",
+      "url": "/blue?shortcut",
+      "icons": [
+        { "src": "/assets/blue.png", "sizes": "192x192", "type": "image/png" }
+      ]
     },
     {
-      "src": "https://marcdobler.github.io/assets/icon/hd_hi.ico",
-      "sizes": "72x72 96x96 128x128 256x256"
+      "name": "Feel red",
+      "short_name": "Red",
+      "url": "/red?shortcut",
+      "icons": [
+        { "src": "/assets/red.png", "sizes": "192x192", "type": "image/png" }
+      ]
     },
     {
-      "src": "https://marcdobler.github.io/assets/icon/hd_hi.svg",
-      "sizes": "72x72"
+      "name": "Feel yellow",
+      "short_name": "Yellow",
+      "url": "/yellow?shortcut",
+      "icons": [
+        { "src": "/assets/yellow.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Feel green",
+      "short_name": "Green",
+      "url": "/green?shortcut",
+      "icons": [
+        { "src": "/assets/green.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://marcdobler.github.io/site.webmanifest"
     }
   ],
   "url": "https://marcdobler.github.io/",
   "lang": "English",
-  "screenshots": [],
   "description": "Making thing it an art, let do something beautiful!"
 }
