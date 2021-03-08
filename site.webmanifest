@@ -27,5 +27,21 @@
         "src": "assets/icon/hd_hi.svg",
         "sizes": "72x72"
       }
+    ],
+    "shortcuts": [
+      {
+        "name": "Read last blog post",
+        "short_name": "Read blog",
+        "description": "View the list of podcasts you saved for later",
+        "url": "/blog/?utm_source=homescreen",
+        "icons": [{ "src": "/icons/play-later.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "View projects",
+        "short_name": "Projects",
+        "description": "View the list of podcasts you listen to",
+        "url": "/projects/?utm_source=homescreen",
+        "icons": [{ "src": "/icons/subscriptions.png", "sizes": "192x192" }]
+      }
     ]
   }
