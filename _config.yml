@@ -33,6 +33,7 @@ github_username:  marcdobler
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-pwa-workbox
 
 # Google Analytics
 google_analytics: UA-108639938-3
@@ -74,6 +75,22 @@ minima:
     youtube: UCm4nKwBw6IfdwJQvIVE0uLg
     #youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
     #youtube_channel_name: CloudCannon
+
+# Build PWA settings
+
+pwa:
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "/**/*.{js,json,css}"
+    - "/**/*.{ico,jpg,jpeg,png,svg}"
+    - "/**/*.html"
+  precache_glob_ignores: # Optional
+    - "sw-register.js"
+    - "fonts/**/*"
 
 collections:
   projects:
