@@ -2,14 +2,12 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  // Positioning context for the mobile navigation icon
+  align-items: center;
   position: absolute;
 
   img {
@@ -23,7 +21,6 @@
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -38,33 +35,26 @@
 
 
 .site-nav {
-
+  flex-grow: 1;
+  
   label {
-    position: absolute;
-    top: $spacing-unit*2;
-    left: $spacing-unit*2;
+    top: $spacing-unit;
     height: $spacing-unit;
     width: $spacing-unit*1.5;
-    z-index: 9999;
+    transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: $spacing-unit;
+    margin-left: $spacing-unit;
+    z-index: 2;
 
     &:hover {
       transform: scaleX(1.2);
     }
   }
 
-  // .nav-trigger {
-  //   position: absolute;
-  //   top: 2em;
-  //   left: 2em;
-  //   height: 1em;
-  //   width: 3em;
-  //   z-index: 9999;
-  // }
-
   .menu-icon {
+    position: relative;
     width: 100%;
     height: 3px;
     line-height: 0;
@@ -74,39 +64,35 @@
     
 
     &:after {
-      top: 0;
-      left: 0;
-      position: absolute;
       content: '';
       background-color: $text-color;
+      display: block;
       width: 100%;
       height: 3px;
+      transform: translateY(12px);
     }
 
     &:before {
-      bottom: 0;
-      left: 0;
-      position: absolute;
       content: '';
       background-color: $text-color;
+      display: block;
       width: 100%;
       height: 3px;
+      transform: translateY(-12px);
     }
-
-    
   }
 
   .trigger {
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: #1f4954;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: -1;
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   
     ul {
       flex-direction: column;
@@ -138,7 +124,6 @@
   }
 
   input:checked ~ label {
-    position: fixed;
 
     .menu-icon:after {
       transform: rotate(45deg);
@@ -161,7 +146,9 @@
     left: $spacing-unit;
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     animation-direction: alternate;
+    animation-delay: .3s;
     transform: scale(0);
+    z-index: -1;
   }
 
   input:checked ~ .round {
@@ -184,8 +171,6 @@
   }
 
   @media screen and (min-width: $on-medium) {
-    position: static;
-    float: right;
     border: none;
     background-color: inherit;
 
@@ -211,6 +196,21 @@
       margin-left: auto;
     }
   }
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.site-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: $spacing-unit;
+  margin-right: $spacing-unit;
 }
 
 /**
@@ -323,6 +323,10 @@
   margin: auto;
   display: flex;
   padding-top: $spacing-unit * 10;
+
+  .wide {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: $on-large) {
@@ -346,6 +350,11 @@
   position: absolute;
 
   @include relative-font-size(9);
+
+  &.tiny {
+    margin-top: -98px;
+    @include relative-font-size(5);
+  }
 }
 
 @media screen and (max-width: $on-large) {
@@ -458,7 +467,21 @@
   color: $brand-color;
   padding: $spacing-unit;
   color: white;
+  font-weight: bold;
 }
+
+.post {
+  .post-meta {
+    @include relative-font-size(2.5);
+    font-weight: bold;
+    padding: $spacing-unit;
+    color: black;
+    position: absolute;
+    margin-top: -65px;
+    right:0;
+  }
+}
+
 
 .post-link {
   display: block;
@@ -543,11 +566,15 @@
   h2,
   h3 {
     margin-top: $spacing-unit * 2;
+    margin-left: $spacing-unit * 10;
+    margin-right: $spacing-unit * 10;
   }
   h4,
   h5,
   h6 {
     margin-top: $spacing-unit;
+    margin-left: $spacing-unit * 10;
+    margin-right: $spacing-unit * 10;
   }
 
   h2 {
@@ -575,6 +602,32 @@
   }
   h6 {
     @include relative-font-size(1.0625);
+  }
+
+  p, ul {
+    margin-left: $spacing-unit * 10;
+    margin-right: $spacing-unit * 10;
+  }
+
+  ul {
+    margin-left: $spacing-unit * 11;
+  }
+
+  div[class^="language-"] {
+    margin-left: $spacing-unit * 5;
+    margin-right: $spacing-unit * 5;
+  }
+
+}
+
+.tags-list {
+  width: 100%;
+  padding: $spacing-unit * 3 $spacing-unit;
+  font-weight: bold;
+  @include relative-font-size(2);
+
+  a {
+    color:black;
   }
 }
 
