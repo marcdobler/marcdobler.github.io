@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch"
+excerpt: A good start to get how firmware work, and nice tips to make it custom version for Ender 3 BLTouch
 tags: [3D Printer, Ender]
 color: bluegrey
 image: "/assets/images/ender-3-pro-desktop-1536x1152.jpg"

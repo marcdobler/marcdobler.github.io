@@ -95,6 +95,7 @@ pwa:
 collections:
   projects:
     output: true
+    sort_by: date
   tags:
     output: true
     permalink: tags/:path/

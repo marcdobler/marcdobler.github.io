@@ -1,32 +1,41 @@
 ---
-layout: default-hero
+layout: default
 ---
 
 <div class="home">
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} {{ content }} {% assign projects = site.projects %} {%- if
-  projects.size > 0 -%}
+  {%- endif -%} 
+  
+  {{ content }} 
+  
+  {% assign projects = site.projects | sort: 'date' | reverse %} {%- if projects.size > 0 -%}
   <section class="section">
     <h2 class="section-heading">Projects.</h2>
 
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-      -%} {%- for project in projects -%}
+      
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} 
+      
+      {%- for project in projects -%}
       <li class="color-bg {{ project.color }}">
         <a class="post-link" href="{{ post.url | relative_url }}">
           <span class="read-more">View project</span>
           <h3 class="post-title">{{ project.title | escape }}</h3>
-          {%- if site.show_excerpts -%} {{ project.excerpt }} {%- endif -%}
+          {%- if site.show_excerpts -%} 
+          <div class="post-excerpt">{{ project.excerpt }}</div>
+          {%- endif -%}
           <span class="post-meta">{{ project.date | date: date_format }}</span>
         </a>
       </li>
       {%- endfor -%}
     </ul>
   </section>
-  {%- endif -%} {% assign works = site.works %} {%- if works.size > 0 -%}
+  {%- endif -%} 
+  
+  {% assign works = site.works %} {%- if works.size > 0 -%}
   <section class="section">
-    <h2 class="post-list-heading">Blog.</h2>
+    <h2 class="post-list-heading">Works.</h2>
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
       -%} {%- for work in works -%}
@@ -58,8 +67,10 @@ layout: default-hero
   <section class="section">
     <h2 class="post-list-heading">Blog.</h2>
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-      -%} {%- for post in posts -%}
+      
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} 
+      
+      {%- for post in posts -%}
       <li class="color-bg {{ post.color }}">
         <a class="post-link" href="{{ post.url | relative_url }}">
           <span class="read-more">Read more</span>
@@ -71,6 +82,7 @@ layout: default-hero
         </a>
       </li>
       {%- endfor -%}
+      
       <li class="color-bg bluelight">
         <a href="#">
           <h3 class="post-title">Read all posts</h3>

@@ -5,8 +5,11 @@
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
 
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/firefox/firefox-general-32-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/firefox/firefox-general-16-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icon/apple/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/icon/firefox/firefox-general-32-32.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/icon/firefox/firefox-general-16-16.png" | prepend: site.baseurl | prepend: site.url }}">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+
+
+

@@ -1,0 +1,38 @@
+
+
+<section class="section say-hi">
+      <h2 class="post-list-heading">Subscribe.</h2>
+      <div class="color-bg bluedark info one-half">
+        <h3 class="post-title">Get new posts delivered to your inbox</h3>
+        <p>
+          They're not frequent, promise ✌️ you can also <a href="{{ 'feed.xml' | relative_url }}">subscribe to the RSS feed</a>.
+        </p>
+
+      </div>
+      <div class="info-image color-bg greylight one-half">
+        {%- include mailchimp-form.html -%}
+      </div>
+</section>
+
+<section class="section say-hi">
+      <h2 class="post-list-heading">Say hi.</h2>
+      <div class="color-bg teal info one-half">
+        <a class="fake-post-title" href="mailto:me@marcdobler.com">me@marcdobler.com</a>
+        <p>Say hi!
+          <br>
+          Blah blah blah blah
+          <br>
+          Marc Dobler
+          <br>
+          Vienna, Austria
+        </p>
+        <div class="social-links">
+          {%- include social.html -%}
+        </div>
+
+      </div>
+      <div class="info-image one-half">
+        <img src="{{ file.path }}/assets/images/marc-dobler-1536x1024.jpg" alt="Marc Dobler - 2019 by Tatiana Dobler">
+      </div>
+
+</section>

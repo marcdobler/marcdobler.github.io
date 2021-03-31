@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "How to calibrate Z-Offset with a BLTouch bed leveling probe?"
-excerpt: test excerpt
+excerpt: Make calibration of z-offset through the terminal 
 image: "/assets/images/BLTouch-ZOffset-1536x1152.jpg"
 image-desc: "Illustration Computer with BLTouch logo"
-tags: [3D Printer; Ender]
+tags: ["3D Printer", "Ender 3"]
 color: teal
 author:
 - Marc Dobler
