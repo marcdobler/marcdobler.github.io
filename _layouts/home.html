@@ -19,7 +19,7 @@ layout: default
       
       {%- for project in projects -%}
       <li class="color-bg {{ project.color }}">
-        <a class="post-link" href="{{ post.url | relative_url }}">
+        <a class="post-link" href="{{ project.url | relative_url }}">
           <span class="read-more">View project</span>
           <h3 class="post-title">{{ project.title | escape }}</h3>
           {%- if site.show_excerpts -%} 

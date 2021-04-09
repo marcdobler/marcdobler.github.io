@@ -329,8 +329,6 @@
   }
 }
 
-
-
 .page-content {
   flex: 1 0 auto;
 }
@@ -352,7 +350,6 @@
     @include relative-font-size(5);
 
     @media screen and (max-width: $on-large) {
-
       margin-top: -48px;
       @include relative-font-size(2.5);
     }
@@ -493,10 +490,14 @@
  * Posts
  */
 .post-header {
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-content > p:first-child {
+  margin-top: $spacing-unit * 2;
 }
 
 .post-title,
@@ -555,35 +556,32 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  max-width: 1280px;
+  max-width: 740px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: $on-medium) {
+    margin-left: $spacing-unit / 2;
+    margin-right: $spacing-unit / 2;
+  }
 
   h1,
   h2,
   h3 {
     margin-top: $spacing-unit * 2;
-    margin-left: $spacing-unit * 9;
-    margin-right: $spacing-unit * 9;
 
     @media screen and (max-width: $on-large) {
       margin-top: $spacing-unit;
-      margin-left: $spacing-unit * 2;
-      margin-right: $spacing-unit * 2;
     }
 
     @media screen and (max-width: $on-medium) {
       margin-top: $spacing-unit / 2;
-      margin-left: $spacing-unit;
-      margin-right: $spacing-unit;
     }
   }
   h4,
   h5,
   h6 {
     margin-top: $spacing-unit;
-    margin-left: $spacing-unit * 9;
-    margin-right: $spacing-unit * 9;
   }
 
   h2 {
@@ -611,45 +609,6 @@
   }
   h6 {
     @include relative-font-size(1.0625);
-  }
-
-  p {
-    margin-left: $spacing-unit * 9;
-    margin-right: $spacing-unit * 9;
-
-    @media screen and (max-width: $on-large) {
-      margin-left: $spacing-unit * 2;
-      margin-right: $spacing-unit * 2;
-    }
-
-    @media screen and (max-width: $on-medium) {
-      margin-left: $spacing-unit;
-      margin-right: $spacing-unit;
-    }
-  }
-
-  ul,
-  ol {
-    margin-left: $spacing-unit * 10;
-    margin-right: $spacing-unit * 10;
-    li > ol {
-      margin-left: $spacing-unit * 2;
-    }
-
-    @media screen and (max-width: $on-large) {
-      margin-left: $spacing-unit * 3;
-      margin-right: $spacing-unit * 2;
-    }
-
-    @media screen and (max-width: $on-medium) {
-      margin-left: $spacing-unit * 2;
-      margin-right: $spacing-unit;
-    }
-  }
-
-  div[class^="language-"] {
-    margin-left: $spacing-unit * 5;
-    margin-right: $spacing-unit * 5;
   }
 }
 

@@ -22,10 +22,10 @@ layout: default-hero
           {% assign tags_by_name = page.tags | sort %}
           <div class="tags-list">
             {% for tag in tags_by_name %}
-              {% capture tag_name %}
+              {% capture tag-name %}
                 {{ tag }}
               {% endcapture %}
-              <a href="/tag/{{ tag_name | slugify }}">{{ tag_name }}</a>{% unless forloop.last %}/{% endunless %}
+              <a href="/tag/{{ tag-name | slugify }}">{{ tag-name }}</a>{% unless forloop.last %}/{% endunless %}
             {% endfor %}
           </div>
     

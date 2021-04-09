@@ -93,9 +93,22 @@ pwa:
     - "fonts/**/*"
 
 collections:
+  posts:
+    output: true
+    sort_by: date
+    permalink: blog/:year/:month/:day/:title:output_ext
   projects:
     output: true
     sort_by: date
+    permalink: project/:year/:month/:day/:title:output_ext
+
   tags:
     output: true
-    permalink: tags/:path/
+    permalink: tag/:title:output_ext
+
+defaults:
+- scope:
+    path: ''
+    type: tags
+  values:
+    layout: tags

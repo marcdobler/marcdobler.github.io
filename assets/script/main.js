@@ -8,10 +8,8 @@ let howOldIAm = {
   },
 };
 
-window.onload = function () {
-  var script = document.createElement('script');
-  var firstScript = document.getElementsByTagName('script')[0];
-  script.async = true;
-  script.src = '{{'sw-register.js'|relative_url}}?v=' + Date.now();
-  firstScript.parentNode.insertBefore(script, firstScript);
-};
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register(document.location.protocol + '/sw-register.js');
+  });
+}
