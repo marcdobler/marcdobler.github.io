@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 let howOldIAm = {
   inYears: function (date) {
     let birthdate = new Date(date);
@@ -10,6 +14,6 @@ let howOldIAm = {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register(document.location.protocol + '/sw-register.js');
+    navigator.serviceWorker.register('{{'sw-register.js'|relative_url}}');
   });
 }
