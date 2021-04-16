@@ -125,11 +125,11 @@
     }
   }
 
-  // input:checked ~ .trigger {
-  //   display: flex;
-  //   overflow: hidden;
-  //   // padding-bottom: 5px;
-  // }
+  input:checked ~ .trigger {
+     display: flex;
+     overflow: hidden;
+    z-index: 9;
+  }
 
   // input ~ .round {
   //   position: absolute;
@@ -213,7 +213,7 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit 0;
+  padding-bottom: $spacing-unit * 9;
 }
 
 .footer-heading {
@@ -225,8 +225,7 @@
   padding: 5px 5px 2px 0;
 }
 
-.contact-list,
-.social-media-list {
+.contact-list {
   list-style: none;
   margin-left: 0;
 }
@@ -288,13 +287,10 @@
 .info {
   a {
     color: white;
-    // padding: $spacing-unit * 1.5 $spacing-unit $spacing-unit $spacing-unit;
-    // display: block;
   }
 
   p {
     color: white;
-    padding: $spacing-unit;
     line-height: $spacing-unit;
     margin: 0;
   }
@@ -327,6 +323,10 @@
     padding-top: $spacing-unit * 5;
     flex-direction: column;
   }
+}
+
+.padding {
+  padding: $spacing-unit * 2;
 }
 
 .page-content {
@@ -516,8 +516,15 @@
 }
 
 .fake-post-title {
+  display: block;
   font-weight: bold;
+  color: white;
+  margin-bottom: $spacing-unit / 2;
   @include relative-font-size(2.625);
+}
+
+.tiny {
+  @include relative-font-size(.6);
 }
 
 .color-bg {
@@ -627,14 +634,11 @@
 }
 
 .social-media-list {
-  display: table;
-  margin: 0 $spacing-unit $spacing-unit;
+  list-style-type: none;
+  display: flex;
+  margin: $spacing-unit 0 0 0;
+  justify-content: space-between;
   li {
-    float: left;
-    margin: 5px 10px 5px 0;
-    &:last-of-type {
-      margin-right: 0;
-    }
     a {
       display: block;
       padding: $spacing-unit / 4;
@@ -684,3 +688,33 @@
     width: 100%;
   }
 }
+
+#mc_embed_signup {
+  
+  label {
+    display: none;
+  }
+
+  .checkbox {
+    display: inline-block;
+  }
+
+  .button {
+    margin: 0 auto;
+    padding:  $spacing-unit / 2  $spacing-unit;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .email {
+    padding: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
+    border: 0;
+    border-radius: 0;
+    font-weight: bold;
+    width: -webkit-fill-available;
+    @include relative-font-size(2);
+  }
+}
+ 
