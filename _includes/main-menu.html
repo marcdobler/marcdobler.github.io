@@ -1,7 +1,7 @@
 {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths =
 site.header_pages | default: default_paths -%} {%- assign titles_size =
 site.pages | map: 'title' | join: '' | size -%} {%- if titles_size > 0 -%}
-<nav class="site-nav">
+<nav class="site-nav header-item">
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label class="menu-icon" for="nav-trigger">
     <span></span>
@@ -18,7 +18,7 @@ site.pages | map: 'title' | join: '' | size -%} {%- if titles_size > 0 -%}
     </svg>
     
   </label>
-  <div class="trigger">
+  <label class="trigger" for="nav-trigger">
     <ul>
       {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
       "path", path | first -%} {%- if my_page.title -%}
@@ -29,6 +29,6 @@ site.pages | map: 'title' | join: '' | size -%} {%- if titles_size > 0 -%}
       </li>
       {%- endif -%} {%- endfor -%}
     </ul>
-  </div>
+  </label>
 </nav>
 {%- endif -%}

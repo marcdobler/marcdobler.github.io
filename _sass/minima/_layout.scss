@@ -10,10 +10,11 @@
   align-items: center;
   position: absolute;
   z-index: 1;
+  flex-wrap: wrap;
 
-  img {
-    // width: -webkit-fill-available;
-    object-fit: cover;
+  .header-item {
+    flex-grow: 1;
+    flex-basis: 10px;
   }
 }
 
@@ -34,7 +35,9 @@
 }
 
 .site-nav {
-  flex-grow: 1;
+  
+  display: inline-block;
+  min-width: 30px;
 
   label {
     top: $spacing-unit;
@@ -44,10 +47,18 @@
     display: flex;
     align-items: center;
     padding: $spacing-unit;
-    margin-left: $spacing-unit;
+    
+    @media screen and (max-width: $on-large) {
+      padding: $spacing-unit / 2;
+    }
+
     z-index: 2;
 
     .round {
+      position: absolute;
+      top: $spacing-unit / 2;
+      left: $spacing-unit / 4;
+      transform: scale(0);
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
@@ -117,41 +128,35 @@
     z-index: 2;
 
     span {
-      background-color: #c1605c;
+      display: none;
     }
 
     .round {
       transform: scale(75);
+      position: fixed;
+     
     }
   }
 
   input:checked ~ .trigger {
-     display: flex;
-     overflow: hidden;
+    display: flex;
+    overflow: hidden;
     z-index: 9;
+
+    ul {
+      opacity: 0;
+      animation: menuappear 2s;
+      animation-direction:alternate;
+      animation-delay: 250ms;
+      animation-fill-mode: forwards;
+    }
+
   }
 
-  // input ~ .round {
-  //   position: absolute;
-  //   top: $spacing-unit;
-  //   left: $spacing-unit;
-  //   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-  //   animation-direction: alternate;
-  //   animation-delay: .3s;
-  //   transform: scale(0);
-  //   z-index: 1;
-  // }
-
-  // input:checked ~ .round {
-  //   animation-direction: alternate;
-  //   transition: transform 1s cubic-bezier(1, 0.2, 0, 0.4);
-  //   transform: scale(75);
-  // }
-
-  // input:checked ~ label {
-  //   position: absolute;
-  //   z-index: 9;
-  // }
+  @keyframes menuappear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
   .page-link {
     color: $text-color;
@@ -170,18 +175,6 @@
     border: none;
     background-color: inherit;
 
-    label[for="nav-trigger"] {
-      // display: none;
-    }
-
-    .menu-icon {
-      // display: none;
-    }
-
-    input ~ .trigger {
-      // display: flex;
-    }
-
     .page-link {
       display: inline;
       padding: 0;
@@ -198,15 +191,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+
+  @media screen and (max-width: $on-large) {
+    img {
+      height: $spacing-unit * 3;
+      width: auto;
+    }
+  }
+
 }
 
 .site-search {
-  flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  padding: $spacing-unit;
-  margin-right: $spacing-unit;
+
+  button {
+    margin-right: $spacing-unit;
+
+    @media screen and (max-width: $on-large) {
+      margin-right: $spacing-unit / 2;
+    }
+  }
 }
 
 /**
@@ -490,10 +495,13 @@
  * Posts
  */
 .post-header {
-  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.hero {
+    min-height: 85vh;
+  }
 }
 
 .post-content > p:first-child {
@@ -524,7 +532,7 @@
 }
 
 .tiny {
-  @include relative-font-size(.6);
+  @include relative-font-size(0.6);
 }
 
 .color-bg {
@@ -690,7 +698,6 @@
 }
 
 #mc_embed_signup {
-  
   label {
     display: none;
   }
@@ -701,12 +708,12 @@
 
   .button {
     margin: 0 auto;
-    padding:  $spacing-unit / 2  $spacing-unit;
+    padding: $spacing-unit / 2 $spacing-unit;
     border: 0;
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   .email {
     padding: $spacing-unit / 2;
     margin-bottom: $spacing-unit;
@@ -717,4 +724,3 @@
     @include relative-font-size(2);
   }
 }
- 
