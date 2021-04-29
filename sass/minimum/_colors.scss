@@ -1,0 +1,49 @@
+/* Colors */
+:root {
+  --lightgray: #FEFBF5;
+  --gray: #c0c0c0;
+  --darkgray: #333;
+  --navy: #17050f;
+  --blue: #082840;
+  --white: #fff;
+
+  --background-color: var(--lightgray);
+  --site-title-color: var(--darkgray);
+}
+
+.color-bg {
+  &.green {
+    background-color: #3bab87;
+    color: white;
+  }
+
+  &.pink {
+    background-color: #fdf0ec;
+  }
+
+  &.teal {
+    background-color: #224a54;
+    color: white;
+  }
+
+  &.bluegrey {
+    background-color: #98bec8;
+  }
+
+  &.bluelight {
+    background-color: #d1e1e0;
+  }
+
+  &.amber {
+    background-color: #c1605c;
+  }
+
+  &.bluedark {
+    background-color: #2b2f3c;
+  }
+
+  &.greylight {
+    background-color: #9ba5b5;
+  }
+}
+

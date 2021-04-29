@@ -1,0 +1,32 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Start Here
+  order: 1
+---
+
+<section>
+{% set maxPosts = collections.projects.length | min(4) %}
+<h2>{% if maxPosts == 1 %}Project{% else %}Projects{% endif %}</h2>
+
+{% set postslist = collections.projects | head(-4) %}
+{% set postslistCounter = collections.projects | length %}
+{% set collectionLink = '/projects/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "postslist.njk" %}
+</section>
+
+<section>
+{% set maxPosts = collections.posts.length | min(6) %}
+<h2>Blog</h2>
+
+{% set postslist = collections.posts | head(-6) %}
+{% set postslistCounter = collections.posts | length %}
+{% set collectionLink = '/posts/' %}
+{% set collectionReadMore = 'show' %}
+{% include "postslist.njk" %}
+
+</section>
+
+{% include "section-sayhi.njk" %}
+{% include "section-subscribe.njk" %}

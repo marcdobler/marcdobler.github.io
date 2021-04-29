@@ -1,0 +1,38 @@
+html {
+  font-size: $base-font-size;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  scroll-behavior: smooth;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.sr-text {
+  display: none;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}

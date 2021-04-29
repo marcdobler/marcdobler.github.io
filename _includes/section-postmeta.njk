@@ -1,0 +1,16 @@
+<section class="section">
+    <h2 class="post-list-heading tiny">Published in:</h2>
+    <div class="color-bg pink wide">
+        <p class="post-meta">
+            {%- for tag in tags | filterTagList -%}
+            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+
+            {%- if not loop.last -%}
+                &nbsp;/&nbsp;
+            {%- endif -%}
+            {%- endfor %}
+        </p>
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+    </div>
+</section>
