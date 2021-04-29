@@ -7,7 +7,7 @@ eleventyNavigation:
 
 <section>
 {% set maxPosts = collections.projects.length | min(4) %}
-<h2>{% if maxPosts == 1 %}Project{% else %}Projects{% endif %}</h2>
+<h2>{% if maxPosts == 1 %}Project.{% else %}Projects{% endif %}</h2>
 
 {% set postslist = collections.projects | head(-4) %}
 {% set postslistCounter = collections.projects | length %}
@@ -18,7 +18,7 @@ eleventyNavigation:
 
 <section>
 {% set maxPosts = collections.posts.length | min(6) %}
-<h2>Blog</h2>
+<h2>Blog.</h2>
 
 {% set postslist = collections.posts | head(-6) %}
 {% set postslistCounter = collections.posts | length %}
