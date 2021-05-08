@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to calibrate Z-Offset with a BLTouch bed leveling probe?</title>
+    <title>Make an IoT device for Reef Tank</title>
     <meta name="description" content="Experiences, Self development DIY projects, How to sharing...">
 
     <link rel="manifest" href="/site.webmanifest"/>
@@ -33,14 +33,14 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/posts/how-to-calibrate-z-offset-with-a-bltouch-bed-leveling-probe/"
+        "@id": "/projects/pico-fish-tank/"
       },
-      "url": "/posts/how-to-calibrate-z-offset-with-a-bltouch-bed-leveling-probe/",
+      "url": "/projects/pico-fish-tank/",
       "isPartOf": {
         "@id": "https://www.marcdobler.com/#website"
       },
-      "headline": "How to calibrate Z-Offset with a BLTouch bed leveling probe?",
-      "description": "Make calibration of z-offset through the terminal",
+      "headline": "Make an IoT device for Reef Tank",
+      "description": "After a restart inside reef tank",
       "image": "https://example.com/images/page.png",
       "inLanguage": "en-US",
       "publisher": {
@@ -58,8 +58,8 @@
         "@type": "Person",
         "name": "Marc Dobler"
       },
-      "keywords": "posts,3D Printer,Ender 3",
-      "datePublished": "2020-05-28T00:00:00.000Z",
+      "keywords": "projects,DIY,Reef tank",
+      "datePublished": "2020-04-20T00:00:00.000Z",
       "articleSection": "Example"
     }
   ]
@@ -70,7 +70,7 @@
     <header>
       <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-        <label class="menu-icon teal " for="nav-trigger">
+        <label class="menu-icon green " for="nav-trigger">
           <span></span>
           <span></span>
           <span></span>
@@ -121,35 +121,44 @@
       
 <article>
   <header>
-    <h1 class="color-bg teal">How to calibrate Z-Offset with a BLTouch bed leveling probe?</h1>
+    <h1 class="color-bg green">Make an IoT device for Reef Tank</h1>
   </header>
 
   <main>
     
-    <h2>Requirements</h2>
+    <h2>Presentation</h2>
+<p>The project need</p>
+<h3>Embedded software</h3>
 <ul>
-<li>Any kind of software you can send GCODE through the terminal like Octoprint</li>
-<li>Piece of paper 90g/cm3</li>
+<li><a href="https://flutter.dev/">Flutter</a> / <a href="https://github.com/ardera/flutter-pi">flutter-pi</a></li>
 </ul>
-<h2>Z-Offset Instructions:</h2>
+<h3>Hardware</h3>
 <ul>
-<li>G28 – Home 3D printer</li>
-<li>M851 Z0 – Reset Z0 Offset</li>
-<li>M500 – Store setting to EEPROM</li>
-<li>M501 – Set active parameters</li>
-<li>M503 – Display Active Parameters</li>
-<li>G28 Z – Home Z-Axis</li>
-<li>G1 F60 Z0 – Move nozzle to true 0 offset</li>
-<li>M211 S0 – Switch off soft endstops</li>
-<li>Move nozzle towards bed slowly until the paper can barely move</li>
-<li>Take note of the Z on the printer display (take that number and add the measurement of the calibration sheet or device used)</li>
-<li>M851 Z X.XX (X.XX being your z offset achieved)</li>
-<li>M211 S1 – Enable Soft Endstops</li>
-<li>M500 – Save settings to Eeprom</li>
-<li>M501 – Set Active Parameters</li>
-<li>M503 – display current settings</li>
+<li>ESP32 / ESP8266</li>
+<li>DS18B20, pH sensor, ORP...</li>
+<li>Pomorini OLED touch screen</li>
+<li>Raspberry Pi</li>
 </ul>
-<p>Enjoy!</p>
+<h2>Resssources</h2>
+<h3>Getting Started</h3>
+<p>This project is a starting point for a Flutter embedded application.</p>
+<p>A few resources to get you started if this is your first Flutter project:</p>
+<ul>
+<li><a href="https://flutter.dev/docs/get-started/codelab">Lab: Write your first Flutter app</a></li>
+<li><a href="https://flutter.dev/docs/cookbook">Cookbook: Useful Flutter samples</a></li>
+<li><a href="https://github.com/ardera/flutter-pi">A light-weight Flutter Engine Embedder for Raspberry Pi</a></li>
+</ul>
+<p>For help getting started with Flutter, view our<br>
+<a href="https://flutter.dev/docs">online documentation</a>, which offers tutorials,<br>
+samples, guidance on mobile development, and a full API reference.</p>
+<h2>Contributing</h2>
+<p>Please read <a href="https://github.com/marcdobler/smart_reef/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for details on our code of conduct, and the process for submitting pull requests to us.</p>
+<h2>Authors</h2>
+<ul>
+<li><strong>Marc Dobler</strong> - <em>Initial work</em> - <a href="https://github.com/marcdobler">marcdobler</a></li>
+</ul>
+<h2>License</h2>
+<p>This project is licensed under the GPL-3.0 License - see the <a href="https://github.com/marcdobler/smart_reef/blob/master/LICENSE.md">LICENSE.md</a> file for details</p>
 
   </main>
 
@@ -159,18 +168,13 @@
     <section class="section">
     <h2 class="post-list-heading tiny">Published in:</h2>
     <div class="color-bg pink wide">
-        <p class="post-meta"><a href="/tags/3d-printer/" class="post-tag">3D Printer</a>&nbsp;/&nbsp;<a href="/tags/ender-3/" class="post-tag">Ender 3</a>
+        <p class="post-meta"><a href="/tags/diy/" class="post-tag">DIY</a>&nbsp;/&nbsp;<a href="/tags/reef-tank/" class="post-tag">Reef tank</a>
         </p>
-        <time datetime="2020-05-28">28 May 2020</time>
+        <time datetime="2020-04-20">20 Apr 2020</time>
     </div>
 </section>
   <footer>
 </article>
-      <ul>
-          <li>Previous: <a href="/posts/Configuring-Marlin-2-0-for-an-Ender-3-Pro-and-BLTouch/">How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch</a>
-          </li>
-        
-      </ul>
 
     <section class="say-hi">
     <h2>Subscribe.</h2>
@@ -237,6 +241,6 @@
       &copy; Marc Dobler - 2021
 
     </footer>
-    <!-- Current page: /posts/how-to-calibrate-z-offset-with-a-bltouch-bed-leveling-probe/ -->
+    <!-- Current page: /projects/pico-fish-tank/ -->
   </body>
 </html>

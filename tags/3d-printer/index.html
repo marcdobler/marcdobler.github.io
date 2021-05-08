@@ -11,15 +11,67 @@
     <meta name="theme-color" content="#4285f4">
     <link rel="icon" type="image/png" href="/img/icon/chrome/chrome-favicon-16-16.png">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Blog Marc Dobler">
-    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Blog Marc Dobler">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
     <script src="/js/main.js"></script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com#website",
+      "url": "https://example.com",
+      "name": "Site title",
+      "description": "Site description",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://example.com/page"
+      },
+      "url": "https://example.com/page",
+      "isPartOf": {
+        "@id": "https://example.com#website"
+      },
+      "headline": "Post title",
+      "description": "Post description",
+      "image": "https://example.com/images/page.png",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Site title",
+        "url": "https://example.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://example.com/images/logo.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "First Last"
+      },
+      "keywords": "",
+      "datePublished": "2020-07-03T06:43:21.123Z",
+      "dateModified": "2020-07-03T08:35:46.289Z",
+      "articleSection": "Example"
+    }
+  ]
+}
+  </script>
   </head>
   <body>
     <header>
       <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-        <label class="menu-icon" for="nav-trigger">
+        <label class="menu-icon black" for="nav-trigger">
           <span></span>
           <span></span>
           <span></span>
@@ -53,14 +105,15 @@
         </ul>
         </label>
       </nav>
-      <h1 class="home">
+      <div class="home">
+        <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
         <a href="/">
 
           <picture><source type="image/webp" srcset="/img/e55326d3-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/e55326d3-128.jpeg" width="128" height="128"></picture>
           
-          <span class="sr-text">Blog Marc Dobler</span>
+          
         </a>
-      </h1>
+      </div>
       <div></div>
 
     </header>
