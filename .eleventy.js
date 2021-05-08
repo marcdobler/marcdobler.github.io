@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
+const schema = require("@quasibit/eleventy-plugin-schema");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -31,6 +32,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(schema);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -84,12 +86,18 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addWatchTarget("sass");
 
+  eleventyConfig.addFilter('iso8601', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO();
+  })
 
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
+
+
+
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

@@ -16,9 +16,9 @@
     "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Marc Dobler",
+    "email": "me@marcdobler.com",
+    "url": "https://www.marcdiobler.com/"
   },
   "license": "MIT",
   "bugs": {
@@ -31,15 +31,21 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "@csstools/postcss-sass": "^4.0.0",
+    "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "autoprefixer": "^10.2.5",
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.1.0",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
     "workbox-cli": "^6.1.5"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material/button": "^11.0.0",
+    "@material/top-app-bar": "^11.0.0",
     "normalize.css": "^8.0.1"
   }
 }

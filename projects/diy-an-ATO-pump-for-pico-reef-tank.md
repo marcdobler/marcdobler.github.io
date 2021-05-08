@@ -1,12 +1,13 @@
 ---
 layout: layouts/post.njk
-title: "Make an ESP32 temperature probe for reef tank"
+title: "DIY an ATO pump for pico reef tank"
 excerpt: 
 tags:
     - DIY
     - Reef tank
-color: teal
+color: amber
 author:
 - Marc Dobler
 meta: "DIY reef stuff"
+date: 2021-02-19
 ---

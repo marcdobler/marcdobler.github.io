@@ -14,21 +14,21 @@ I am <script>howOldIAm.inYears('08/23/1982');</script> years old web enthusiast 
 
 ## Work experience
 
-### Chief Technical Officer
+### Chief Technical Officer / Wordpress developer
 
 "Noviy Vek Media" LLC — Moscow, RU  
 March 2011 — Now
 
 WordPress CMS development. Theme and plugins creation. Improving WordPress site from classic one to responsive for progressive web apps. Cleaning core HTML process, maintaining and improving SEO. Restructuration of data for NewsML-G 2 - IPTC format. Maintenance of the company ’s computer network (75 workstations). Broadcast of cultural events in streaming (Facebook, Youtube). Creation of hard paywall for an online journal. Web content management training for journalists and community managers. Outsourcing administration of web server systems.
 
-### Project Manager
+### Project Manager  / Web developer
 
 Bureau Nouveau Media — Paris, FR  
 September 2010 — February 2011
 
 Project management for websites: case studies, negotiations, plan framing, website development, marketing management. Existing platform improvement.
 
-### Technical director
+### Technical director / Tech Lead
 
 Color Web, web agency — Chambéry, FR  
 December 2009 — July 2010

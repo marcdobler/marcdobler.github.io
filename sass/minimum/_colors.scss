@@ -47,3 +47,41 @@
   }
 }
 
+.menu-icon {
+  &.green span {
+    background-color: var(--lightgray);
+  }
+
+  &.black span {
+    background-color: black;
+  }
+
+  &.pink span {
+    background-color: var(--lightgray);
+  }
+
+  &.teal span {
+    background-color: var(--lightgray);
+  }
+
+  &.bluegrey span {
+    background-color: var(--darkgray);
+  }
+
+  &.bluelight span {
+    background-color: var(--darkgray);
+  }
+
+  &.amber span {
+    background-color: var(--lightgray);
+  }
+
+  &.bluedark span {
+    background-color: var(--lightgray);
+  }
+
+  &.greylight span {
+    background-color: var(--darkgray);
+  }
+}
+
