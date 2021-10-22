@@ -344,7 +344,8 @@ template {
   color: var(--black); }
 
 .color-bg.lightgray header .card {
-  background-color: #f5f8fe; }
+  background-color: #f5f8fe;
+  color: var(--black); }
   .color-bg.lightgray header .card ::selection {
     background: #fefbf5;
     /* WebKit/Blink Browsers */ }
@@ -374,7 +375,8 @@ template {
   color: var(--black); }
 
 .color-bg.gray header .card {
-  background-color: silver; }
+  background-color: silver;
+  color: var(--black); }
   .color-bg.gray header .card ::selection {
     background: #c0c0c0;
     /* WebKit/Blink Browsers */ }
@@ -404,7 +406,8 @@ template {
   color: var(--white); }
 
 .color-bg.darkgray header .card {
-  background-color: #333333; }
+  background-color: #333333;
+  color: var(--white); }
   .color-bg.darkgray header .card ::selection {
     background: #333;
     /* WebKit/Blink Browsers */ }
@@ -434,7 +437,8 @@ template {
   color: var(--white); }
 
 .color-bg.navy header .card {
-  background-color: #05170d; }
+  background-color: #05170d;
+  color: var(--white); }
   .color-bg.navy header .card ::selection {
     background: #17050f;
     /* WebKit/Blink Browsers */ }
@@ -464,7 +468,8 @@ template {
   color: var(--white); }
 
 .color-bg.blue header .card {
-  background-color: #402008; }
+  background-color: #402008;
+  color: var(--white); }
   .color-bg.blue header .card ::selection {
     background: #082840;
     /* WebKit/Blink Browsers */ }
@@ -494,7 +499,8 @@ template {
   color: var(--white); }
 
 .color-bg.chrysiptera header .card {
-  background-color: #e2e502; }
+  background-color: #e2e502;
+  color: var(--white); }
   .color-bg.chrysiptera header .card ::selection {
     background: #0502e5;
     /* WebKit/Blink Browsers */ }
@@ -524,7 +530,8 @@ template {
   color: var(--black); }
 
 .color-bg.white header .card {
-  background-color: white; }
+  background-color: white;
+  color: var(--black); }
   .color-bg.white header .card ::selection {
     background: #fff;
     /* WebKit/Blink Browsers */ }
@@ -554,7 +561,8 @@ template {
   color: var(--black); }
 
 .color-bg.violet header .card {
-  background-color: #81ff20; }
+  background-color: #81ff20;
+  color: var(--black); }
   .color-bg.violet header .card ::selection {
     background: #9e20ff;
     /* WebKit/Blink Browsers */ }
@@ -584,7 +592,8 @@ template {
   color: var(--white); }
 
 .color-bg.green header .card {
-  background-color: #ab3b5f; }
+  background-color: #ab3b5f;
+  color: var(--white); }
   .color-bg.green header .card ::selection {
     background: #3bab87;
     /* WebKit/Blink Browsers */ }
@@ -614,7 +623,8 @@ template {
   color: var(--black); }
 
 .color-bg.pink header .card {
-  background-color: #ecf9fd; }
+  background-color: #ecf9fd;
+  color: var(--black); }
   .color-bg.pink header .card ::selection {
     background: #fdf0ec;
     /* WebKit/Blink Browsers */ }
@@ -644,7 +654,8 @@ template {
   color: var(--white); }
 
 .color-bg.teal header .card {
-  background-color: #542c22; }
+  background-color: #542c22;
+  color: var(--white); }
   .color-bg.teal header .card ::selection {
     background: #224a54;
     /* WebKit/Blink Browsers */ }
@@ -674,7 +685,8 @@ template {
   color: var(--black); }
 
 .color-bg.bluegrey header .card {
-  background-color: #c8a298; }
+  background-color: #c8a298;
+  color: var(--black); }
   .color-bg.bluegrey header .card ::selection {
     background: #98bec8;
     /* WebKit/Blink Browsers */ }
@@ -704,7 +716,8 @@ template {
   color: var(--black); }
 
 .color-bg.bluelight header .card {
-  background-color: #e1d1d2; }
+  background-color: #e1d1d2;
+  color: var(--black); }
   .color-bg.bluelight header .card ::selection {
     background: #d1e1e0;
     /* WebKit/Blink Browsers */ }
@@ -734,7 +747,8 @@ template {
   color: var(--black); }
 
 .color-bg.amber header .card {
-  background-color: #5cbdc1; }
+  background-color: #5cbdc1;
+  color: var(--black); }
   .color-bg.amber header .card ::selection {
     background: #c1605c;
     /* WebKit/Blink Browsers */ }
@@ -764,7 +778,8 @@ template {
   color: var(--white); }
 
 .color-bg.bluedark header .card {
-  background-color: #3c382b; }
+  background-color: #3c382b;
+  color: var(--white); }
   .color-bg.bluedark header .card ::selection {
     background: #2b2f3c;
     /* WebKit/Blink Browsers */ }
@@ -794,7 +809,8 @@ template {
   color: var(--black); }
 
 .color-bg.greylight header .card {
-  background-color: #b5ab9b; }
+  background-color: #b5ab9b;
+  color: var(--black); }
   .color-bg.greylight header .card ::selection {
     background: #9ba5b5;
     /* WebKit/Blink Browsers */ }
@@ -824,7 +840,8 @@ template {
   color: var(--white); }
 
 .color-bg.black header .card {
-  background-color: black; }
+  background-color: black;
+  color: var(--white); }
   .color-bg.black header .card ::selection {
     background: #000;
     /* WebKit/Blink Browsers */ }
@@ -854,7 +871,8 @@ template {
   color: var(--white); }
 
 .color-bg.orange header .card {
-  background-color: #008ebf; }
+  background-color: #008ebf;
+  color: var(--white); }
   .color-bg.orange header .card ::selection {
     background: #bf3100;
     /* WebKit/Blink Browsers */ }
@@ -884,7 +902,8 @@ template {
   color: var(--white); }
 
 .color-bg.brown header .card {
-  background-color: #307096; }
+  background-color: #307096;
+  color: var(--white); }
   .color-bg.brown header .card ::selection {
     background: #965630;
     /* WebKit/Blink Browsers */ }
@@ -1484,9 +1503,6 @@ body > footer {
 /**
    * Posts
    */
-.tmpl-page article > header > h1 {
-  min-height: 43vh; }
-
 article > header,
 .tmpl-tags > header {
   align-content: center;
