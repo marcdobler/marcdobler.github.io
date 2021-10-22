@@ -17,54 +17,7 @@
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
     <script src="/js/main.js"></script>
-    <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://www.marcdobler.com/#website",
-      "url": "https://www.marcdobler.com/",
-      "name": "Marc Dobler | Web Developer, DIY Maker",
-      "description": "Experiences, Self development DIY projects, How to sharing...",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/posts/how-to-compile-and-install-wxPython-on-raspberry-pi/"
-      },
-      "url": "/posts/how-to-compile-and-install-wxPython-on-raspberry-pi/",
-      "isPartOf": {
-        "@id": "https://www.marcdobler.com/#website"
-      },
-      "headline": "How to compile and install wxPython on Raspberry Pi?",
-      "description": "If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.",
-      "image": "https://example.com/images/page.png",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Marc Dobler | Web Developer, DIY Maker",
-        "url": "https://www.marcdobler.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://example.com/images/logo.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Marc Dobler"
-      },
-      "keywords": "posts,Programming,Python,Arduino",
-      "datePublished": "2020-05-18T00:00:00.000Z",
-      "articleSection": "Example"
-    }
-  ]
-}
-  </script>
+    
   </head>
   <body>
     <header>
@@ -99,6 +52,9 @@
               <a href="/about/">About Me</a>
             </li>
             <li class="nav-item">
+              <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
               <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
             </li>
         </ul>
@@ -108,7 +64,7 @@
         <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
         <a href="/">
 
-          <picture><source type="image/webp" srcset="/img/e55326d3-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/e55326d3-128.jpeg" width="128" height="128"></picture>
+          <picture><source type="image/webp" srcset="/img/KINtVbES59-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/KINtVbES59-128.jpeg" width="128" height="128"></picture>
           
           
         </a>
@@ -119,34 +75,34 @@
 
     <main class="tmpl-post">
       
-<article>
+<article class="color-bg green">
   <header>
-    <h1 class="color-bg green">How to compile and install wxPython on Raspberry Pi?</h1>
+    <h1>How to compile and install wxPython on Raspberry Pi?</h1>
   </header>
 
   <main>
     
     <p>If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.</p>
 <p>Here you can find step by step explanation of how to do it.</p>
-<h2>Requirements</h2>
+<h2 id="requirements" tabindex="-1">Requirements <a class="direct-link" href="#requirements" aria-hidden="true">#</a></h2>
 <ul>
 <li>Raspberry Pi</li>
 <li>Python 3.x</li>
 <li>time, lots of time</li>
 </ul>
-<h2>Step 1</h2>
+<h2 id="step-1" tabindex="-1">Step 1 <a class="direct-link" href="#step-1" aria-hidden="true">#</a></h2>
 <p>First, you need to open a terminal (shortcut ctrl + alt + t)</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update</code></pre>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> dpkg-dev build-essential libjpeg-dev libtiff-dev libsdl1.2-dev libgstreamer-plugins-base0.10-dev libnotify-dev freeglut3 freeglut3-dev libwebkitgtk-dev libghc-gtk3-dev libwxgtk3.0-gtk3-dev</code></pre>
 <p>if you use the pre-installed Python 3:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> python3.7-dev</code></pre>
-<h2>Step 2</h2>
+<h2 id="step-2" tabindex="-1">Step 2 <a class="direct-link" href="#step-2" aria-hidden="true">#</a></h2>
 <p>Now, let’s make the virtual environment. I made mine right off the /home/pi directory, but you can put it anywhere. Some like to put all their virtual environments (virtenv) in specific locations.</p>
 <p>Let’s make one (wx is the name of the virtenv we are creating, change it to suit):</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~</code></pre>
 <pre class="language-bash"><code class="language-bash">python3 -m venv wx</code></pre>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">source</span> ~/wx/bin/activate</code></pre>
-<h2>Step 3</h2>
+<h2 id="step-3" tabindex="-1">Step 3 <a class="direct-link" href="#step-3" aria-hidden="true">#</a></h2>
 <p>The first thing you need is wxPython.</p>
 <p>Go to:</p>
 <p><a href="https://pypi.org/project/wxPython/#files">https://pypi.org/project/wxPython/#files</a></p>
@@ -163,11 +119,11 @@
 <pre class="language-bash"><code class="language-bash">pip3 <span class="token function">install</span> -r requirements.txt</code></pre>
 <p>The next part is the big one. This will take a while, anywhere from a few hours to 18+ hours on a Raspberry Pi Zero.</p>
 <pre class="language-bash"><code class="language-bash">python3 build.py build bdist_wheel --jobs<span class="token operator">=</span><span class="token number">1</span></code></pre>
-<h2>After waiting ~ 8 hours</h2>
+<h2 id="after-waiting-~-8-hours" tabindex="-1">After waiting ~ 8 hours <a class="direct-link" href="#after-waiting-~-8-hours" aria-hidden="true">#</a></h2>
 <p>Now to install it in Python as a package (the name of this file varies depending on the Python version you build it with. ie. wxPython-4.1.0-cp38-cp38-linux_armv7l.whl for Python 3.8) :</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/wxPython-4.1.0/dist</code></pre>
 <pre class="language-bash"><code class="language-bash">pip3 <span class="token function">install</span> wxPython-4.1.0-cp37-cp37m-linux_armv7l.whl</code></pre>
-<h2>After waiting ~ 1 hour</h2>
+<h2 id="after-waiting-~-1-hour" tabindex="-1">After waiting ~ 1 hour <a class="direct-link" href="#after-waiting-~-1-hour" aria-hidden="true">#</a></h2>
 <p>Now let’s test it:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/wxPython-4.1.0.post2/demo</code></pre>
 <pre class="language-bash"><code class="language-bash">python3 demo.py</code></pre>
@@ -180,9 +136,8 @@
 
     <section class="section">
     <h2 class="post-list-heading tiny">Published in:</h2>
-    <div class="color-bg pink wide">
-        <p class="post-meta"><a href="/tags/programming/" class="post-tag">Programming</a>&nbsp;/&nbsp;<a href="/tags/python/" class="post-tag">Python</a>&nbsp;/&nbsp;<a href="/tags/arduino/" class="post-tag">Arduino</a>
-        </p>
+    <div class="post-meta color-bg pink wide"><a href="/tags/programming/" class="post-tag">Programming</a>&nbsp;/&nbsp;<a href="/tags/python/" class="post-tag">Python</a>&nbsp;/&nbsp;<a href="/tags/arduino/" class="post-tag">Arduino</a>
+        
         <time datetime="2020-05-18">18 May 2020</time>
     </div>
 </section>

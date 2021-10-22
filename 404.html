@@ -17,53 +17,13 @@
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
     <script src="/js/main.js"></script>
-    <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://example.com#website",
-      "url": "https://example.com",
-      "name": "Site title",
-      "description": "Site description",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://example.com/page"
-      },
-      "url": "https://example.com/page",
-      "isPartOf": {
-        "@id": "https://example.com#website"
-      },
-      "headline": "Post title",
-      "description": "Post description",
-      "image": "https://example.com/images/page.png",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Site title",
-        "url": "https://example.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://example.com/images/logo.png",
-          "width": 1200,
-          "height": 630
-        }
-      }
-    }
-  ]
-}
-  </script>
+    
   </head>
   <body>
     <header>
       <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-        <label class="menu-icon black" for="nav-trigger">
+        <label class="menu-icon white " for="nav-trigger">
           <span></span>
           <span></span>
           <span></span>
@@ -92,6 +52,9 @@
               <a href="/about/">About Me</a>
             </li>
             <li class="nav-item">
+              <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
               <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
             </li>
         </ul>
@@ -101,7 +64,7 @@
         <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
         <a href="/">
 
-          <picture><source type="image/webp" srcset="/img/e55326d3-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/e55326d3-128.jpeg" width="128" height="128"></picture>
+          <picture><source type="image/webp" srcset="/img/KINtVbES59-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/KINtVbES59-128.jpeg" width="128" height="128"></picture>
           
           
         </a>
@@ -111,7 +74,7 @@
     </header>
 
     <main class="tmpl-home">
-      <h1>Content not found.</h1>
+      <h1 id="content-not-found." tabindex="-1">Content not found. <a class="direct-link" href="#content-not-found." aria-hidden="true">#</a></h1>
 <p>Go <a href="/">home</a>.</p>
 
 

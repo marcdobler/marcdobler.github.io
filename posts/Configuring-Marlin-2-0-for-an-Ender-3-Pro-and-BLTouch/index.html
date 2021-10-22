@@ -17,54 +17,7 @@
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
     <script src="/js/main.js"></script>
-    <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://www.marcdobler.com/#website",
-      "url": "https://www.marcdobler.com/",
-      "name": "Marc Dobler | Web Developer, DIY Maker",
-      "description": "Experiences, Self development DIY projects, How to sharing...",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/posts/Configuring-Marlin-2-0-for-an-Ender-3-Pro-and-BLTouch/"
-      },
-      "url": "/posts/Configuring-Marlin-2-0-for-an-Ender-3-Pro-and-BLTouch/",
-      "isPartOf": {
-        "@id": "https://www.marcdobler.com/#website"
-      },
-      "headline": "How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch",
-      "description": "A good start to get how firmware work, and nice tips to make it custom version for Ender 3 BLTouch",
-      "image": "https://example.com/images/page.png",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Marc Dobler | Web Developer, DIY Maker",
-        "url": "https://www.marcdobler.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://example.com/images/logo.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Marc Dobler"
-      },
-      "keywords": "posts,3D Printer,Ender",
-      "datePublished": "2020-05-20T00:00:00.000Z",
-      "articleSection": "Example"
-    }
-  ]
-}
-  </script>
+    
   </head>
   <body>
     <header>
@@ -99,6 +52,9 @@
               <a href="/about/">About Me</a>
             </li>
             <li class="nav-item">
+              <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
               <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
             </li>
         </ul>
@@ -108,7 +64,7 @@
         <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
         <a href="/">
 
-          <picture><source type="image/webp" srcset="/img/e55326d3-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/e55326d3-128.jpeg" width="128" height="128"></picture>
+          <picture><source type="image/webp" srcset="/img/KINtVbES59-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/KINtVbES59-128.jpeg" width="128" height="128"></picture>
           
           
         </a>
@@ -119,21 +75,21 @@
 
     <main class="tmpl-post">
       
-<article>
+<article class="color-bg bluegrey">
   <header>
-    <h1 class="color-bg bluegrey">How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch</h1>
+    <h1>How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch</h1>
   </header>
 
   <main>
     
-    <h2>The Template</h2>
+    <h2 id="the-template" tabindex="-1">The Template <a class="direct-link" href="#the-template" aria-hidden="true">#</a></h2>
 <p>Firstly, you’ll need the Marlin firmware with the appropriate template settings.</p>
 <ol>
 <li>Start by downloading the latest stable release of Marlin from here and the configuration files here.</li>
 <li>Extract the zip.</li>
 <li>Copy the 4 files from config/examples/Creality/Ender-3 to the Marlin/ folder, overwriting the 2 already there.</li>
 </ol>
-<h2>Configuration.h</h2>
+<h2 id="configuration.h" tabindex="-1">Configuration.h <a class="direct-link" href="#configuration.h" aria-hidden="true">#</a></h2>
 <p>Open the new Marlin/Configuration.h file using a text editor suitable for code, like vs code. We’ll customize our configuration now:</p>
 <ol>
 <li>
@@ -189,7 +145,7 @@
 <p>Save the file and close the file.</p>
 </li>
 </ol>
-<h2>Configuration_adv.h</h2>
+<h2 id="configuration_adv.h" tabindex="-1">Configuration_adv.h <a class="direct-link" href="#configuration_adv.h" aria-hidden="true">#</a></h2>
 <p>Open the new Marlin/Configuration_adv.h file in your chosen text editor.</p>
 <ol>
 <li>If you’re using a BLTouch:
@@ -205,7 +161,7 @@
 <li>Marlin watches the rate of temperature increase for hot-end and bed. If it’s too slow, it will trigger an error and halt your print. If you have the windows open for ventilation and it’s cold out, this can be a problem. Increase <code>WATCH_BED_TEMP_PERIOD</code> a little if you have this issue.<br>
 Save your changes and close the file.</li>
 </ol>
-<h2>To The Printer!</h2>
+<h2 id="to-the-printer!" tabindex="-1">To The Printer! <a class="direct-link" href="#to-the-printer!" aria-hidden="true">#</a></h2>
 <p>Take a copy of your <code>M503</code> output to save your current printer settings. You’ll need to put some of these back later.</p>
 <p>Open Marlin/Marlin.ino with the Visual Studio Code, compile with PlateformIO, and write the new firmware to your printer.</p>
 <p>Run M502 to set all settings to those specified in your firmware files, then M500 to store these settings in the EEPROM.</p>
@@ -219,9 +175,8 @@ Save your changes and close the file.</li>
 
     <section class="section">
     <h2 class="post-list-heading tiny">Published in:</h2>
-    <div class="color-bg pink wide">
-        <p class="post-meta"><a href="/tags/3d-printer/" class="post-tag">3D Printer</a>&nbsp;/&nbsp;<a href="/tags/ender/" class="post-tag">Ender</a>
-        </p>
+    <div class="post-meta color-bg pink wide"><a href="/tags/3d-printer/" class="post-tag">3D Printer</a>&nbsp;/&nbsp;<a href="/tags/ender/" class="post-tag">Ender</a>
+        
         <time datetime="2020-05-20">20 May 2020</time>
     </div>
 </section>
