@@ -61,6 +61,7 @@ $themeColours: (
         }
         .card {
           background-color: complement($color);
+          color: coloraria($color);
           ::selection {
             background: $color; /* WebKit/Blink Browsers */
           }

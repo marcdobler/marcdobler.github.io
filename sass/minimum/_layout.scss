@@ -295,14 +295,6 @@ body > footer {
    * Posts
    */
 
-.tmpl-page {
-  article {
-    & > header > h1 {
-      min-height: 43vh;
-    }
-  }
-}
-
 article,
 .tmpl-tags {
   & > header {
