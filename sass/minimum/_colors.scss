@@ -1,87 +1,93 @@
+$themeColours: (
+  "lightgray": #fefbf5,
+  "gray": #c0c0c0,
+  "darkgray": #333,
+  "navy": #17050f,
+  "blue": #082840,
+  "chrysiptera":#0502e5,
+  "white": #fff,
+  "violet": #9e20ff,
+  "green": #3bab87,
+  "pink": #fdf0ec,
+  "teal": #224a54,
+  "bluegrey": #98bec8,
+  "bluelight": #d1e1e0,
+  "amber": #c1605c,
+  "bluedark": #2b2f3c,
+  "greylight": #9ba5b5,
+  "black": #000,
+  "orange": #bf3100,
+  "brown": #965630,
+);
+
 /* Colors */
 :root {
-  --lightgray: #FEFBF5;
-  --gray: #c0c0c0;
-  --darkgray: #333;
-  --navy: #17050f;
-  --blue: #082840;
-  --white: #fff;
+  @each $themeColour, $color in $themeColours {
+    --#{$themeColour}: #{$color};
+  }
 
   --background-color: var(--lightgray);
   --site-title-color: var(--darkgray);
 }
 
-.color-bg {
-  &.green {
-    background-color: #3bab87;
-    color: white;
-  }
-
-  &.pink {
-    background-color: #fdf0ec;
-  }
-
-  &.teal {
-    background-color: #224a54;
-    color: white;
-  }
-
-  &.bluegrey {
-    background-color: #98bec8;
-  }
-
-  &.bluelight {
-    background-color: #d1e1e0;
-  }
-
-  &.amber {
-    background-color: #c1605c;
-  }
-
-  &.bluedark {
-    background-color: #2b2f3c;
-  }
-
-  &.greylight {
-    background-color: #9ba5b5;
+@function coloraria($bg) {
+  @if (lightness($bg) > 50) {
+    @return var(--black);
+  } @else {
+    @return var(--white);
   }
 }
 
-.menu-icon {
-  &.green span {
-    background-color: var(--lightgray);
-  }
+@each $themeColour, $color in $themeColours {
+  .color-bg {
+    &.#{$themeColour} {
+      
+      ::selection {
+        background: complement($color); /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+        background: complement($color); /* Gecko Browsers */
+      }
 
-  &.black span {
-    background-color: black;
-  }
+      header, &.postlist-item, &.info, &.info-image, &.post-meta  {
+        background-color: var(--#{$themeColour});
+        color: coloraria($color);
+      } 
 
-  &.pink span {
-    background-color: var(--lightgray);
-  }
+      header {
+        h1 {
+          background-color: var(--#{$themeColour});
+          color: coloraria($color);
+        }
+        .card {
+          background-color: complement($color);
+          ::selection {
+            background: $color; /* WebKit/Blink Browsers */
+          }
+        }
+      }
 
-  &.teal span {
-    background-color: var(--lightgray);
-  }
+      a h3 {
+        color: coloraria($color);
 
-  &.bluegrey span {
-    background-color: var(--darkgray);
-  }
+        &:after {
+          background-color: coloraria($color);
+        }
+      }
 
-  &.bluelight span {
-    background-color: var(--darkgray);
-  }
-
-  &.amber span {
-    background-color: var(--lightgray);
-  }
-
-  &.bluedark span {
-    background-color: var(--lightgray);
-  }
-
-  &.greylight span {
-    background-color: var(--darkgray);
+      .post-excerpt, .postlist-date {
+        color: coloraria($color);
+      }
+    }
   }
 }
+
+@each $themeColour, $color in $themeColours {
+  .menu-icon {
+    &.#{$themeColour} span {
+      background-color: coloraria($color);
+    }
+  }
+}
+
 

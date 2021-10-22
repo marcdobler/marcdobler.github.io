@@ -57,6 +57,9 @@ module.exports = function(eleventyConfig) {
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
+    if(!Array.isArray(array) || array.length === 0) {
+      return [];
+    }
     if( n < 0 ) {
       return array.slice(n);
     }
@@ -69,10 +72,11 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
-  eleventyConfig.addFilter("filterTagList", tags => {
-    // should match the list in tags.njk
+  function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post","projects", "posts"].indexOf(tag) === -1);
-  })
+  }
+
+  eleventyConfig.addFilter("filterTagList", filterTagList)
 
   // Create an array of all tags
   eleventyConfig.addCollection("tagList", function(collection) {
@@ -81,29 +85,26 @@ module.exports = function(eleventyConfig) {
       (item.data.tags || []).forEach(tag => tagSet.add(tag));
     });
 
-    return [...tagSet];
+    return filterTagList([...tagSet]);
   });
 
-  eleventyConfig.addWatchTarget("sass");
-
-  eleventyConfig.addFilter('iso8601', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO();
-  })
-
-  eleventyConfig.addPassthroughCopy("site.webmanifest");
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
-
-
-
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
     linkify: true
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      class: "direct-link",
+      symbol: "#",
+      level: [1,2,3,4],
+    }),
+    slugify: eleventyConfig.getFilter("slug")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 

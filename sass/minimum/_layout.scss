@@ -18,7 +18,11 @@ body > header {
   z-index: 1;
 
   h1 {
-      line-height: 0;
+    line-height: 0;
+  }
+
+  picture {
+    display: flex;
   }
 }
 
@@ -51,11 +55,11 @@ body > footer {
 
 .info {
   a {
-    color: white;
+    color: var(--white);
   }
 
   p {
-    color: white;
+    color: var(--white);
     line-height: $spacing-unit;
     margin: 0;
   }
@@ -69,6 +73,8 @@ body > footer {
   }
 }
 
+@import "layout/posts";
+
 /**
    * Page content correct
    */
@@ -76,7 +82,6 @@ body > footer {
 .tmpl-post,
 .tmpl-page,
 .tmpl-tags {
-
   section {
     position: relative;
     max-width: 1280px;
@@ -112,7 +117,7 @@ body > footer {
       letter-spacing: -1px;
       line-height: 1.15;
       font-weight: bold;
-      color: white;
+      color: var(--white);
 
       @media screen and (max-width: $on-large) {
         @include relative-font-size(1.8);
@@ -197,7 +202,7 @@ body > footer {
       .more {
         transform: translateY(0px);
         transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        background-color: black;
+        background-color: var(--black);
         display: inline-block;
         @include relative-font-size(1);
         color: white;
@@ -211,7 +216,6 @@ body > footer {
       h3 {
         transform: translateY(0px);
         transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        color: white;
         text-align: center;
         margin: $spacing-unit;
 
@@ -219,7 +223,6 @@ body > footer {
           transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           content: "";
           display: block;
-          background-color: white;
           margin: 1em auto 0 auto;
           height: 4px;
           width: 2em;
@@ -242,7 +245,6 @@ body > footer {
 
       .post-excerpt {
         padding: 0 $spacing-unit * 4;
-        color: white;
         @include relative-font-size(1);
       }
 
@@ -252,7 +254,6 @@ body > footer {
         font-size: $small-font-size;
         color: var(--brand-color);
         padding: $spacing-unit;
-        color: white;
         font-weight: bold;
       }
     }
@@ -281,7 +282,7 @@ body > footer {
   font-size: $small-font-size;
   color: var(--brand-color);
   padding: $spacing-unit;
-  color: white;
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -295,19 +296,16 @@ body > footer {
    */
 
 .tmpl-page {
-    article {
-        & > header > h1 {
-            min-height: 43vh;  
-        }
+  article {
+    & > header > h1 {
+      min-height: 43vh;
     }
-} 
+  }
+}
 
-
-
-
-article, .tmpl-tags {
-  & > header > h1 {
-    @include relative-font-size(2.625);
+article,
+.tmpl-tags {
+  & > header {
     align-content: center;
     align-items: center;
     display: flex;
@@ -317,9 +315,52 @@ article, .tmpl-tags {
     margin-top: 0;
     height: 85vh;
     padding: 0 $spacing-unit;
+    position: relative;
+    
+    h1 {
+      @include relative-font-size(2.625);
+      z-index: 0;
+      padding: $spacing-unit/2;
 
-    @media screen and (max-width: $on-medium) {
+      @media screen and (max-width: $on-medium) {
         @include relative-font-size(2.025);
+      }
+    }
+
+    .card {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      padding: $spacing-unit/2;
+      bottom: -$spacing-unit/2;
+      right: $spacing-unit*2;
+
+      span {
+        border-bottom: 2px solid #00000034;
+        padding-top: $spacing-unit/2;
+        padding-bottom: $spacing-unit/2;
+        font-weight: bold;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+
+    img {
+      height: 85vh;
+      left: 0;
+      max-width: 50%;
+      object-fit: cover;
+      object-position: 25%;
+      position: absolute;
+      top: 0;
+      z-index: 0;
     }
   }
 
@@ -336,7 +377,7 @@ article, .tmpl-tags {
     margin-top: $spacing-unit * 2;
 
     .post-meta {
-      margin: $spacing-unit * 3 $spacing-unit;
+      padding: $spacing-unit * 3 $spacing-unit;
       font-weight: bold;
       @include relative-font-size(2);
 
@@ -347,37 +388,34 @@ article, .tmpl-tags {
       a {
         color: black;
       }
-
-      
     }
 
     time {
       @include relative-font-size(2.5);
       font-weight: bold;
       padding: $spacing-unit;
-      color: black;
+      color: var(--black);
       position: absolute;
-      margin-top: -65px;
+      margin-top: $spacing-unit*2.6;
       right: 0;
     }
   }
 }
 
 .tmpl-tags {
-    & > header > h1 {
-        height: 50vh;
-    }
+  & > header > h1 {
+    height: 50vh;
+  }
 
-    section {
-        padding-top: 0;
-        margin-top: $spacing-unit * -4;
-    }
+  section {
+    padding-top: 0;
+    margin-top: $spacing-unit * -4;
+  }
 }
 
 .fake-post-title {
   display: block;
   font-weight: bold;
-  color: white;
   margin: $spacing-unit / 2 0;
   @include relative-font-size(2.625);
 }

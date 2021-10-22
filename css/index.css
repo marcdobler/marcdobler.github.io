@@ -305,67 +305,654 @@ template {
 
 /* Colors */
 :root {
-  --lightgray: #FEFBF5;
+  --lightgray: #fefbf5;
   --gray: #c0c0c0;
   --darkgray: #333;
   --navy: #17050f;
   --blue: #082840;
+  --chrysiptera: #0502e5;
   --white: #fff;
+  --violet: #9e20ff;
+  --green: #3bab87;
+  --pink: #fdf0ec;
+  --teal: #224a54;
+  --bluegrey: #98bec8;
+  --bluelight: #d1e1e0;
+  --amber: #c1605c;
+  --bluedark: #2b2f3c;
+  --greylight: #9ba5b5;
+  --black: #000;
+  --orange: #bf3100;
+  --brown: #965630;
   --background-color: var(--lightgray);
   --site-title-color: var(--darkgray); }
 
-.color-bg.green {
-  background-color: #3bab87;
-  color: white; }
+.color-bg.lightgray ::selection {
+  background: #f5f8fe;
+  /* WebKit/Blink Browsers */ }
 
-.color-bg.pink {
-  background-color: #fdf0ec; }
+.color-bg.lightgray ::-moz-selection {
+  background: #f5f8fe;
+  /* Gecko Browsers */ }
 
-.color-bg.teal {
-  background-color: #224a54;
-  color: white; }
+.color-bg.lightgray header, .color-bg.lightgray.postlist-item, .color-bg.lightgray.info, .color-bg.lightgray.info-image, .color-bg.lightgray.post-meta {
+  background-color: var(--lightgray);
+  color: var(--black); }
 
-.color-bg.bluegrey {
-  background-color: #98bec8; }
+.color-bg.lightgray header h1 {
+  background-color: var(--lightgray);
+  color: var(--black); }
 
-.color-bg.bluelight {
-  background-color: #d1e1e0; }
+.color-bg.lightgray header .card {
+  background-color: #f5f8fe; }
+  .color-bg.lightgray header .card ::selection {
+    background: #fefbf5;
+    /* WebKit/Blink Browsers */ }
 
-.color-bg.amber {
-  background-color: #c1605c; }
+.color-bg.lightgray a h3 {
+  color: var(--black); }
+  .color-bg.lightgray a h3:after {
+    background-color: var(--black); }
 
-.color-bg.bluedark {
-  background-color: #2b2f3c; }
+.color-bg.lightgray .post-excerpt, .color-bg.lightgray .postlist-date {
+  color: var(--black); }
 
-.color-bg.greylight {
-  background-color: #9ba5b5; }
+.color-bg.gray ::selection {
+  background: silver;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.gray ::-moz-selection {
+  background: silver;
+  /* Gecko Browsers */ }
+
+.color-bg.gray header, .color-bg.gray.postlist-item, .color-bg.gray.info, .color-bg.gray.info-image, .color-bg.gray.post-meta {
+  background-color: var(--gray);
+  color: var(--black); }
+
+.color-bg.gray header h1 {
+  background-color: var(--gray);
+  color: var(--black); }
+
+.color-bg.gray header .card {
+  background-color: silver; }
+  .color-bg.gray header .card ::selection {
+    background: #c0c0c0;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.gray a h3 {
+  color: var(--black); }
+  .color-bg.gray a h3:after {
+    background-color: var(--black); }
+
+.color-bg.gray .post-excerpt, .color-bg.gray .postlist-date {
+  color: var(--black); }
+
+.color-bg.darkgray ::selection {
+  background: #333333;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.darkgray ::-moz-selection {
+  background: #333333;
+  /* Gecko Browsers */ }
+
+.color-bg.darkgray header, .color-bg.darkgray.postlist-item, .color-bg.darkgray.info, .color-bg.darkgray.info-image, .color-bg.darkgray.post-meta {
+  background-color: var(--darkgray);
+  color: var(--white); }
+
+.color-bg.darkgray header h1 {
+  background-color: var(--darkgray);
+  color: var(--white); }
+
+.color-bg.darkgray header .card {
+  background-color: #333333; }
+  .color-bg.darkgray header .card ::selection {
+    background: #333;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.darkgray a h3 {
+  color: var(--white); }
+  .color-bg.darkgray a h3:after {
+    background-color: var(--white); }
+
+.color-bg.darkgray .post-excerpt, .color-bg.darkgray .postlist-date {
+  color: var(--white); }
+
+.color-bg.navy ::selection {
+  background: #05170d;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.navy ::-moz-selection {
+  background: #05170d;
+  /* Gecko Browsers */ }
+
+.color-bg.navy header, .color-bg.navy.postlist-item, .color-bg.navy.info, .color-bg.navy.info-image, .color-bg.navy.post-meta {
+  background-color: var(--navy);
+  color: var(--white); }
+
+.color-bg.navy header h1 {
+  background-color: var(--navy);
+  color: var(--white); }
+
+.color-bg.navy header .card {
+  background-color: #05170d; }
+  .color-bg.navy header .card ::selection {
+    background: #17050f;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.navy a h3 {
+  color: var(--white); }
+  .color-bg.navy a h3:after {
+    background-color: var(--white); }
+
+.color-bg.navy .post-excerpt, .color-bg.navy .postlist-date {
+  color: var(--white); }
+
+.color-bg.blue ::selection {
+  background: #402008;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.blue ::-moz-selection {
+  background: #402008;
+  /* Gecko Browsers */ }
+
+.color-bg.blue header, .color-bg.blue.postlist-item, .color-bg.blue.info, .color-bg.blue.info-image, .color-bg.blue.post-meta {
+  background-color: var(--blue);
+  color: var(--white); }
+
+.color-bg.blue header h1 {
+  background-color: var(--blue);
+  color: var(--white); }
+
+.color-bg.blue header .card {
+  background-color: #402008; }
+  .color-bg.blue header .card ::selection {
+    background: #082840;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.blue a h3 {
+  color: var(--white); }
+  .color-bg.blue a h3:after {
+    background-color: var(--white); }
+
+.color-bg.blue .post-excerpt, .color-bg.blue .postlist-date {
+  color: var(--white); }
+
+.color-bg.chrysiptera ::selection {
+  background: #e2e502;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.chrysiptera ::-moz-selection {
+  background: #e2e502;
+  /* Gecko Browsers */ }
+
+.color-bg.chrysiptera header, .color-bg.chrysiptera.postlist-item, .color-bg.chrysiptera.info, .color-bg.chrysiptera.info-image, .color-bg.chrysiptera.post-meta {
+  background-color: var(--chrysiptera);
+  color: var(--white); }
+
+.color-bg.chrysiptera header h1 {
+  background-color: var(--chrysiptera);
+  color: var(--white); }
+
+.color-bg.chrysiptera header .card {
+  background-color: #e2e502; }
+  .color-bg.chrysiptera header .card ::selection {
+    background: #0502e5;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.chrysiptera a h3 {
+  color: var(--white); }
+  .color-bg.chrysiptera a h3:after {
+    background-color: var(--white); }
+
+.color-bg.chrysiptera .post-excerpt, .color-bg.chrysiptera .postlist-date {
+  color: var(--white); }
+
+.color-bg.white ::selection {
+  background: white;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.white ::-moz-selection {
+  background: white;
+  /* Gecko Browsers */ }
+
+.color-bg.white header, .color-bg.white.postlist-item, .color-bg.white.info, .color-bg.white.info-image, .color-bg.white.post-meta {
+  background-color: var(--white);
+  color: var(--black); }
+
+.color-bg.white header h1 {
+  background-color: var(--white);
+  color: var(--black); }
+
+.color-bg.white header .card {
+  background-color: white; }
+  .color-bg.white header .card ::selection {
+    background: #fff;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.white a h3 {
+  color: var(--black); }
+  .color-bg.white a h3:after {
+    background-color: var(--black); }
+
+.color-bg.white .post-excerpt, .color-bg.white .postlist-date {
+  color: var(--black); }
+
+.color-bg.violet ::selection {
+  background: #81ff20;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.violet ::-moz-selection {
+  background: #81ff20;
+  /* Gecko Browsers */ }
+
+.color-bg.violet header, .color-bg.violet.postlist-item, .color-bg.violet.info, .color-bg.violet.info-image, .color-bg.violet.post-meta {
+  background-color: var(--violet);
+  color: var(--black); }
+
+.color-bg.violet header h1 {
+  background-color: var(--violet);
+  color: var(--black); }
+
+.color-bg.violet header .card {
+  background-color: #81ff20; }
+  .color-bg.violet header .card ::selection {
+    background: #9e20ff;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.violet a h3 {
+  color: var(--black); }
+  .color-bg.violet a h3:after {
+    background-color: var(--black); }
+
+.color-bg.violet .post-excerpt, .color-bg.violet .postlist-date {
+  color: var(--black); }
+
+.color-bg.green ::selection {
+  background: #ab3b5f;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.green ::-moz-selection {
+  background: #ab3b5f;
+  /* Gecko Browsers */ }
+
+.color-bg.green header, .color-bg.green.postlist-item, .color-bg.green.info, .color-bg.green.info-image, .color-bg.green.post-meta {
+  background-color: var(--green);
+  color: var(--white); }
+
+.color-bg.green header h1 {
+  background-color: var(--green);
+  color: var(--white); }
+
+.color-bg.green header .card {
+  background-color: #ab3b5f; }
+  .color-bg.green header .card ::selection {
+    background: #3bab87;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.green a h3 {
+  color: var(--white); }
+  .color-bg.green a h3:after {
+    background-color: var(--white); }
+
+.color-bg.green .post-excerpt, .color-bg.green .postlist-date {
+  color: var(--white); }
+
+.color-bg.pink ::selection {
+  background: #ecf9fd;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.pink ::-moz-selection {
+  background: #ecf9fd;
+  /* Gecko Browsers */ }
+
+.color-bg.pink header, .color-bg.pink.postlist-item, .color-bg.pink.info, .color-bg.pink.info-image, .color-bg.pink.post-meta {
+  background-color: var(--pink);
+  color: var(--black); }
+
+.color-bg.pink header h1 {
+  background-color: var(--pink);
+  color: var(--black); }
+
+.color-bg.pink header .card {
+  background-color: #ecf9fd; }
+  .color-bg.pink header .card ::selection {
+    background: #fdf0ec;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.pink a h3 {
+  color: var(--black); }
+  .color-bg.pink a h3:after {
+    background-color: var(--black); }
+
+.color-bg.pink .post-excerpt, .color-bg.pink .postlist-date {
+  color: var(--black); }
+
+.color-bg.teal ::selection {
+  background: #542c22;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.teal ::-moz-selection {
+  background: #542c22;
+  /* Gecko Browsers */ }
+
+.color-bg.teal header, .color-bg.teal.postlist-item, .color-bg.teal.info, .color-bg.teal.info-image, .color-bg.teal.post-meta {
+  background-color: var(--teal);
+  color: var(--white); }
+
+.color-bg.teal header h1 {
+  background-color: var(--teal);
+  color: var(--white); }
+
+.color-bg.teal header .card {
+  background-color: #542c22; }
+  .color-bg.teal header .card ::selection {
+    background: #224a54;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.teal a h3 {
+  color: var(--white); }
+  .color-bg.teal a h3:after {
+    background-color: var(--white); }
+
+.color-bg.teal .post-excerpt, .color-bg.teal .postlist-date {
+  color: var(--white); }
+
+.color-bg.bluegrey ::selection {
+  background: #c8a298;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.bluegrey ::-moz-selection {
+  background: #c8a298;
+  /* Gecko Browsers */ }
+
+.color-bg.bluegrey header, .color-bg.bluegrey.postlist-item, .color-bg.bluegrey.info, .color-bg.bluegrey.info-image, .color-bg.bluegrey.post-meta {
+  background-color: var(--bluegrey);
+  color: var(--black); }
+
+.color-bg.bluegrey header h1 {
+  background-color: var(--bluegrey);
+  color: var(--black); }
+
+.color-bg.bluegrey header .card {
+  background-color: #c8a298; }
+  .color-bg.bluegrey header .card ::selection {
+    background: #98bec8;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.bluegrey a h3 {
+  color: var(--black); }
+  .color-bg.bluegrey a h3:after {
+    background-color: var(--black); }
+
+.color-bg.bluegrey .post-excerpt, .color-bg.bluegrey .postlist-date {
+  color: var(--black); }
+
+.color-bg.bluelight ::selection {
+  background: #e1d1d2;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.bluelight ::-moz-selection {
+  background: #e1d1d2;
+  /* Gecko Browsers */ }
+
+.color-bg.bluelight header, .color-bg.bluelight.postlist-item, .color-bg.bluelight.info, .color-bg.bluelight.info-image, .color-bg.bluelight.post-meta {
+  background-color: var(--bluelight);
+  color: var(--black); }
+
+.color-bg.bluelight header h1 {
+  background-color: var(--bluelight);
+  color: var(--black); }
+
+.color-bg.bluelight header .card {
+  background-color: #e1d1d2; }
+  .color-bg.bluelight header .card ::selection {
+    background: #d1e1e0;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.bluelight a h3 {
+  color: var(--black); }
+  .color-bg.bluelight a h3:after {
+    background-color: var(--black); }
+
+.color-bg.bluelight .post-excerpt, .color-bg.bluelight .postlist-date {
+  color: var(--black); }
+
+.color-bg.amber ::selection {
+  background: #5cbdc1;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.amber ::-moz-selection {
+  background: #5cbdc1;
+  /* Gecko Browsers */ }
+
+.color-bg.amber header, .color-bg.amber.postlist-item, .color-bg.amber.info, .color-bg.amber.info-image, .color-bg.amber.post-meta {
+  background-color: var(--amber);
+  color: var(--black); }
+
+.color-bg.amber header h1 {
+  background-color: var(--amber);
+  color: var(--black); }
+
+.color-bg.amber header .card {
+  background-color: #5cbdc1; }
+  .color-bg.amber header .card ::selection {
+    background: #c1605c;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.amber a h3 {
+  color: var(--black); }
+  .color-bg.amber a h3:after {
+    background-color: var(--black); }
+
+.color-bg.amber .post-excerpt, .color-bg.amber .postlist-date {
+  color: var(--black); }
+
+.color-bg.bluedark ::selection {
+  background: #3c382b;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.bluedark ::-moz-selection {
+  background: #3c382b;
+  /* Gecko Browsers */ }
+
+.color-bg.bluedark header, .color-bg.bluedark.postlist-item, .color-bg.bluedark.info, .color-bg.bluedark.info-image, .color-bg.bluedark.post-meta {
+  background-color: var(--bluedark);
+  color: var(--white); }
+
+.color-bg.bluedark header h1 {
+  background-color: var(--bluedark);
+  color: var(--white); }
+
+.color-bg.bluedark header .card {
+  background-color: #3c382b; }
+  .color-bg.bluedark header .card ::selection {
+    background: #2b2f3c;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.bluedark a h3 {
+  color: var(--white); }
+  .color-bg.bluedark a h3:after {
+    background-color: var(--white); }
+
+.color-bg.bluedark .post-excerpt, .color-bg.bluedark .postlist-date {
+  color: var(--white); }
+
+.color-bg.greylight ::selection {
+  background: #b5ab9b;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.greylight ::-moz-selection {
+  background: #b5ab9b;
+  /* Gecko Browsers */ }
+
+.color-bg.greylight header, .color-bg.greylight.postlist-item, .color-bg.greylight.info, .color-bg.greylight.info-image, .color-bg.greylight.post-meta {
+  background-color: var(--greylight);
+  color: var(--black); }
+
+.color-bg.greylight header h1 {
+  background-color: var(--greylight);
+  color: var(--black); }
+
+.color-bg.greylight header .card {
+  background-color: #b5ab9b; }
+  .color-bg.greylight header .card ::selection {
+    background: #9ba5b5;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.greylight a h3 {
+  color: var(--black); }
+  .color-bg.greylight a h3:after {
+    background-color: var(--black); }
+
+.color-bg.greylight .post-excerpt, .color-bg.greylight .postlist-date {
+  color: var(--black); }
+
+.color-bg.black ::selection {
+  background: black;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.black ::-moz-selection {
+  background: black;
+  /* Gecko Browsers */ }
+
+.color-bg.black header, .color-bg.black.postlist-item, .color-bg.black.info, .color-bg.black.info-image, .color-bg.black.post-meta {
+  background-color: var(--black);
+  color: var(--white); }
+
+.color-bg.black header h1 {
+  background-color: var(--black);
+  color: var(--white); }
+
+.color-bg.black header .card {
+  background-color: black; }
+  .color-bg.black header .card ::selection {
+    background: #000;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.black a h3 {
+  color: var(--white); }
+  .color-bg.black a h3:after {
+    background-color: var(--white); }
+
+.color-bg.black .post-excerpt, .color-bg.black .postlist-date {
+  color: var(--white); }
+
+.color-bg.orange ::selection {
+  background: #008ebf;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.orange ::-moz-selection {
+  background: #008ebf;
+  /* Gecko Browsers */ }
+
+.color-bg.orange header, .color-bg.orange.postlist-item, .color-bg.orange.info, .color-bg.orange.info-image, .color-bg.orange.post-meta {
+  background-color: var(--orange);
+  color: var(--white); }
+
+.color-bg.orange header h1 {
+  background-color: var(--orange);
+  color: var(--white); }
+
+.color-bg.orange header .card {
+  background-color: #008ebf; }
+  .color-bg.orange header .card ::selection {
+    background: #bf3100;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.orange a h3 {
+  color: var(--white); }
+  .color-bg.orange a h3:after {
+    background-color: var(--white); }
+
+.color-bg.orange .post-excerpt, .color-bg.orange .postlist-date {
+  color: var(--white); }
+
+.color-bg.brown ::selection {
+  background: #307096;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.brown ::-moz-selection {
+  background: #307096;
+  /* Gecko Browsers */ }
+
+.color-bg.brown header, .color-bg.brown.postlist-item, .color-bg.brown.info, .color-bg.brown.info-image, .color-bg.brown.post-meta {
+  background-color: var(--brown);
+  color: var(--white); }
+
+.color-bg.brown header h1 {
+  background-color: var(--brown);
+  color: var(--white); }
+
+.color-bg.brown header .card {
+  background-color: #307096; }
+  .color-bg.brown header .card ::selection {
+    background: #965630;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.brown a h3 {
+  color: var(--white); }
+  .color-bg.brown a h3:after {
+    background-color: var(--white); }
+
+.color-bg.brown .post-excerpt, .color-bg.brown .postlist-date {
+  color: var(--white); }
+
+.menu-icon.lightgray span {
+  background-color: var(--black); }
+
+.menu-icon.gray span {
+  background-color: var(--black); }
+
+.menu-icon.darkgray span {
+  background-color: var(--white); }
+
+.menu-icon.navy span {
+  background-color: var(--white); }
+
+.menu-icon.blue span {
+  background-color: var(--white); }
+
+.menu-icon.chrysiptera span {
+  background-color: var(--white); }
+
+.menu-icon.white span {
+  background-color: var(--black); }
+
+.menu-icon.violet span {
+  background-color: var(--black); }
 
 .menu-icon.green span {
-  background-color: var(--lightgray); }
-
-.menu-icon.black span {
-  background-color: black; }
+  background-color: var(--white); }
 
 .menu-icon.pink span {
-  background-color: var(--lightgray); }
+  background-color: var(--black); }
 
 .menu-icon.teal span {
-  background-color: var(--lightgray); }
+  background-color: var(--white); }
 
 .menu-icon.bluegrey span {
-  background-color: var(--darkgray); }
+  background-color: var(--black); }
 
 .menu-icon.bluelight span {
-  background-color: var(--darkgray); }
+  background-color: var(--black); }
 
 .menu-icon.amber span {
-  background-color: var(--lightgray); }
+  background-color: var(--black); }
 
 .menu-icon.bluedark span {
-  background-color: var(--lightgray); }
+  background-color: var(--white); }
 
 .menu-icon.greylight span {
-  background-color: var(--darkgray); }
+  background-color: var(--black); }
+
+.menu-icon.black span {
+  background-color: var(--white); }
+
+.menu-icon.orange span {
+  background-color: var(--white); }
+
+.menu-icon.brown span {
+  background-color: var(--white); }
 
 html {
   font-size: 18px; }
@@ -393,14 +980,6 @@ main {
 
 .sr-text {
   display: none; }
-
-::selection {
-  background: #ffb7b7;
-  /* WebKit/Blink Browsers */ }
-
-::-moz-selection {
-  background: #ffb7b7;
-  /* Gecko Browsers */ }
 
 .small {
   font-size: 0.5rem; }
@@ -564,6 +1143,8 @@ body > header {
   z-index: 1; }
   body > header h1 {
     line-height: 0; }
+  body > header picture {
+    display: flex; }
 
 body > header > nav {
   display: inline-block;
@@ -583,7 +1164,7 @@ body > header > nav {
         padding: 15px; } }
     body > header > nav label .round {
       position: absolute;
-      top: 45px;
+      top: 13.5px;
       left: 7.5px;
       transform: scale(0);
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -594,7 +1175,7 @@ body > header > nav {
     body > header > nav .menu-icon span {
       display: block;
       width: 100%;
-      height: 5px; }
+      height: 6px; }
   body > header > nav .trigger {
     position: fixed;
     top: 0;
@@ -698,10 +1279,10 @@ body > footer {
   margin-left: 0; }
 
 .info a {
-  color: white; }
+  color: var(--white); }
 
 .info p {
-  color: white;
+  color: var(--white);
   line-height: 30px;
   margin: 0; }
 
@@ -768,7 +1349,7 @@ body > footer {
     letter-spacing: -1px;
     line-height: 1.15;
     font-weight: bold;
-    color: white; }
+    color: var(--white); }
     @media screen and (max-width: 800px) {
       .tmpl-home section h3,
       .tmpl-post section h3,
@@ -841,7 +1422,7 @@ body > footer {
       .postlist > li a .more {
         transform: translateY(0px);
         transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        background-color: black;
+        background-color: var(--black);
         display: inline-block;
         font-size: 1rem;
         color: white;
@@ -853,14 +1434,12 @@ body > footer {
       .postlist > li a h3 {
         transform: translateY(0px);
         transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        color: white;
         text-align: center;
         margin: 30px; }
         .postlist > li a h3:after {
           transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           content: "";
           display: block;
-          background-color: white;
           margin: 1em auto 0 auto;
           height: 4px;
           width: 2em;
@@ -873,7 +1452,6 @@ body > footer {
           transform: scaleX(2); }
       .postlist > li a .post-excerpt {
         padding: 0 120px;
-        color: white;
         font-size: 1rem; }
       .postlist > li a .postlist-date {
         margin-top: auto;
@@ -881,7 +1459,6 @@ body > footer {
         font-size: 15.75px;
         color: var(--brand-color);
         padding: 30px;
-        color: white;
         font-weight: bold; }
 
 @media screen and (max-width: 800px) {
@@ -897,7 +1474,7 @@ body > footer {
   font-size: 15.75px;
   color: var(--brand-color);
   padding: 30px;
-  color: white;
+  color: var(--white);
   font-weight: bold; }
 
 .postlist-link {
@@ -910,8 +1487,8 @@ body > footer {
 .tmpl-page article > header > h1 {
   min-height: 43vh; }
 
-article > header > h1, .tmpl-tags > header > h1 {
-  font-size: 2.625rem;
+article > header,
+.tmpl-tags > header {
   align-content: center;
   align-items: center;
   display: flex;
@@ -920,36 +1497,81 @@ article > header > h1, .tmpl-tags > header > h1 {
   justify-content: center;
   margin-top: 0;
   height: 85vh;
-  padding: 0 30px; }
-  @media screen and (max-width: 600px) {
-    article > header > h1, .tmpl-tags > header > h1 {
-      font-size: 2.025rem; } }
+  padding: 0 30px;
+  position: relative; }
+  article > header h1,
+  .tmpl-tags > header h1 {
+    font-size: 2.625rem;
+    z-index: 0;
+    padding: 15px; }
+    @media screen and (max-width: 600px) {
+      article > header h1,
+      .tmpl-tags > header h1 {
+        font-size: 2.025rem; } }
+  article > header .card,
+  .tmpl-tags > header .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    bottom: -15px;
+    right: 60px; }
+    article > header .card span,
+    .tmpl-tags > header .card span {
+      border-bottom: 2px solid #00000034;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: bold; }
+      article > header .card span:first-child,
+      .tmpl-tags > header .card span:first-child {
+        padding-top: 0; }
+      article > header .card span:last-child,
+      .tmpl-tags > header .card span:last-child {
+        padding-bottom: 0;
+        border-bottom: 0; }
+  article > header img,
+  .tmpl-tags > header img {
+    height: 85vh;
+    left: 0;
+    max-width: 50%;
+    object-fit: cover;
+    object-position: 25%;
+    position: absolute;
+    top: 0;
+    z-index: 0; }
 
-article > main, .tmpl-tags > main {
+article > main,
+.tmpl-tags > main {
   max-width: 75ch;
   padding: 0 30px;
   margin: auto; }
-  article > main > p:first-child, .tmpl-tags > main > p:first-child {
+  article > main > p:first-child,
+  .tmpl-tags > main > p:first-child {
     margin-top: 60px; }
 
-article > footer, .tmpl-tags > footer {
+article > footer,
+.tmpl-tags > footer {
   margin-top: 60px; }
-  article > footer .post-meta, .tmpl-tags > footer .post-meta {
-    margin: 90px 30px;
+  article > footer .post-meta,
+  .tmpl-tags > footer .post-meta {
+    padding: 90px 30px;
     font-weight: bold;
     font-size: 2rem; }
     @media screen and (max-width: 600px) {
-      article > footer .post-meta, .tmpl-tags > footer .post-meta {
+      article > footer .post-meta,
+      .tmpl-tags > footer .post-meta {
         font-size: 1rem; } }
-    article > footer .post-meta a, .tmpl-tags > footer .post-meta a {
+    article > footer .post-meta a,
+    .tmpl-tags > footer .post-meta a {
       color: black; }
-  article > footer time, .tmpl-tags > footer time {
+  article > footer time,
+  .tmpl-tags > footer time {
     font-size: 2.5rem;
     font-weight: bold;
     padding: 30px;
-    color: black;
+    color: var(--black);
     position: absolute;
-    margin-top: -65px;
+    margin-top: 78px;
     right: 0; }
 
 .tmpl-tags > header > h1 {
@@ -962,7 +1584,6 @@ article > footer, .tmpl-tags > footer {
 .fake-post-title {
   display: block;
   font-weight: bold;
-  color: white;
   margin: 15px 0;
   font-size: 2.625rem; }
 

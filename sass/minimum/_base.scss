@@ -30,13 +30,6 @@ main {
   display: none;
 }
 
-::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
-}
-
 .small {
   @include relative-font-size(0.5);
 }

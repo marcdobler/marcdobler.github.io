@@ -25,7 +25,17 @@ eleventyNavigation:
 {% set collectionLink = '/posts/' %}
 {% set collectionReadMore = 'show' %}
 {% include "postslist.njk" %}
+</section>
 
+<section>
+{% set maxPosts = collections.fish.length | min(6) %}
+<h2>Fish.</h2>
+
+{% set postslist = collections.fish | head(-6) %}
+{% set postslistCounter = collections.fish | length %}
+{% set collectionLink = '/fish/' %}
+{% set collectionReadMore = 'show' %}
+{% include "postslist.njk" %}
 </section>
 
 {% include "section-sayhi.njk" %}

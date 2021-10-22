@@ -413,7 +413,16 @@
       "icons": [
         { "src": "/img/red.png", "sizes": "192x192", "type": "image/png" }
       ]
+    },
+    {
+      "name": "View reef tank",
+      "short_name": "Reef Tank",
+      "url": "/reefing/",
+      "icons": [
+        { "src": "/img/red.png", "sizes": "192x192", "type": "image/png" }
+      ]
     }
+
   ],
   "url": "https://marcdobler.github.io",
   "lang": "English",
