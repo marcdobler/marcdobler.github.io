@@ -5,8 +5,6 @@
   "scripts": {
     "watch:sass": "node-sass --watch sass -o _site/css",
     "build:sass": "node-sass sass -o css",
-    "watch:sw": "workbox generateSW workbox-config.js",
-    "build:sw": "workbox generateSW workbox-config.js",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
@@ -33,13 +31,13 @@
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "eleventy-plugin-workbox": "^1.4.0",
     "luxon": "^1.26.0",
     "markdown-it": "^12.1.0",
     "markdown-it-anchor": "^8.1.2",
     "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.4.1",
-    "workbox-cli": "^6.3.0"
+    "prettier": "^2.4.1"
   },
   "dependencies": {
     "sass-a11ycolor": "^2.0.8"
