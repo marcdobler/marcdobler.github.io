@@ -24,7 +24,14 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PPWXDW4');</script>
     <!-- End Google Tag Manager -->
-  </head>
+  <!-- Register service worker for PWA offline mode support. -->
+      <script>
+        if ("serviceWorker" in window.navigator) {
+          window.addEventListener("load", () =>
+            window.navigator.serviceWorker.register("/service-worker.js", { scope: "/" }),
+          );
+        }
+      </script></head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
