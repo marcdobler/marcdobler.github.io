@@ -25,8 +25,6 @@ Also, since childhood, I adore aquariums. At 15, my parents bought me one. And I
 
 In general, everything at the junction of technology, electronics, and programming is about me. Therefore, another hobby of mine is 3D printing. I set up Ender 3 one myself, and now I print everything for the home and any other needs. Do you need help with yours? Or maybe want me to print something for you?
 
-
-
 What else?... I also love wood. Have you heard about [Magic Mirror](https://magicmirror.builders/)? I created and configured one for my wife. Hanging in the corridor, it pleases her every day, telling her how beautiful she is today. In dreams, I have the idea to make some wood furniture more for the house. I have already made a table for changing diapers for children (I have three kids if anyone is interested).
 
 Here you can find a little bit about all this. So I told you what I am doing and answering the question of why. Well, I do something all the time, just because I can't do not do. Do something for nothing. Just like this. Welcome to my world!
