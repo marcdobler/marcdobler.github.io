@@ -5,6 +5,8 @@
   "scripts": {
     "watch:sass": "node-sass --watch sass -o _site/css",
     "build:sass": "node-sass sass -o css",
+    "watch:sw": "workbox generateSW workbox-config.js",
+    "build:sw": "workbox generateSW workbox-config.js",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
