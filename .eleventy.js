@@ -27,6 +27,9 @@ async function imageShortcode(src, alt, sizes) {
 }
 
 module.exports = function(eleventyConfig) {
+  // CNAME custom
+  eleventyConfig.addPassthroughCopy("CNAME");
+  
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
