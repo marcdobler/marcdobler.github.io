@@ -8,9 +8,11 @@ eleventyNavigation:
   order: 5
 ---
 
+
+
 ## About me
 
-I am <script>howOldIAm.inYears('08/23/1982');</script> years old web enthusiast passionate about coding, who loves to create new things in web mostly using WordPress, with progressive web apps experience that com bine s the best of the web and apps.
+I am <span id="hOIA"></span> years old web enthusiast passionate about coding, who loves to create new things in web mostly using WordPress, with progressive web apps experience that com bine s the best of the web and apps.
 
 ## Work experience
 
@@ -57,4 +59,6 @@ September 2005 to July 2007
 
 Bachelor Science Laboratory Technology Biotechnology  
 High school Jules Ferry — Canne, FR  
-September 2000 to July 2003  
+September 2000 to July 2003
+
+<script>howOldIAm.inYears('08/23/1982');</script>
