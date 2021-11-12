@@ -14,9 +14,9 @@ let howOldIAm = {
     // Show only years diff
     var howoldyouare = Math.abs(age.getUTCFullYear() - 1970);
 
-    // return write value
-    return document.getElementById('hOIA').innerHTML = howoldyouare;
-    // return document.write(howoldyouare);
+    if( document.body.contains( document.getElementById('hOIA') ) ) {
+      return document.getElementById('hOIA').innerHTML = howoldyouare;
+    }
   },
 };
 
