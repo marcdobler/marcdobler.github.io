@@ -14,8 +14,18 @@
     <link rel="preload" href="/css/index.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/index.css"></noscript>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- optionally increase loading priority -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons" onload="this.rel='stylesheet'">
+
+    <!-- no-JS fallback -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </noscript>
 
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
@@ -119,12 +129,12 @@
     <td>Tagged “3D Printer”</td>
   </tr>
   <tr>
-    <td><a href="/tags/ender/"><code>/tags/ender/</code></a></td>
-    <td>Tagged “Ender”</td>
-  </tr>
-  <tr>
     <td><a href="/tags/ender-3/"><code>/tags/ender-3/</code></a></td>
     <td>Tagged “Ender 3”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/ender/"><code>/tags/ender/</code></a></td>
+    <td>Tagged “Ender”</td>
   </tr>
   <tr>
     <td><a href="/tags/programming/"><code>/tags/programming/</code></a></td>
