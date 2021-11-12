@@ -15,7 +15,8 @@ let howOldIAm = {
     var howoldyouare = Math.abs(age.getUTCFullYear() - 1970);
 
     // return write value
-    return document.write(howoldyouare);
+    return document.getElementById('hOIA').innerHTML = howoldyouare;
+    // return document.write(howoldyouare);
   },
 };
 
