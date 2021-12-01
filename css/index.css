@@ -1662,6 +1662,7 @@ article > footer,
         font-size: 1rem; } }
     article > footer .post-meta a,
     .tmpl-tags > footer .post-meta a {
+      text-transform: capitalize;
       color: black; }
   article > footer time,
   .tmpl-tags > footer time {
@@ -1670,7 +1671,7 @@ article > footer,
     padding: 1em;
     color: var(--black);
     position: absolute;
-    margin-top: 2.6em;
+    margin-top: 1.8em;
     right: 0; }
 
 .tmpl-tags > header > h1 {
