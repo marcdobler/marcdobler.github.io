@@ -305,150 +305,90 @@ template {
 
 /* Colors */
 :root {
-  --lightgray: #fefbf5;
-  --gray: #c0c0c0;
-  --darkgray: #333;
-  --navy: #17050f;
+  --amber: #c1605c;
+  --black: #000;
   --blue: #082840;
-  --chrysiptera: #0502e5;
-  --white: #fff;
-  --violet: #9e20ff;
-  --green: #3bab87;
-  --pink: #fdf0ec;
-  --teal: #224a54;
+  --bluedark: #2b2f3c;
   --bluegrey: #98bec8;
   --bluelight: #d1e1e0;
-  --amber: #c1605c;
-  --bluedark: #2b2f3c;
-  --greylight: #9ba5b5;
-  --black: #000;
-  --orange: #bf3100;
   --brown: #965630;
+  --chrysiptera: #0502e5;
+  --darkgray: #333;
+  --gray: #c0c0c0;
+  --green: #3bab87;
+  --greylight: #9ba5b5;
+  --lightgray: #fefbf5;
+  --navy: #17050f;
+  --orange: #bf3100;
+  --pink: #fdf0ec;
+  --purple: #571af9;
+  --teal: #224a54;
+  --violet: #9e20ff;
+  --white: #fff;
+  --yellow: #a38f10;
   --background-color: var(--lightgray);
   --site-title-color: var(--darkgray); }
 
-.color-bg.lightgray ::selection {
-  background: #f5f8fe;
+.color-bg.amber ::selection {
+  background: #5cbdc1;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.lightgray ::-moz-selection {
-  background: #f5f8fe;
+.color-bg.amber ::-moz-selection {
+  background: #5cbdc1;
   /* Gecko Browsers */ }
 
-.color-bg.lightgray header, .color-bg.lightgray.postlist-item, .color-bg.lightgray.info, .color-bg.lightgray.info-image, .color-bg.lightgray.post-meta {
-  background-color: var(--lightgray);
+.color-bg.amber header, .color-bg.amber.postlist-item, .color-bg.amber.info, .color-bg.amber.info-image, .color-bg.amber.post-meta {
+  background-color: var(--amber);
   color: var(--black); }
 
-.color-bg.lightgray header h1 {
-  background-color: var(--lightgray);
+.color-bg.amber header h1 {
+  background-color: var(--amber);
   color: var(--black); }
 
-.color-bg.lightgray header .card {
-  background-color: #f5f8fe;
+.color-bg.amber header .card {
+  background-color: #5cbdc1;
   color: var(--black); }
-  .color-bg.lightgray header .card ::selection {
-    background: #fefbf5;
+  .color-bg.amber header .card ::selection {
+    background: #c1605c;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.lightgray a h3 {
+.color-bg.amber a h3 {
   color: var(--black); }
-  .color-bg.lightgray a h3:after {
+  .color-bg.amber a h3:after {
     background-color: var(--black); }
 
-.color-bg.lightgray .post-excerpt, .color-bg.lightgray .postlist-date {
+.color-bg.amber .post-excerpt, .color-bg.amber .postlist-date {
   color: var(--black); }
 
-.color-bg.gray ::selection {
-  background: silver;
+.color-bg.black ::selection {
+  background: black;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.gray ::-moz-selection {
-  background: silver;
+.color-bg.black ::-moz-selection {
+  background: black;
   /* Gecko Browsers */ }
 
-.color-bg.gray header, .color-bg.gray.postlist-item, .color-bg.gray.info, .color-bg.gray.info-image, .color-bg.gray.post-meta {
-  background-color: var(--gray);
-  color: var(--black); }
+.color-bg.black header, .color-bg.black.postlist-item, .color-bg.black.info, .color-bg.black.info-image, .color-bg.black.post-meta {
+  background-color: var(--black);
+  color: var(--white); }
 
-.color-bg.gray header h1 {
-  background-color: var(--gray);
-  color: var(--black); }
+.color-bg.black header h1 {
+  background-color: var(--black);
+  color: var(--white); }
 
-.color-bg.gray header .card {
-  background-color: silver;
-  color: var(--black); }
-  .color-bg.gray header .card ::selection {
-    background: #c0c0c0;
+.color-bg.black header .card {
+  background-color: black;
+  color: var(--white); }
+  .color-bg.black header .card ::selection {
+    background: #000;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.gray a h3 {
-  color: var(--black); }
-  .color-bg.gray a h3:after {
-    background-color: var(--black); }
-
-.color-bg.gray .post-excerpt, .color-bg.gray .postlist-date {
-  color: var(--black); }
-
-.color-bg.darkgray ::selection {
-  background: #333333;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.darkgray ::-moz-selection {
-  background: #333333;
-  /* Gecko Browsers */ }
-
-.color-bg.darkgray header, .color-bg.darkgray.postlist-item, .color-bg.darkgray.info, .color-bg.darkgray.info-image, .color-bg.darkgray.post-meta {
-  background-color: var(--darkgray);
+.color-bg.black a h3 {
   color: var(--white); }
-
-.color-bg.darkgray header h1 {
-  background-color: var(--darkgray);
-  color: var(--white); }
-
-.color-bg.darkgray header .card {
-  background-color: #333333;
-  color: var(--white); }
-  .color-bg.darkgray header .card ::selection {
-    background: #333;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.darkgray a h3 {
-  color: var(--white); }
-  .color-bg.darkgray a h3:after {
+  .color-bg.black a h3:after {
     background-color: var(--white); }
 
-.color-bg.darkgray .post-excerpt, .color-bg.darkgray .postlist-date {
-  color: var(--white); }
-
-.color-bg.navy ::selection {
-  background: #05170d;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.navy ::-moz-selection {
-  background: #05170d;
-  /* Gecko Browsers */ }
-
-.color-bg.navy header, .color-bg.navy.postlist-item, .color-bg.navy.info, .color-bg.navy.info-image, .color-bg.navy.post-meta {
-  background-color: var(--navy);
-  color: var(--white); }
-
-.color-bg.navy header h1 {
-  background-color: var(--navy);
-  color: var(--white); }
-
-.color-bg.navy header .card {
-  background-color: #05170d;
-  color: var(--white); }
-  .color-bg.navy header .card ::selection {
-    background: #17050f;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.navy a h3 {
-  color: var(--white); }
-  .color-bg.navy a h3:after {
-    background-color: var(--white); }
-
-.color-bg.navy .post-excerpt, .color-bg.navy .postlist-date {
+.color-bg.black .post-excerpt, .color-bg.black .postlist-date {
   color: var(--white); }
 
 .color-bg.blue ::selection {
@@ -482,190 +422,35 @@ template {
 .color-bg.blue .post-excerpt, .color-bg.blue .postlist-date {
   color: var(--white); }
 
-.color-bg.chrysiptera ::selection {
-  background: #e2e502;
+.color-bg.bluedark ::selection {
+  background: #3c382b;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.chrysiptera ::-moz-selection {
-  background: #e2e502;
+.color-bg.bluedark ::-moz-selection {
+  background: #3c382b;
   /* Gecko Browsers */ }
 
-.color-bg.chrysiptera header, .color-bg.chrysiptera.postlist-item, .color-bg.chrysiptera.info, .color-bg.chrysiptera.info-image, .color-bg.chrysiptera.post-meta {
-  background-color: var(--chrysiptera);
+.color-bg.bluedark header, .color-bg.bluedark.postlist-item, .color-bg.bluedark.info, .color-bg.bluedark.info-image, .color-bg.bluedark.post-meta {
+  background-color: var(--bluedark);
   color: var(--white); }
 
-.color-bg.chrysiptera header h1 {
-  background-color: var(--chrysiptera);
+.color-bg.bluedark header h1 {
+  background-color: var(--bluedark);
   color: var(--white); }
 
-.color-bg.chrysiptera header .card {
-  background-color: #e2e502;
+.color-bg.bluedark header .card {
+  background-color: #3c382b;
   color: var(--white); }
-  .color-bg.chrysiptera header .card ::selection {
-    background: #0502e5;
+  .color-bg.bluedark header .card ::selection {
+    background: #2b2f3c;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.chrysiptera a h3 {
+.color-bg.bluedark a h3 {
   color: var(--white); }
-  .color-bg.chrysiptera a h3:after {
+  .color-bg.bluedark a h3:after {
     background-color: var(--white); }
 
-.color-bg.chrysiptera .post-excerpt, .color-bg.chrysiptera .postlist-date {
-  color: var(--white); }
-
-.color-bg.white ::selection {
-  background: white;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.white ::-moz-selection {
-  background: white;
-  /* Gecko Browsers */ }
-
-.color-bg.white header, .color-bg.white.postlist-item, .color-bg.white.info, .color-bg.white.info-image, .color-bg.white.post-meta {
-  background-color: var(--white);
-  color: var(--black); }
-
-.color-bg.white header h1 {
-  background-color: var(--white);
-  color: var(--black); }
-
-.color-bg.white header .card {
-  background-color: white;
-  color: var(--black); }
-  .color-bg.white header .card ::selection {
-    background: #fff;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.white a h3 {
-  color: var(--black); }
-  .color-bg.white a h3:after {
-    background-color: var(--black); }
-
-.color-bg.white .post-excerpt, .color-bg.white .postlist-date {
-  color: var(--black); }
-
-.color-bg.violet ::selection {
-  background: #81ff20;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.violet ::-moz-selection {
-  background: #81ff20;
-  /* Gecko Browsers */ }
-
-.color-bg.violet header, .color-bg.violet.postlist-item, .color-bg.violet.info, .color-bg.violet.info-image, .color-bg.violet.post-meta {
-  background-color: var(--violet);
-  color: var(--black); }
-
-.color-bg.violet header h1 {
-  background-color: var(--violet);
-  color: var(--black); }
-
-.color-bg.violet header .card {
-  background-color: #81ff20;
-  color: var(--black); }
-  .color-bg.violet header .card ::selection {
-    background: #9e20ff;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.violet a h3 {
-  color: var(--black); }
-  .color-bg.violet a h3:after {
-    background-color: var(--black); }
-
-.color-bg.violet .post-excerpt, .color-bg.violet .postlist-date {
-  color: var(--black); }
-
-.color-bg.green ::selection {
-  background: #ab3b5f;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.green ::-moz-selection {
-  background: #ab3b5f;
-  /* Gecko Browsers */ }
-
-.color-bg.green header, .color-bg.green.postlist-item, .color-bg.green.info, .color-bg.green.info-image, .color-bg.green.post-meta {
-  background-color: var(--green);
-  color: var(--white); }
-
-.color-bg.green header h1 {
-  background-color: var(--green);
-  color: var(--white); }
-
-.color-bg.green header .card {
-  background-color: #ab3b5f;
-  color: var(--white); }
-  .color-bg.green header .card ::selection {
-    background: #3bab87;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.green a h3 {
-  color: var(--white); }
-  .color-bg.green a h3:after {
-    background-color: var(--white); }
-
-.color-bg.green .post-excerpt, .color-bg.green .postlist-date {
-  color: var(--white); }
-
-.color-bg.pink ::selection {
-  background: #ecf9fd;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.pink ::-moz-selection {
-  background: #ecf9fd;
-  /* Gecko Browsers */ }
-
-.color-bg.pink header, .color-bg.pink.postlist-item, .color-bg.pink.info, .color-bg.pink.info-image, .color-bg.pink.post-meta {
-  background-color: var(--pink);
-  color: var(--black); }
-
-.color-bg.pink header h1 {
-  background-color: var(--pink);
-  color: var(--black); }
-
-.color-bg.pink header .card {
-  background-color: #ecf9fd;
-  color: var(--black); }
-  .color-bg.pink header .card ::selection {
-    background: #fdf0ec;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.pink a h3 {
-  color: var(--black); }
-  .color-bg.pink a h3:after {
-    background-color: var(--black); }
-
-.color-bg.pink .post-excerpt, .color-bg.pink .postlist-date {
-  color: var(--black); }
-
-.color-bg.teal ::selection {
-  background: #542c22;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.teal ::-moz-selection {
-  background: #542c22;
-  /* Gecko Browsers */ }
-
-.color-bg.teal header, .color-bg.teal.postlist-item, .color-bg.teal.info, .color-bg.teal.info-image, .color-bg.teal.post-meta {
-  background-color: var(--teal);
-  color: var(--white); }
-
-.color-bg.teal header h1 {
-  background-color: var(--teal);
-  color: var(--white); }
-
-.color-bg.teal header .card {
-  background-color: #542c22;
-  color: var(--white); }
-  .color-bg.teal header .card ::selection {
-    background: #224a54;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.teal a h3 {
-  color: var(--white); }
-  .color-bg.teal a h3:after {
-    background-color: var(--white); }
-
-.color-bg.teal .post-excerpt, .color-bg.teal .postlist-date {
+.color-bg.bluedark .post-excerpt, .color-bg.bluedark .postlist-date {
   color: var(--white); }
 
 .color-bg.bluegrey ::selection {
@@ -730,66 +515,159 @@ template {
 .color-bg.bluelight .post-excerpt, .color-bg.bluelight .postlist-date {
   color: var(--black); }
 
-.color-bg.amber ::selection {
-  background: #5cbdc1;
+.color-bg.brown ::selection {
+  background: #307096;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.amber ::-moz-selection {
-  background: #5cbdc1;
+.color-bg.brown ::-moz-selection {
+  background: #307096;
   /* Gecko Browsers */ }
 
-.color-bg.amber header, .color-bg.amber.postlist-item, .color-bg.amber.info, .color-bg.amber.info-image, .color-bg.amber.post-meta {
-  background-color: var(--amber);
-  color: var(--black); }
+.color-bg.brown header, .color-bg.brown.postlist-item, .color-bg.brown.info, .color-bg.brown.info-image, .color-bg.brown.post-meta {
+  background-color: var(--brown);
+  color: var(--white); }
 
-.color-bg.amber header h1 {
-  background-color: var(--amber);
-  color: var(--black); }
+.color-bg.brown header h1 {
+  background-color: var(--brown);
+  color: var(--white); }
 
-.color-bg.amber header .card {
-  background-color: #5cbdc1;
-  color: var(--black); }
-  .color-bg.amber header .card ::selection {
-    background: #c1605c;
+.color-bg.brown header .card {
+  background-color: #307096;
+  color: var(--white); }
+  .color-bg.brown header .card ::selection {
+    background: #965630;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.amber a h3 {
-  color: var(--black); }
-  .color-bg.amber a h3:after {
-    background-color: var(--black); }
-
-.color-bg.amber .post-excerpt, .color-bg.amber .postlist-date {
-  color: var(--black); }
-
-.color-bg.bluedark ::selection {
-  background: #3c382b;
-  /* WebKit/Blink Browsers */ }
-
-.color-bg.bluedark ::-moz-selection {
-  background: #3c382b;
-  /* Gecko Browsers */ }
-
-.color-bg.bluedark header, .color-bg.bluedark.postlist-item, .color-bg.bluedark.info, .color-bg.bluedark.info-image, .color-bg.bluedark.post-meta {
-  background-color: var(--bluedark);
+.color-bg.brown a h3 {
   color: var(--white); }
-
-.color-bg.bluedark header h1 {
-  background-color: var(--bluedark);
-  color: var(--white); }
-
-.color-bg.bluedark header .card {
-  background-color: #3c382b;
-  color: var(--white); }
-  .color-bg.bluedark header .card ::selection {
-    background: #2b2f3c;
-    /* WebKit/Blink Browsers */ }
-
-.color-bg.bluedark a h3 {
-  color: var(--white); }
-  .color-bg.bluedark a h3:after {
+  .color-bg.brown a h3:after {
     background-color: var(--white); }
 
-.color-bg.bluedark .post-excerpt, .color-bg.bluedark .postlist-date {
+.color-bg.brown .post-excerpt, .color-bg.brown .postlist-date {
+  color: var(--white); }
+
+.color-bg.chrysiptera ::selection {
+  background: #e2e502;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.chrysiptera ::-moz-selection {
+  background: #e2e502;
+  /* Gecko Browsers */ }
+
+.color-bg.chrysiptera header, .color-bg.chrysiptera.postlist-item, .color-bg.chrysiptera.info, .color-bg.chrysiptera.info-image, .color-bg.chrysiptera.post-meta {
+  background-color: var(--chrysiptera);
+  color: var(--white); }
+
+.color-bg.chrysiptera header h1 {
+  background-color: var(--chrysiptera);
+  color: var(--white); }
+
+.color-bg.chrysiptera header .card {
+  background-color: #e2e502;
+  color: var(--white); }
+  .color-bg.chrysiptera header .card ::selection {
+    background: #0502e5;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.chrysiptera a h3 {
+  color: var(--white); }
+  .color-bg.chrysiptera a h3:after {
+    background-color: var(--white); }
+
+.color-bg.chrysiptera .post-excerpt, .color-bg.chrysiptera .postlist-date {
+  color: var(--white); }
+
+.color-bg.darkgray ::selection {
+  background: #333333;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.darkgray ::-moz-selection {
+  background: #333333;
+  /* Gecko Browsers */ }
+
+.color-bg.darkgray header, .color-bg.darkgray.postlist-item, .color-bg.darkgray.info, .color-bg.darkgray.info-image, .color-bg.darkgray.post-meta {
+  background-color: var(--darkgray);
+  color: var(--white); }
+
+.color-bg.darkgray header h1 {
+  background-color: var(--darkgray);
+  color: var(--white); }
+
+.color-bg.darkgray header .card {
+  background-color: #333333;
+  color: var(--white); }
+  .color-bg.darkgray header .card ::selection {
+    background: #333;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.darkgray a h3 {
+  color: var(--white); }
+  .color-bg.darkgray a h3:after {
+    background-color: var(--white); }
+
+.color-bg.darkgray .post-excerpt, .color-bg.darkgray .postlist-date {
+  color: var(--white); }
+
+.color-bg.gray ::selection {
+  background: silver;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.gray ::-moz-selection {
+  background: silver;
+  /* Gecko Browsers */ }
+
+.color-bg.gray header, .color-bg.gray.postlist-item, .color-bg.gray.info, .color-bg.gray.info-image, .color-bg.gray.post-meta {
+  background-color: var(--gray);
+  color: var(--black); }
+
+.color-bg.gray header h1 {
+  background-color: var(--gray);
+  color: var(--black); }
+
+.color-bg.gray header .card {
+  background-color: silver;
+  color: var(--black); }
+  .color-bg.gray header .card ::selection {
+    background: #c0c0c0;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.gray a h3 {
+  color: var(--black); }
+  .color-bg.gray a h3:after {
+    background-color: var(--black); }
+
+.color-bg.gray .post-excerpt, .color-bg.gray .postlist-date {
+  color: var(--black); }
+
+.color-bg.green ::selection {
+  background: #ab3b5f;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.green ::-moz-selection {
+  background: #ab3b5f;
+  /* Gecko Browsers */ }
+
+.color-bg.green header, .color-bg.green.postlist-item, .color-bg.green.info, .color-bg.green.info-image, .color-bg.green.post-meta {
+  background-color: var(--green);
+  color: var(--white); }
+
+.color-bg.green header h1 {
+  background-color: var(--green);
+  color: var(--white); }
+
+.color-bg.green header .card {
+  background-color: #ab3b5f;
+  color: var(--white); }
+  .color-bg.green header .card ::selection {
+    background: #3bab87;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.green a h3 {
+  color: var(--white); }
+  .color-bg.green a h3:after {
+    background-color: var(--white); }
+
+.color-bg.green .post-excerpt, .color-bg.green .postlist-date {
   color: var(--white); }
 
 .color-bg.greylight ::selection {
@@ -823,35 +701,66 @@ template {
 .color-bg.greylight .post-excerpt, .color-bg.greylight .postlist-date {
   color: var(--black); }
 
-.color-bg.black ::selection {
-  background: black;
+.color-bg.lightgray ::selection {
+  background: #f5f8fe;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.black ::-moz-selection {
-  background: black;
+.color-bg.lightgray ::-moz-selection {
+  background: #f5f8fe;
   /* Gecko Browsers */ }
 
-.color-bg.black header, .color-bg.black.postlist-item, .color-bg.black.info, .color-bg.black.info-image, .color-bg.black.post-meta {
-  background-color: var(--black);
-  color: var(--white); }
+.color-bg.lightgray header, .color-bg.lightgray.postlist-item, .color-bg.lightgray.info, .color-bg.lightgray.info-image, .color-bg.lightgray.post-meta {
+  background-color: var(--lightgray);
+  color: var(--black); }
 
-.color-bg.black header h1 {
-  background-color: var(--black);
-  color: var(--white); }
+.color-bg.lightgray header h1 {
+  background-color: var(--lightgray);
+  color: var(--black); }
 
-.color-bg.black header .card {
-  background-color: black;
-  color: var(--white); }
-  .color-bg.black header .card ::selection {
-    background: #000;
+.color-bg.lightgray header .card {
+  background-color: #f5f8fe;
+  color: var(--black); }
+  .color-bg.lightgray header .card ::selection {
+    background: #fefbf5;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.black a h3 {
+.color-bg.lightgray a h3 {
+  color: var(--black); }
+  .color-bg.lightgray a h3:after {
+    background-color: var(--black); }
+
+.color-bg.lightgray .post-excerpt, .color-bg.lightgray .postlist-date {
+  color: var(--black); }
+
+.color-bg.navy ::selection {
+  background: #05170d;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.navy ::-moz-selection {
+  background: #05170d;
+  /* Gecko Browsers */ }
+
+.color-bg.navy header, .color-bg.navy.postlist-item, .color-bg.navy.info, .color-bg.navy.info-image, .color-bg.navy.post-meta {
+  background-color: var(--navy);
   color: var(--white); }
-  .color-bg.black a h3:after {
+
+.color-bg.navy header h1 {
+  background-color: var(--navy);
+  color: var(--white); }
+
+.color-bg.navy header .card {
+  background-color: #05170d;
+  color: var(--white); }
+  .color-bg.navy header .card ::selection {
+    background: #17050f;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.navy a h3 {
+  color: var(--white); }
+  .color-bg.navy a h3:after {
     background-color: var(--white); }
 
-.color-bg.black .post-excerpt, .color-bg.black .postlist-date {
+.color-bg.navy .post-excerpt, .color-bg.navy .postlist-date {
   color: var(--white); }
 
 .color-bg.orange ::selection {
@@ -885,68 +794,202 @@ template {
 .color-bg.orange .post-excerpt, .color-bg.orange .postlist-date {
   color: var(--white); }
 
-.color-bg.brown ::selection {
-  background: #307096;
+.color-bg.pink ::selection {
+  background: #ecf9fd;
   /* WebKit/Blink Browsers */ }
 
-.color-bg.brown ::-moz-selection {
-  background: #307096;
+.color-bg.pink ::-moz-selection {
+  background: #ecf9fd;
   /* Gecko Browsers */ }
 
-.color-bg.brown header, .color-bg.brown.postlist-item, .color-bg.brown.info, .color-bg.brown.info-image, .color-bg.brown.post-meta {
-  background-color: var(--brown);
-  color: var(--white); }
+.color-bg.pink header, .color-bg.pink.postlist-item, .color-bg.pink.info, .color-bg.pink.info-image, .color-bg.pink.post-meta {
+  background-color: var(--pink);
+  color: var(--black); }
 
-.color-bg.brown header h1 {
-  background-color: var(--brown);
-  color: var(--white); }
+.color-bg.pink header h1 {
+  background-color: var(--pink);
+  color: var(--black); }
 
-.color-bg.brown header .card {
-  background-color: #307096;
-  color: var(--white); }
-  .color-bg.brown header .card ::selection {
-    background: #965630;
+.color-bg.pink header .card {
+  background-color: #ecf9fd;
+  color: var(--black); }
+  .color-bg.pink header .card ::selection {
+    background: #fdf0ec;
     /* WebKit/Blink Browsers */ }
 
-.color-bg.brown a h3 {
+.color-bg.pink a h3 {
+  color: var(--black); }
+  .color-bg.pink a h3:after {
+    background-color: var(--black); }
+
+.color-bg.pink .post-excerpt, .color-bg.pink .postlist-date {
+  color: var(--black); }
+
+.color-bg.purple ::selection {
+  background: #bcf91a;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.purple ::-moz-selection {
+  background: #bcf91a;
+  /* Gecko Browsers */ }
+
+.color-bg.purple header, .color-bg.purple.postlist-item, .color-bg.purple.info, .color-bg.purple.info-image, .color-bg.purple.post-meta {
+  background-color: var(--purple);
+  color: var(--black); }
+
+.color-bg.purple header h1 {
+  background-color: var(--purple);
+  color: var(--black); }
+
+.color-bg.purple header .card {
+  background-color: #bcf91a;
+  color: var(--black); }
+  .color-bg.purple header .card ::selection {
+    background: #571af9;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.purple a h3 {
+  color: var(--black); }
+  .color-bg.purple a h3:after {
+    background-color: var(--black); }
+
+.color-bg.purple .post-excerpt, .color-bg.purple .postlist-date {
+  color: var(--black); }
+
+.color-bg.teal ::selection {
+  background: #542c22;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.teal ::-moz-selection {
+  background: #542c22;
+  /* Gecko Browsers */ }
+
+.color-bg.teal header, .color-bg.teal.postlist-item, .color-bg.teal.info, .color-bg.teal.info-image, .color-bg.teal.post-meta {
+  background-color: var(--teal);
   color: var(--white); }
-  .color-bg.brown a h3:after {
+
+.color-bg.teal header h1 {
+  background-color: var(--teal);
+  color: var(--white); }
+
+.color-bg.teal header .card {
+  background-color: #542c22;
+  color: var(--white); }
+  .color-bg.teal header .card ::selection {
+    background: #224a54;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.teal a h3 {
+  color: var(--white); }
+  .color-bg.teal a h3:after {
     background-color: var(--white); }
 
-.color-bg.brown .post-excerpt, .color-bg.brown .postlist-date {
+.color-bg.teal .post-excerpt, .color-bg.teal .postlist-date {
   color: var(--white); }
 
-.menu-icon.lightgray span {
+.color-bg.violet ::selection {
+  background: #81ff20;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.violet ::-moz-selection {
+  background: #81ff20;
+  /* Gecko Browsers */ }
+
+.color-bg.violet header, .color-bg.violet.postlist-item, .color-bg.violet.info, .color-bg.violet.info-image, .color-bg.violet.post-meta {
+  background-color: var(--violet);
+  color: var(--black); }
+
+.color-bg.violet header h1 {
+  background-color: var(--violet);
+  color: var(--black); }
+
+.color-bg.violet header .card {
+  background-color: #81ff20;
+  color: var(--black); }
+  .color-bg.violet header .card ::selection {
+    background: #9e20ff;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.violet a h3 {
+  color: var(--black); }
+  .color-bg.violet a h3:after {
+    background-color: var(--black); }
+
+.color-bg.violet .post-excerpt, .color-bg.violet .postlist-date {
+  color: var(--black); }
+
+.color-bg.white ::selection {
+  background: white;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.white ::-moz-selection {
+  background: white;
+  /* Gecko Browsers */ }
+
+.color-bg.white header, .color-bg.white.postlist-item, .color-bg.white.info, .color-bg.white.info-image, .color-bg.white.post-meta {
+  background-color: var(--white);
+  color: var(--black); }
+
+.color-bg.white header h1 {
+  background-color: var(--white);
+  color: var(--black); }
+
+.color-bg.white header .card {
+  background-color: white;
+  color: var(--black); }
+  .color-bg.white header .card ::selection {
+    background: #fff;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.white a h3 {
+  color: var(--black); }
+  .color-bg.white a h3:after {
+    background-color: var(--black); }
+
+.color-bg.white .post-excerpt, .color-bg.white .postlist-date {
+  color: var(--black); }
+
+.color-bg.yellow ::selection {
+  background: #1024a3;
+  /* WebKit/Blink Browsers */ }
+
+.color-bg.yellow ::-moz-selection {
+  background: #1024a3;
+  /* Gecko Browsers */ }
+
+.color-bg.yellow header, .color-bg.yellow.postlist-item, .color-bg.yellow.info, .color-bg.yellow.info-image, .color-bg.yellow.post-meta {
+  background-color: var(--yellow);
+  color: var(--white); }
+
+.color-bg.yellow header h1 {
+  background-color: var(--yellow);
+  color: var(--white); }
+
+.color-bg.yellow header .card {
+  background-color: #1024a3;
+  color: var(--white); }
+  .color-bg.yellow header .card ::selection {
+    background: #a38f10;
+    /* WebKit/Blink Browsers */ }
+
+.color-bg.yellow a h3 {
+  color: var(--white); }
+  .color-bg.yellow a h3:after {
+    background-color: var(--white); }
+
+.color-bg.yellow .post-excerpt, .color-bg.yellow .postlist-date {
+  color: var(--white); }
+
+.menu-icon.amber span {
   background-color: var(--black); }
 
-.menu-icon.gray span {
-  background-color: var(--black); }
-
-.menu-icon.darkgray span {
-  background-color: var(--white); }
-
-.menu-icon.navy span {
+.menu-icon.black span {
   background-color: var(--white); }
 
 .menu-icon.blue span {
   background-color: var(--white); }
 
-.menu-icon.chrysiptera span {
-  background-color: var(--white); }
-
-.menu-icon.white span {
-  background-color: var(--black); }
-
-.menu-icon.violet span {
-  background-color: var(--black); }
-
-.menu-icon.green span {
-  background-color: var(--white); }
-
-.menu-icon.pink span {
-  background-color: var(--black); }
-
-.menu-icon.teal span {
+.menu-icon.bluedark span {
   background-color: var(--white); }
 
 .menu-icon.bluegrey span {
@@ -955,22 +998,49 @@ template {
 .menu-icon.bluelight span {
   background-color: var(--black); }
 
-.menu-icon.amber span {
+.menu-icon.brown span {
+  background-color: var(--white); }
+
+.menu-icon.chrysiptera span {
+  background-color: var(--white); }
+
+.menu-icon.darkgray span {
+  background-color: var(--white); }
+
+.menu-icon.gray span {
   background-color: var(--black); }
 
-.menu-icon.bluedark span {
+.menu-icon.green span {
   background-color: var(--white); }
 
 .menu-icon.greylight span {
   background-color: var(--black); }
 
-.menu-icon.black span {
+.menu-icon.lightgray span {
+  background-color: var(--black); }
+
+.menu-icon.navy span {
   background-color: var(--white); }
 
 .menu-icon.orange span {
   background-color: var(--white); }
 
-.menu-icon.brown span {
+.menu-icon.pink span {
+  background-color: var(--black); }
+
+.menu-icon.purple span {
+  background-color: var(--black); }
+
+.menu-icon.teal span {
+  background-color: var(--white); }
+
+.menu-icon.violet span {
+  background-color: var(--black); }
+
+.menu-icon.white span {
+  background-color: var(--black); }
+
+.menu-icon.yellow span {
   background-color: var(--white); }
 
 html {
@@ -1148,7 +1218,7 @@ pre > code.highlight {
  * Site header
  */
 body > header {
-  min-height: 55.95px;
+  min-height: 1.865em;
   line-height: 60.75px;
   width: 100%;
   display: grid;
@@ -1165,26 +1235,31 @@ body > header {
   body > header picture {
     display: flex; }
 
+@media screen and (max-width: 400px) {
+  body > header picture img {
+    width: 64px;
+    height: auto; } }
+
 body > header > nav {
   display: inline-block;
   min-width: 30px;
   justify-self: left; }
   body > header > nav label {
-    top: 30px;
-    height: 45px;
-    width: 54px;
+    top: 1em;
+    height: 1.8em;
+    width: 2.3em;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 1em;
     z-index: 2; }
     @media screen and (max-width: 800px) {
       body > header > nav label {
-        padding: 15px; } }
+        padding: 0.5em; } }
     body > header > nav label .round {
       position: absolute;
-      top: 13.5px;
-      left: 7.5px;
+      top: 0.8em;
+      left: -0.6em;
       transform: scale(0);
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
   body > header > nav .menu-icon {
@@ -1194,7 +1269,7 @@ body > header > nav {
     body > header > nav .menu-icon span {
       display: block;
       width: 100%;
-      height: 6px; }
+      height: 0.33333em; }
   body > header > nav .trigger {
     position: fixed;
     top: 0;
@@ -1219,7 +1294,7 @@ body > header > nav {
         font-size: 2rem;
         font-weight: bold;
         display: block;
-        padding: 15px 30px;
+        padding: 0.5em 1em;
         text-decoration: none; }
         body > header > nav .trigger ul a:hover {
           color: #1f4954;
@@ -1283,12 +1358,12 @@ body > footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
 .footer-heading {
   font-size: 1.125rem;
-  margin-bottom: 15px; }
+  margin-bottom: 0.5em; }
 
 .feed-subscribe .svg-icon {
   padding: 5px 5px 2px 0; }
@@ -1302,7 +1377,7 @@ body > footer {
 
 .info p {
   color: var(--white);
-  line-height: 30px;
+  line-height: 1.5em;
   margin: 0; }
 
 .info-image img {
@@ -1321,7 +1396,7 @@ body > footer {
   max-width: 1280px;
   margin: auto;
   display: flex;
-  padding-top: 300px; }
+  padding-top: 15em; }
   .tmpl-home section .wide,
   .tmpl-post section .wide,
   .tmpl-page section .wide,
@@ -1336,7 +1411,7 @@ body > footer {
   .tmpl-tags section h1,
   .tmpl-tags section h2 {
     font-weight: bold;
-    margin-top: -174px;
+    margin-top: -1.1em;
     position: absolute;
     font-size: 9rem; }
     .tmpl-home section h1.tiny,
@@ -1375,25 +1450,32 @@ body > footer {
       .tmpl-page section h3,
       .tmpl-tags section h3 {
         font-size: 1.8rem; } }
+  @media screen and (max-width: 400px) {
+    .tmpl-home section h1,
+    .tmpl-post section h1,
+    .tmpl-page section h1,
+    .tmpl-tags section h1 {
+      font-size: 3.5rem;
+      margin-left: 0.5em; } }
   @media screen and (max-width: 800px) {
     .tmpl-home section,
     .tmpl-post section,
     .tmpl-page section,
     .tmpl-tags section {
-      padding-top: 150px;
-      flex-direction: column; }
+      flex-direction: column;
+      padding-top: 10em; }
       .tmpl-home section h2,
       .tmpl-post section h2,
       .tmpl-page section h2,
       .tmpl-tags section h2 {
         font-weight: bold;
-        margin-left: 10px;
-        margin-top: -68px;
+        margin-left: 0.25em;
+        margin-top: -1.1em;
         position: absolute;
         font-size: 3.5rem; } }
 
 .padding {
-  padding: 60px; }
+  padding: 2em; }
 
 .page-content {
   flex: 1 0 auto; }
@@ -1446,15 +1528,15 @@ body > footer {
         font-size: 1rem;
         color: white;
         width: 100px;
-        padding: 20px 10px;
+        padding: 0.66667em 0.33333em;
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 1em;
         transform: translateY(-150px); }
       .postlist > li a h3 {
         transform: translateY(0px);
         transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         text-align: center;
-        margin: 30px; }
+        margin: 1em; }
         .postlist > li a h3:after {
           transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           content: "";
@@ -1470,14 +1552,14 @@ body > footer {
         .postlist > li a:hover h3:after {
           transform: scaleX(2); }
       .postlist > li a .post-excerpt {
-        padding: 0 120px;
+        padding: 0 4em;
         font-size: 1rem; }
       .postlist > li a .postlist-date {
         margin-top: auto;
         display: block;
         font-size: 15.75px;
         color: var(--brand-color);
-        padding: 30px;
+        padding: 1em;
         font-weight: bold; }
 
 @media screen and (max-width: 800px) {
@@ -1486,13 +1568,13 @@ body > footer {
     .postlist > li a h3 {
       font-size: 2rem; }
     .postlist > li a .post-excerpt {
-      padding: 0 30px;
+      padding: 0 1em;
       font-size: 0.8rem; } }
 
 .postlist-date {
   font-size: 15.75px;
   color: var(--brand-color);
-  padding: 30px;
+  padding: 1em;
   color: var(--white);
   font-weight: bold; }
 
@@ -1513,13 +1595,13 @@ article > header,
   justify-content: center;
   margin-top: 0;
   height: 85vh;
-  padding: 0 30px;
+  padding: 0 1em;
   position: relative; }
   article > header h1,
   .tmpl-tags > header h1 {
     font-size: 2.625rem;
     z-index: 0;
-    padding: 15px; }
+    padding: 0.5em; }
     @media screen and (max-width: 600px) {
       article > header h1,
       .tmpl-tags > header h1 {
@@ -1529,14 +1611,14 @@ article > header,
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    bottom: -15px;
-    right: 60px; }
+    padding: 0.5em;
+    bottom: -0.5em;
+    right: 2em; }
     article > header .card span,
     .tmpl-tags > header .card span {
       border-bottom: 2px solid #00000034;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
       font-weight: bold; }
       article > header .card span:first-child,
       .tmpl-tags > header .card span:first-child {
@@ -1559,18 +1641,19 @@ article > header,
 article > main,
 .tmpl-tags > main {
   max-width: 75ch;
-  padding: 0 30px;
+  padding: 0 1em;
   margin: auto; }
   article > main > p:first-child,
   .tmpl-tags > main > p:first-child {
-    margin-top: 60px; }
+    margin-top: 2em; }
 
 article > footer,
 .tmpl-tags > footer {
-  margin-top: 60px; }
+  margin-top: 2em; }
   article > footer .post-meta,
   .tmpl-tags > footer .post-meta {
-    padding: 90px 30px;
+    padding: 3em 1em;
+    box-sizing: border-box;
     font-weight: bold;
     font-size: 2rem; }
     @media screen and (max-width: 600px) {
@@ -1584,10 +1667,10 @@ article > footer,
   .tmpl-tags > footer time {
     font-size: 2.5rem;
     font-weight: bold;
-    padding: 30px;
+    padding: 1em;
     color: var(--black);
     position: absolute;
-    margin-top: 78px;
+    margin-top: 2.6em;
     right: 0; }
 
 .tmpl-tags > header > h1 {
@@ -1595,12 +1678,12 @@ article > footer,
 
 .tmpl-tags section {
   padding-top: 0;
-  margin-top: -120px; }
+  margin-top: -4em; }
 
 .fake-post-title {
   display: block;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 0.5em 0;
   font-size: 2.625rem; }
 
 .tiny {
@@ -1609,11 +1692,11 @@ article > footer,
 .social-media-list, .pagination {
   list-style-type: none;
   display: flex;
-  margin: 30px 0 0 0;
+  margin: 1em 0 0 0;
   justify-content: space-between; }
   .social-media-list li a, .pagination li a {
     display: block;
-    padding: 7.5px; }
+    padding: 0.25em; }
     .social-media-list li a:hover, .pagination li a:hover {
       border-color: var(--border-color-02); }
 
@@ -1621,7 +1704,7 @@ article > footer,
    * Pagination navbar
    */
 .pagination {
-  margin-bottom: 30px; }
+  margin-bottom: 1em; }
   .pagination li a,
   .pagination li div {
     min-width: 41px;
@@ -1629,7 +1712,7 @@ article > footer,
     box-sizing: border-box; }
   .pagination li div {
     display: block;
-    padding: 7.5px;
+    padding: 0.25em;
     border: 1px solid transparent; }
     .pagination li div.pager-edge {
       color: var(--border-color-01);
@@ -1653,14 +1736,14 @@ article > footer,
 
 #mc_embed_signup .button {
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 0.5em 1em;
   border: 0;
   font-weight: bold;
   text-transform: uppercase; }
 
 #mc_embed_signup .email {
-  padding: 15px;
-  margin-bottom: 30px;
+  padding: 0.5em;
+  margin-bottom: 1em;
   border: 0;
   border-radius: 0;
   font-weight: bold;
