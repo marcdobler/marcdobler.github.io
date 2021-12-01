@@ -392,6 +392,7 @@ article,
       padding: $spacing-unit * 3 $spacing-unit;
       box-sizing: border-box;
       font-weight: bold;
+      
       @include relative-font-size(2);
 
       @media screen and (max-width: $on-medium) {
@@ -399,6 +400,7 @@ article,
       }
 
       a {
+        text-transform: capitalize;
         color: black;
       }
     }
@@ -409,7 +411,7 @@ article,
       padding: $spacing-unit;
       color: var(--black);
       position: absolute;
-      margin-top: $spacing-unit*2.6;
+      margin-top: $spacing-unit*1.8;
       right: 0;
     }
   }
