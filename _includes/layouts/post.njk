@@ -31,15 +31,12 @@ eleventyComputed:
   </header>
 
   <main>
-    
     {{ content | safe }}
   </main>
 
   <footer>
-
-
     {% include "section-postmeta.njk" %}
-  <footer>
+  </footer>
 </article>
     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
     {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
