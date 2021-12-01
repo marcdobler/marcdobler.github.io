@@ -367,7 +367,17 @@
   </url>
   
   <url>
-    <loc>https://www.marcdobler.com/tags/ender-3/</loc>
+    <loc>https://www.marcdobler.com/tags/programming/</loc>
+    <lastmod>2021-12-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marcdobler.com/tags/python/</loc>
+    <lastmod>2021-12-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marcdobler.com/tags/arduino/</loc>
     <lastmod>2021-12-01</lastmod>
   </url>
   
@@ -387,17 +397,7 @@
   </url>
   
   <url>
-    <loc>https://www.marcdobler.com/tags/programming/</loc>
-    <lastmod>2021-12-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marcdobler.com/tags/python/</loc>
-    <lastmod>2021-12-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marcdobler.com/tags/arduino/</loc>
+    <loc>https://www.marcdobler.com/tags/ender-3/</loc>
     <lastmod>2021-12-01</lastmod>
   </url>
   
