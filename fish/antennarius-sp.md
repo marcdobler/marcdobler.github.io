@@ -1,6 +1,6 @@
 ---
 layout: layouts/post-animal.njk
-title: "Amphiprion Ocellaris"
+title: "Antennarius sp."
 excerpt: 
 tags:
     - Amphiprion
@@ -18,4 +18,3 @@ parameter:
     size:
     volume: 20G
 ---
-

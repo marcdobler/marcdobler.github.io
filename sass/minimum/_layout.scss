@@ -23,6 +23,19 @@ body > header {
 
   picture {
     display: flex;
+
+    
+  }
+}
+
+@media screen and (max-width: $on-mobile) {
+  body > header {
+    picture { 
+      img {
+        width: 64px;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -60,7 +73,7 @@ body > footer {
 
   p {
     color: var(--white);
-    line-height: $spacing-unit;
+    line-height: $spacing-unit*1.5;
     margin: 0;
   }
 }
@@ -87,7 +100,7 @@ body > footer {
     max-width: 1280px;
     margin: auto;
     display: flex;
-    padding-top: $spacing-unit * 10;
+    padding-top: $spacing-unit * 15;
 
     .wide {
       width: 100%;
@@ -96,7 +109,7 @@ body > footer {
     h1,
     h2 {
       font-weight: bold;
-      margin-top: -174px;
+      margin-top: -1.1em;
       position: absolute;
 
       @include relative-font-size(9);
@@ -124,14 +137,21 @@ body > footer {
       }
     }
 
+    @media screen and (max-width: $on-mobile) {
+      h1 {
+        @include relative-font-size(3.5);
+        margin-left: $spacing-unit/2;
+      }
+    }
+
     @media screen and (max-width: $on-large) {
-      padding-top: $spacing-unit * 5;
       flex-direction: column;
+      padding-top: $spacing-unit * 10;
 
       h2 {
         font-weight: bold;
-        margin-left: 10px;
-        margin-top: -68px;
+        margin-left: $spacing-unit / 4;
+        margin-top: $spacing-unit * -1.1;
         position: absolute;
         font-size: 3.5rem;
       }
@@ -370,6 +390,7 @@ article,
 
     .post-meta {
       padding: $spacing-unit * 3 $spacing-unit;
+      box-sizing: border-box;
       font-weight: bold;
       @include relative-font-size(2);
 

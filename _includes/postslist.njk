@@ -19,9 +19,9 @@
   {% if collectionReadMore === "show" %}
     <li class="postlist-item color-bg bluelight wide">
       <a href="{{ collectionLink | url }}">
-        <h3 class="post-title">Read all posts</h3>
+        <h3 class="post-title">{{ collectionReadMoreTitle }}</h3>
         <p class="post-excerpt">
-        I wrote about programming, IoT, 3D printer and Reef Tank
+        {{ collectionReadMoreText }}
       </p>
       </a>
     </li>

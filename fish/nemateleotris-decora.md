@@ -1,15 +1,15 @@
 ---
 layout: layouts/post-animal.njk
-title: "Amphiprion Ocellaris"
+title: "Nemateleotris Decora"
 excerpt: 
 tags:
     - Amphiprion
     - Nano Reef tank
-color: orange
+color: purple
 author:
 - Marc Dobler
 meta: "Here the description of the article"
-image: img/fish/amphiprion-ocellaris.jpg
+image: img/fish/nemateleotris-decora.jpg
 
 parameter:
     geography: 
@@ -18,4 +18,3 @@ parameter:
     size:
     volume: 20G
 ---
-

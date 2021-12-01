@@ -1,6 +1,6 @@
 ---
 layout: layouts/post-animal.njk
-title: "Amphiprion Ocellaris"
+title: "Stiphodon Atropurpureus"
 excerpt: 
 tags:
     - Amphiprion
@@ -16,6 +16,6 @@ parameter:
     temp:
     ph:
     size:
-    volume: 20G
+    volume: 10G
 ---
 

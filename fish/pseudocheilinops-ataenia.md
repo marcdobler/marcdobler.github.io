@@ -1,6 +1,6 @@
 ---
 layout: layouts/post-animal.njk
-title: "Amphiprion Ocellaris"
+title: "Pseudocheilinops Ataenia"
 excerpt: 
 tags:
     - Amphiprion
@@ -16,6 +16,5 @@ parameter:
     temp:
     ph:
     size:
-    volume: 20G
+    volume: 15G
 ---
-

@@ -5,8 +5,8 @@ body > header > nav {
   
     label {
       top: $spacing-unit;
-      height: $spacing-unit * 1.5;
-      width: $spacing-unit * 1.8;
+      height: 1.8em;
+      width: 2.3em;
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       display: flex;
       align-items: center;
@@ -20,8 +20,8 @@ body > header > nav {
   
       .round {
         position: absolute;
-        top: $spacing-unit*0.45;
-        left: $spacing-unit / 4;
+        top: 0.8em;
+        left: -0.6em;
         transform: scale(0);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -35,7 +35,7 @@ body > header > nav {
       span {
         display: block;
         width: 100%;
-        height: $spacing-unit/5;
+        height: $spacing-unit / 3;
       }
     }
   
