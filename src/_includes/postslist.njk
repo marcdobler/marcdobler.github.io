@@ -1,0 +1,28 @@
+<ul reversed class="postsList" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+  {% for post in postslist | reverse %}
+    <li class="item{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color-bg {{ post.data.color }}{% endif %}">
+      <a href="{{ post.url | url }}" class="link">
+        <h3 class="title">
+          {% if post.data.title %}{{ post.data.title }}
+          {% else %}
+            <code>{{ post.url }}</code>
+          {% endif %}
+        </h3>
+        {% if post.data.excerpt %}
+          <div class="excerpt">{{ post.data.excerpt }}</div>
+        {% endif %}
+        <time class="date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </a>
+    </li>
+  {% endfor %}
+  {% if collectionReadMore === "show" %}
+    <li class="item color-bg bluelight wide">
+      <a class="link" href="{{ collectionLink | url }}">
+        <h3 class="title">{{ collectionReadMoreTitle }}</h3>
+        <p class="excerpt">
+          {{ collectionReadMoreText }}
+        </p>
+      </a>
+    </li>
+  {% endif %}
+</ul>

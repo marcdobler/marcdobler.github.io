@@ -1,0 +1,12 @@
+<section>
+{% set maxPosts = collections.corals.length | min(6) %}
+<h2>{% if maxPosts == 1 %}Corals.{% else %}Coral.{% endif %}</h2>
+
+{% set postslist = collections.corals | head(-6) %}
+{% set postslistCounter = collections.corals | length %}
+{% set collectionLink = '/corals/' %}
+{% set collectionReadMore = 'show' %}
+{% set collectionReadMoreTitle = 'View all corals' %}
+{% set collectionReadMoreText = 'For a better, obsessive corals disorder' %}
+{% include "postslist.njk" %}
+</section>

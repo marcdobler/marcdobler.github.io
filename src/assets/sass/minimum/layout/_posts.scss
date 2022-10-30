@@ -1,0 +1,31 @@
+.card {
+  align-items: flex-start;
+  bottom: calc($spacing-unit/2 * -1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  right: calc($spacing-unit * 2);
+  width: 50%;
+
+  li {
+    width: calc(50% - 1em);
+    border-bottom: 2px solid #00000034;
+    font-weight: bold;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: $on-medium) {
+    position: absolute;
+    width: calc(100% - 1em);
+    margin: 0;
+    right: 0;
+  }
+}

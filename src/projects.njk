@@ -1,0 +1,19 @@
+---
+layout: home
+permalink: /projects/
+eleventyNavigation:
+  key: Projects
+  order: 2
+---
+
+<section>
+<h1>Projects.</h1>
+
+{% set postslist = collections.projects %}
+{% set collectionLink = '/posts/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "postslist.njk" %}
+</section>
+
+{% include "partials/section-sayhi.njk" %}
+{% include "partials/section-subscribe.njk" %}

@@ -1,0 +1,12 @@
+<section>
+    {% set maxPosts = collections.projects.length | min(4) %}
+
+    <h2 id="project">{% if maxPosts == 1 %}Project.{% else %}Projects.{% endif %}</h2>
+
+    {% set postslist = collections.projects | head(-4) %}
+    {% set postslistCounter = collections.projects | length %}
+    {% set collectionId = 'project' %}
+    {% set collectionReadMore = 'hide' %}
+    {% include "postslist.njk" %}
+    
+</section>

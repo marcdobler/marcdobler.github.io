@@ -1,0 +1,97 @@
+$themeColours: (
+  'amber': #c1605c,
+  'black': #000,
+  'blue': #082840,
+  'bluedark': #2b2f3c,
+  'bluegrey': #98bec8,
+  'bluelight': #d1e1e0,
+  'brown': #965630,
+  'chrysiptera': #0502e5,
+  'darkgray': #333,
+  'gray': #c0c0c0,
+  'green': #3bab87,
+  'greylight': #9ba5b5,
+  'lightgray': #fefbf5,
+  'navy': #17050f,
+  'orange': #bf3100,
+  'pink': #fdf0ec,
+  'purple': #571af9,
+  'teal': #224a54,
+  'violet': #9e20ff,
+  'white': #fff,
+  'yellow': #a38f10,
+);
+
+/* Colors */
+:root {
+  @each $themeColour, $color in $themeColours {
+    --#{$themeColour}: #{$color};
+  }
+
+  --background-color: var(--lightgray);
+  --site-title-color: var(--darkgray);
+}
+
+@function coloraria($bg) {
+  @if (lightness($bg) > 50) {
+    @return var(--black);
+  } @else {
+    @return var(--white);
+  }
+}
+
+@each $themeColour, $color in $themeColours {
+  .color-bg {
+    &.#{$themeColour} {
+      ::selection {
+        background: complement($color); /* WebKit/Blink Browsers */
+        color: coloraria($color);
+      }
+      ::-moz-selection {
+        background: complement($color); /* Gecko Browsers */
+        color: coloraria($color);
+      }
+
+      .invert {
+        background: complement($color); /* Gecko Browsers */
+        color: coloraria($color);
+      }
+
+      .invert * {
+        background: complement($color); /* Gecko Browsers */
+        color: coloraria($color);
+      }
+
+      .invert *::selection {
+        background-color: var(--#{$themeColour});
+        color: coloraria($color);
+      }
+
+      background-color: var(--#{$themeColour});
+      color: coloraria($color);
+
+      * {
+        background-color: var(--#{$themeColour});
+        color: coloraria($color);
+      }
+
+      *:after {
+        background-color: coloraria($color);
+      }
+
+      /* exception */
+
+      .link:after {
+        background-color: darken($color, 25%);
+      }
+    }
+  }
+}
+
+@each $themeColour, $color in $themeColours {
+  .menu-icon {
+    &.#{$themeColour} span {
+      background-color: coloraria($color);
+    }
+  }
+}

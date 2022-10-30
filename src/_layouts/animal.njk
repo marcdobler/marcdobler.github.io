@@ -1,0 +1,62 @@
+---
+layout: base
+templateClass: tmpl-post
+type: post
+eleventyComputed:
+  meta:
+    site:
+      name: "{{ metadata.title }}" 
+      description: "{{ metadata.description }}" 
+      url: "{{ metadata.url }}"
+      logo:
+        src: https://example.com/images/logo.png
+        width: 1200
+        height: 630
+    language: en-US
+    url: "{{ page.url | url }}"
+    title: "{{ title }}"
+    description: "{{ excerpt }}"
+    image:
+      src: https://example.com/images/page.png
+    author:
+      name: "{{ metadata.author.name }}"
+    published: "{{ date }}"
+    modified: "{% if updateDate %}{{ updateDate }}{% endif %}"
+    section: Example
+---
+
+<article >
+  <header class="color-bg {{ color }}">
+
+    <img src="{{ site.base }}/assets/images/fish/{{ image }}"/>
+
+    <h1>{{ title }}</h1>
+
+    <div class="card animal">
+      <span>Temparature °C: {{ parameter.temp }}</span>
+      <span>pH: {{ parameter.ph }}</span>
+      <span>Size: {{ parameter.size }}</span>
+      <span>Volume: {{ parameter.volume }}</span>
+      <span>Geography: {{ parameter.geography }}</span>
+    </div>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    {% include "partials/section-postmeta.njk" %}
+  <footer>
+</article>
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+  <ul>
+    {%- if nextPost %}
+      <li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>
+    {% endif %}
+    {%- if previousPost %}
+      <li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>
+    {% endif %}
+  </ul>
+{%- endif %}
+{% include "partials/section-subscribe.njk" %}

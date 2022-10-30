@@ -1,0 +1,19 @@
+---
+layout: home
+permalink: /corals/
+eleventyNavigation:
+  key: Corals
+  order: 5
+---
+
+<section>
+<h1>Corals.</h1>
+
+{% set postslist = collections.corals %}
+{% set collectionLink = '/corals/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "postslist.njk" %}
+</section>
+
+{% include "partials/section-sayhi.njk" %}
+{% include "partials/section-subscribe.njk" %}

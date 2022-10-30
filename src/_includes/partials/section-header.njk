@@ -1,0 +1,33 @@
+{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      <nav>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+        <label class="menu-icon{% if color %} {{ color }} {% else %} white {% endif %}" for="nav-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <svg height="100" width="100" class="round">
+            <circle
+        cx="50"
+        cy="50"
+        r="40"
+        fill="#1f4954"
+/>
+          </svg>
+
+        </label>
+        <label class="trigger" for="nav-trigger">
+        <ul>
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+        </label>
+      </nav>
+      <div class="logo">
+        <a href="{{ '/' | url }}">
+          <img src="/assets/images/icon/android/android-launchericon-144-144.png" width="144" height="144" alt="Marc Dobler"/>
+        </a>
+      </div>
+      <div class="cart"></div>
