@@ -1,3 +1,92 @@
+/**
+   * Posts
+   */
+
+   article,
+   .tmpl-tags {
+     & > header {
+       align-content: center;
+       align-items: center;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: center;
+       margin-top: 0;
+       height: 85vh;
+       padding: 0 $spacing-unit;
+       position: relative;
+   
+       @media screen and (max-width: $on-medium) {
+         flex-direction: column;
+       }
+   
+       h1 {
+         @include relative-font-size(2.625);
+         z-index: 0;
+         padding: calc($spacing-unit/2);
+   
+         @media screen and (max-width: $on-medium) {
+           @include relative-font-size(2.025);
+         }
+       }  
+   
+       img {
+         height: inherit;
+         left: 0;
+         max-width: 50%;
+         object-fit: cover;
+         object-position: 25%;
+         position: absolute;
+         top: 0;
+         z-index: 0;
+   
+         @media screen and (max-width: $on-medium) {
+           max-width: 100%;
+         }
+       }
+     }
+   
+     & > main {
+       max-width: 75ch;
+       padding: 0 $spacing-unit;
+       margin: auto;
+       & > p:first-child {
+         margin-top: $spacing-unit * 2;
+       }
+     }
+   
+     & > footer {
+       margin-top: $spacing-unit * 2;
+   
+       .post-meta {
+         padding: $spacing-unit * 3 $spacing-unit;
+         box-sizing: border-box;
+         font-weight: bold;
+   
+         @include relative-font-size(2);
+   
+         @media screen and (max-width: $on-medium) {
+           @include relative-font-size(1);
+         }
+   
+         a {
+           text-transform: capitalize;
+           color: black;
+         }
+       }
+   
+       time {
+         @include relative-font-size(2.5);
+         font-weight: bold;
+         padding: $spacing-unit;
+         color: var(--black);
+         position: absolute;
+         margin-top: $spacing-unit * 1.8;
+         right: 0;
+       }
+     }
+   }
+
 .card {
   align-items: flex-start;
   bottom: calc($spacing-unit/2 * -1);
