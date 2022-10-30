@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build wxPython On Raspberry Pi</title>
+    <meta name="description" content="Experiences, Self development DIY projects, How to sharing...">
+    <link rel="canonical" href="/posts/build-wxpython-on-raspberry-pi/" />
+
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="apple-touch-icon" href="/assets/images/icons/ios/32.png">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="icon" type="image/png" href="/assets/images/icons/android/android-launchericon-48-48.png">
+    
+    <link rel="preload" href="/assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/index.css"></noscript>
+
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- optionally increase loading priority -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <script async src="/assets/javascripts/main.js"></script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PPWXDW4');</script>
+    <!-- End Google Tag Manager -->
+    
+  <!-- Register service worker for PWA offline mode support. -->
+      <script>
+        if ("serviceWorker" in window.navigator) {
+          window.addEventListener("load", () =>
+            window.navigator.serviceWorker.register("/service-worker.js", { scope: "/" }),
+          );
+        }
+      </script></head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header>
+      
+      <nav>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+        <label class="menu-icon green " for="nav-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <svg height="100" width="100" class="round">
+            <circle
+        cx="50"
+        cy="50"
+        r="40"
+        fill="#1f4954"
+/>
+          </svg>
+
+        </label>
+        <label class="trigger" for="nav-trigger">
+        <ul>
+            <li class="nav-item">
+              <a href="/">Start here</a>
+            </li>
+            <li class="nav-item">
+              <a href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="/posts/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="/corals/">Corals</a>
+            </li>
+            <li class="nav-item">
+              <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
+            </li>
+        </ul>
+        </label>
+      </nav>
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/images/icon/android/android-launchericon-144-144.png" width="144" height="144" alt="Marc Dobler"/>
+        </a>
+      </div>
+      <div class="cart"></div>
+    </header>
+
+    <main class="tmpl-post">
+      
+<article >
+  <header class="color-bg green">
+    <h1>Build wxPython On Raspberry Pi</h1>
+  </header>
+
+  <main>
+    <p>If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.</p>
+<p>Here you can find step by step explanation of how to do it.</p>
+<h2>Requirements</h2>
+<ul>
+<li>Raspberry Pi</li>
+<li>Python 3.x</li>
+<li>time, lots of time</li>
+</ul>
+<h2>Step 1</h2>
+<p>First, you need to open a terminal (shortcut ctrl + alt + t)</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> dpkg-dev build-essential libjpeg-dev libtiff-dev libsdl1.2-dev libgstreamer-plugins-base0.10-dev libnotify-dev freeglut3 freeglut3-dev libwebkitgtk-dev libghc-gtk3-dev libwxgtk3.0-gtk3-dev</code></pre>
+<p>if you use the pre-installed Python 3:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> python3.7-dev</code></pre>
+<h2>Step 2</h2>
+<p>Now, let’s make the virtual environment. I made mine right off the /home/pi directory, but you can put it anywhere. Some like to put all their virtual environments (virtenv) in specific locations.</p>
+<p>Let’s make one (wx is the name of the virtenv we are creating, change it to suit):</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~</code></pre>
+<pre class="language-bash"><code class="language-bash">python3 <span class="token parameter variable">-m</span> venv wx</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">source</span> ~/wx/bin/activate</code></pre>
+<h2>Step 3</h2>
+<p>The first thing you need is wxPython.</p>
+<p>Go to:</p>
+<p><a href="https://pypi.org/project/wxPython/#files">https://pypi.org/project/wxPython/#files</a></p>
+<p>Down of the bottom of the choices, you will see “wxPython-4.1.0.tar.gz … Source”.</p>
+<p>Download wxPython-4.1.0.tar.gz</p>
+<p>Use your browser if you can. The file should go into your ~/Downloads folder. The link currently is the very human unfriendly:</p>
+<p><a href="https://files.pythonhosted.org/packages/cb/4f/1e21d3c079c973ba862a18f3be73c2bbe2e6bc25c96d94df605b5cbb494d/wxPython-4.1.0.tar.gz">https://files.pythonhosted.org/packages/cb/4f/1e21d3c079c973ba862a18f3be73c2bbe2e6bc25c96d94df605b5cbb494d/wxPython-4.1.0.tar.gz</a></p>
+<p>Okay, that’s not exactly a professional comment but sometimes you just have to call it what it is.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mv</span> ~Downloads/wxPython-4.1.0.tar.gz</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">tar</span> xf wxPython-4.1.0.tar.gz</code></pre>
+<p>Next step, make sure you are in the environment you want to install wxPython into.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> wxPython-4.1.0</code></pre>
+<pre class="language-bash"><code class="language-bash">pip3 <span class="token function">install</span> <span class="token parameter variable">-r</span> requirements.txt</code></pre>
+<p>The next part is the big one. This will take a while, anywhere from a few hours to 18+ hours on a Raspberry Pi Zero.</p>
+<pre class="language-bash"><code class="language-bash">python3 build.py build bdist_wheel <span class="token parameter variable">--jobs</span><span class="token operator">=</span><span class="token number">1</span></code></pre>
+<h2>After waiting ~ 8 hours</h2>
+<p>Now to install it in Python as a package (the name of this file varies depending on the Python version you build it with. ie. wxPython-4.1.0-cp38-cp38-linux_armv7l.whl for Python 3.8) :</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/wxPython-4.1.0/dist</code></pre>
+<pre class="language-bash"><code class="language-bash">pip3 <span class="token function">install</span> wxPython-4.1.0-cp37-cp37m-linux_armv7l.whl</code></pre>
+<h2>After waiting ~ 1 hour</h2>
+<p>Now let’s test it:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/wxPython-4.1.0.post2/demo</code></pre>
+<pre class="language-bash"><code class="language-bash">python3 demo.py</code></pre>
+<p>Enjoy!</p>
+
+  </main>
+
+  <footer>
+   
+  </footer>
+</article>
+    </main>
+
+    <footer id="footer">
+      &copy; Marc Dobler - 2022
+    </footer>
+    <!-- Current page: /posts/build-wxpython-on-raspberry-pi/ -->
+  </body>
+</html>

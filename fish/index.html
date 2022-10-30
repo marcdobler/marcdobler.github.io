@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc Dobler | Web Developer, DIY Maker</title>
+    <title>Marc Dobler | Obsessive Coral Disorder, DIY Maker</title>
     <meta name="description" content="Experiences, Self development DIY projects, How to sharing...">
+    <link rel="canonical" href="/fish/" />
 
     <link rel="manifest" href="/site.webmanifest"/>
-    <link rel="apple-touch-icon" href="/img/icon/apple/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/ios/32.png">
     <meta name="theme-color" content="#4285f4">
-    <link rel="icon" type="image/png" href="/img/icon/chrome/chrome-favicon-16-16.png">
+    <link rel="icon" type="image/png" href="/assets/images/icons/android/android-launchericon-48-48.png">
     
-    <link rel="preload" href="/css/index.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/index.css"></noscript>
+    <link rel="preload" href="/assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/index.css"></noscript>
 
     <!-- connect to domain of font files -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
     <!-- optionally increase loading priority -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" onload="this.rel='stylesheet'">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- no-JS fallback -->
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </noscript>
-
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
-    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
-    <script async src="/js/main.js"></script>
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <script async src="/assets/javascripts/main.js"></script>
+    
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,6 +38,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PPWXDW4');</script>
     <!-- End Google Tag Manager -->
+    
   <!-- Register service worker for PWA offline mode support. -->
       <script>
         if ("serviceWorker" in window.navigator) {
@@ -50,7 +52,9 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    
     <header>
+      
       <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
         <label class="menu-icon white " for="nav-trigger">
@@ -70,7 +74,7 @@
         <label class="trigger" for="nav-trigger">
         <ul>
             <li class="nav-item">
-              <a href="/">Start Here</a>
+              <a href="/">Start here</a>
             </li>
             <li class="nav-item">
               <a href="/projects/">Projects</a>
@@ -79,10 +83,13 @@
               <a href="/posts/">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="/about/">About Me</a>
+              <a href="/corals/">Corals</a>
             </li>
             <li class="nav-item nav-item-active">
               <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About Me</a>
             </li>
             <li class="nav-item">
               <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
@@ -90,686 +97,55 @@
         </ul>
         </label>
       </nav>
-      <div class="home">
-        <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
+      <div class="logo">
         <a href="/">
-
-          <picture><source type="image/webp" srcset="/img/KINtVbES59-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/KINtVbES59-128.jpeg" width="128" height="128"></picture>
-          
-          
+          <img src="/assets/images/icon/android/android-launchericon-144-144.png" width="144" height="144" alt="Marc Dobler"/>
         </a>
       </div>
-      <div></div>
-
+      <div class="cart"></div>
     </header>
 
     <main class="tmpl-home">
       
+
 <section>
 <h1>Fish.</h1>
 
 
 
 
-<ul reversed class="postlist" style="counter-reset: start-from 56">
+<ul reversed class="postsList" style="counter-reset: start-from 4">
   
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/zoramia-leptacantha/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Zoramia Leptacantha
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/wetmorella-tanakai/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Wetmorella Tanakai
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/wetmorella-nigropinnata/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Wetmorella Nigropinnata
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/wetmorella-albofasciata/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Wetmorella Albofasciata 
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/trimma-rubromaculatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Trimma Rubromaculatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/trimma-maiandros/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Trimma Maiandros
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/trimma-kitrinum/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Trimma Kitrinum
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/trimma-cana/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Trimma Cana
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/trimma-caesiura/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Trimma cf. Caesiura
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/tigrigobius-multifasciatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Tigrigobius multifasciatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/stonogobiops-yasha/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Stonogobiops Yasha
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/stonogobiops-nematodes/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Stonogobiops Nematodes
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/stonogobiops-dracula/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Stonogobiops Dracula
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/stiphodon-atropurpureus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Stiphodon Atropurpureus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg yellow">
-      <a href="/fish/sphaeramia-nematoptera/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Sphaeramia Nematoptera
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/signigobius-biocellatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Signigobius Biocellatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/pseudocheilinops-ataenia/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Pseudocheilinops Ataenia
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/paragobius-lacunicolus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Paragobius Lacunicolus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/nemateleotris-magnifica/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Nemateleotris Magnifica
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg purple">
-      <a href="/fish/nemateleotris-helfrichi/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Nemateleotris Helfrichi
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg purple">
-      <a href="/fish/nemateleotris-exquisita/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Nemateleotris Exquisita
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg purple">
-      <a href="/fish/nemateleotris-decora/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Nemateleotris Decora
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/lythrypnus-zebra/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Lythrypnus Zebra
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/lythrypnus-dalli/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Lythrypnus Dalli
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/liopropoma-rubre/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Liopropoma Rubre
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/liopropoma-mowbrayi/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Liopropoma Mowbrayi
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/liopropoma-carmabi/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Liopropoma Carmabi
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/koumansetta-rainfordi/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Koumansetta Rainfordi
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/koumansetta-hectori/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Koumansetta Hectori
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/gobiopsis-quinquecincta/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Gobiodon Quinquecincta
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/gobiodon-strangulatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Gobiodon strangulatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/gobiodon-okinawae/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Gobiodon Okinawae
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/gobiodon-citrinus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Gobiodon Citrinus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/fusigobius-pallidus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Fusigobius Pallidus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/eviota-pellucida/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Eviota Pellucida
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/eviota-nigriventris/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Eviota Nigriventris
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/elacatinus-puncticulatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Elacatinus Puncticulatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/elacatinus-prochilos/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Elacatinus Prochilos
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/elacatinus-figaro/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Elacatinus Figaro
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/ecsenius-stigmatura/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Ecsenius Stigmatura
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/ecsenius-opsifrontalis/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Ecsenius Opsifrontalis
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/ecsenius-lividanalis/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
+    <li class="item color-bg yellow">
+      <a href="/fish/ecsenius-lividanalis/" class="link">
+        <h3 class="title">
           Ecsenius Lividanalis
           
         </h3>
         
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
+        <time class="date" datetime="1952-10-28">28 Oct 1952</time>
       </a>
     </li>
   
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/ecsenius-gravieri/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Ecsenius Gravieri
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/ecsenius-bimaculatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Ecsenius Bimaculatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/caracanthus-unipinna/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Caracanthus Unipinna
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/antennarius-sp/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Antennarius sp.
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/antennarius-pictus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Antennarius Pictus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/antennarius-maculatus/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Antennarius Maculatus
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amphiprion-percula/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amphiprion Ocellaris
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amphiprion-ocellaris/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amphiprion Ocellaris
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amblyeleotris-wheeleri/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amblyeleotris Wheeleri
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amblyeleotris-randalli/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amblyeleotris Randalli
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amblyeleotris-guttata/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amblyeleotris Guttata
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/amblyeleotris-aurora/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          Amblyeleotris Aurora
-          
-        </h3>
-        
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg orange">
-      <a href="/fish/acanthemblemaria-hancocki/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
+    <li class="item color-bg blue">
+      <a href="/fish/acanthemblemaria-hancocki/" class="link">
+        <h3 class="title">
           Acanthemblemaria Hancocki
           
         </h3>
         
-        <time class="postlist-date" datetime="2021-12-01">01 Dec 2021</time>
+        <time class="date" datetime="1936-05-25">25 May 1936</time>
+      </a>
+    </li>
+  
+    <li class="item color-bg blue">
+      <a href="/fish/elactinus-oceanops/" class="link">
+        <h3 class="title">
+          Elactinus Oceanops
+          
+        </h3>
+        
+        <time class="date" datetime="1904-05-25">25 May 1904</time>
       </a>
     </li>
   
@@ -781,8 +157,7 @@
   <h2>Say hi.</h2>
   <div class="color-bg teal info one-half">
     <div class="padding">
-      <a class="fake-post-title" href="mailto:me@marcdobler.com"
-        >me@marcdobler.com</a
+      <a class="fake-post-title" href="mailto:me@marcdobler.com">me@marcdobler.com</a
       >
       <p>
         I am <script>howOldIAm.inYears("1982, 08, 23");</script>, IoT enthusiast from France. Although I have built most of my professional carrer in programming, my passion is IoT projects. I independatly studied using different sources many aspects of it and managed to implement several projects for my own use
@@ -791,13 +166,13 @@
         <br />
         Marc Dobler
         <br />
-        Vienna, Austria
+        Agiez, Swiss
       </p>
       <div class="social-links"></div>
     </div>
   </div>
   <div class="info-image one-half">
-    <picture><source type="image/webp" srcset="/img/x_ds1MX-bb-300.webp 300w, /img/x_ds1MX-bb-600.webp 600w" sizes="(min-width: 30em) 50vw, 100vw"><source type="image/jpeg" srcset="/img/x_ds1MX-bb-300.jpeg 300w, /img/x_ds1MX-bb-600.jpeg 600w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler - 2019 by Tatiana Dobler" loading="lazy" decoding="async" src="/img/x_ds1MX-bb-300.jpeg" width="600" height="400"></picture>
+    <img src="/assets/images/avatars/marc-dobler-avatar.png">
   </div>
 </section>
 <section class="say-hi">
@@ -861,10 +236,8 @@
 
     </main>
 
-    <footer>
-    
-      &copy; Marc Dobler - 2021
-
+    <footer id="footer">
+      &copy; Marc Dobler - 2022
     </footer>
     <!-- Current page: /fish/ -->
   </body>

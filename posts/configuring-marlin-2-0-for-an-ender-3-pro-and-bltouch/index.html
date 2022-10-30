@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch</title>
+    <meta name="description" content="Experiences, Self development DIY projects, How to sharing...">
+    <link rel="canonical" href="/posts/configuring-marlin-2-0-for-an-ender-3-pro-and-bltouch/" />
+
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="apple-touch-icon" href="/assets/images/icons/ios/32.png">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="icon" type="image/png" href="/assets/images/icons/android/android-launchericon-48-48.png">
+    
+    <link rel="preload" href="/assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/index.css"></noscript>
+
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- optionally increase loading priority -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <script async src="/assets/javascripts/main.js"></script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PPWXDW4');</script>
+    <!-- End Google Tag Manager -->
+    
+  <!-- Register service worker for PWA offline mode support. -->
+      <script>
+        if ("serviceWorker" in window.navigator) {
+          window.addEventListener("load", () =>
+            window.navigator.serviceWorker.register("/service-worker.js", { scope: "/" }),
+          );
+        }
+      </script></head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header>
+      
+      <nav>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+        <label class="menu-icon bluegrey " for="nav-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <svg height="100" width="100" class="round">
+            <circle
+        cx="50"
+        cy="50"
+        r="40"
+        fill="#1f4954"
+/>
+          </svg>
+
+        </label>
+        <label class="trigger" for="nav-trigger">
+        <ul>
+            <li class="nav-item">
+              <a href="/">Start here</a>
+            </li>
+            <li class="nav-item">
+              <a href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="/posts/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="/corals/">Corals</a>
+            </li>
+            <li class="nav-item">
+              <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
+            </li>
+        </ul>
+        </label>
+      </nav>
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/images/icon/android/android-launchericon-144-144.png" width="144" height="144" alt="Marc Dobler"/>
+        </a>
+      </div>
+      <div class="cart"></div>
+    </header>
+
+    <main class="tmpl-post">
+      
+<article >
+  <header class="color-bg bluegrey">
+    <h1>How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch</h1>
+  </header>
+
+  <main>
+    <h2>The Template</h2>
+<p>Firstly, you’ll need the Marlin firmware with the appropriate template settings.</p>
+<ol>
+<li>Start by downloading the latest stable release of Marlin from here and the configuration files here.</li>
+<li>Extract the zip.</li>
+<li>Copy the 4 files from config/examples/Creality/Ender-3 to the Marlin/ folder, overwriting the 2 already there.</li>
+</ol>
+<h2>Configuration.h</h2>
+<p>Open the new Marlin/Configuration.h file using a text editor suitable for code, like vs code. We’ll customize our configuration now:</p>
+<ol>
+<li>
+<p>Change <code>STRING_CONFIG_H_AUTHOR</code> to clearly differentiate the configuration from the default</p>
+</li>
+<li>
+<p>Disable <code>SHOW_BOOTSCREEN</code> and <code>SHOW_CUSTOM_BOOTSCREEN</code> to save space by commenting out the lines (prefix them with //  )</p>
+</li>
+<li>
+<p>Ensure you have the correct <code>BAUDRATE</code>. The original Ender 3 was configured to 115200 by Creality, but the newer Ender 3 Pro (and newer Creality motherboards) default to 250000. You may be fine with 250000 on an older Ender 3.</p>
+</li>
+<li>
+<p>Change <code>CUSTOM_MACHINE_NAME</code> to represent your printer, e.g. &quot;Ender 3 Pro&quot;</p>
+</li>
+<li>
+<p>If you’re using a BLTouch ABL sensor:</p>
+<ol>
+<li>Uncomment <code>#define BLTOUCH</code></li>
+<li><code>#define SERVO0_PIN 27</code> is not required to set up your BLTouch in Marlin 2.x, as it’s defined in the pins folder by default</li>
+<li>You’ll need to customize the offset between Probe and Extruder. In Marlin 1.x, this was done with X, Y, and 4. <code>Z_PROBE_OFFSET_FROM_EXTRUDER</code>. In Marlin 2.x, they’re now combined in <code>NOZZLE_TO_PROBE_OFFSET</code>. Instructions are in the comments. Using the Creality BLTouch Kit bracket, mine is { -43, -9, 0 }. It’s safer to leave Z as 0 here are calibrate this yourself later.</li>
+<li>To keep the probe away from the edge of the bed, increase <code>PROBING_MARGIN</code> to 20</li>
+<li>You can increase <code>XY_PROBE_SPEED</code> to 10000 to speed up probing slightly</li>
+<li>Uncomment #define <code>AUTO_BED_LEVELING_BILINEAR</code> to enable bilinear ABL</li>
+<li>By default, bilinear ABL uses a 3×3 grid. You can change this by editing <code>GRID_MAX_POINTS_X</code> under <code>EITHER</code>(<code>AUTO_BED_LEVELING_LINEAR</code>, <code>AUTO_BED_LEVELING_BILINEAR</code>). Mine is set to 5, for a 5×5 grid</li>
+<li>Uncomment <code>#define LCD_BED_LEVELING</code> to add bed leveling menu items</li>
+</ol>
+</li>
+<li>
+<p>If your bed is non-standard, you’ll need to adjust the size and/or travel limits to make sure Marlin knows this. I use bulldog clips to secure a glass bed. To ensure the nozzle stays clear of the clips, I’ve changed the following: <code>Y_BED_SIZE</code> from 235 to 199, <code>X_MIN_POS</code> from 0 to -2, <code>Y_MIN_POS</code> from 0 to -24.</p>
+</li>
+<li>
+<p>Uncomment <code>Z_SAFE_HOMING</code>. This prevents your Z homing from occurring without prior X and Y homing. Without this, you may accidentally miss the bed when homing Z.</p>
+</li>
+<li>
+<p>To increase the homing speed, increase <code>HOMING_FEEDRATE_XY</code> from (20<em>60) to (40</em>60) and <code>HOMING_FEEDRATE_Z</code> from (4<em>60) to (8</em>60).</p>
+</li>
+<li>
+<p>If you want to use PID to efficiently heat your bed, uncomment <code>#define PIDTEMPBED</code>. You’ll need to calibrate this later.</p>
+</li>
+<li>
+<p>If you’re using a “silent” Creality board v1.1.4 or v1.1.5, you’re using TMC2208 drivers in standalone mode. Uncomment X, Y, Z, and <code>E0_DRIVER_TYPE</code> and set them to <code>TMC2208_STANDALONE</code>.</p>
+</li>
+<li>
+<p>To save space, uncomment #define SLIM_LCD_MENUS. This will remove any menu items that you won’t need if controlling using a PC or OctoPrint.</p>
+</li>
+<li>
+<p>To save space, comment out <code>#define SPEAKER</code>. This will stop fully disable the speaker.</p>
+</li>
+<li>
+<p>To save space if you won’t be printing from an SD card, comment out #define <code>SDSUPPORT</code>.</p>
+</li>
+<li>
+<p>Save the file and close the file.</p>
+</li>
+</ol>
+<h2>Configuration_adv.h</h2>
+<p>Open the new Marlin/Configuration_adv.h file in your chosen text editor.</p>
+<ol>
+<li>If you’re using a BLTouch:
+<ol>
+<li>Uncomment <code>#define BLTOUCH_DELAY</code> and change from 500 to 200. This reduces the pause after each individual probe.</li>
+<li>Baby stepping allows the nozzle to move a tiny amount without changing the recorded coordinates for the hot-end. This is usually used for calibrating your Z Offset for a perfect first layer. You can increase <code>BABYSTEP_MULTIPLICATOR_Z</code> and <code>_XY</code> to 10 for faster motion.</li>
+<li>Uncomment <code>BABYSTEP_ZPROBE_OFFSET</code> and <code>#define BABYSTEP_ZPROBE_GFX_OVERLAY</code></li>
+</ol>
+</li>
+<li>If you want to use Linear Advance to increase your print quality at higher speeds, uncomment <code>#define LIN_ADVANCE</code> and set <code>LIN_ADVANCE_K</code> from 0.22 to 0, which will enable the feature but turn it off. Your GCODE will need to specify the K value, which you’ll calibrate later. You need different K values for different filament types. Note that LinearsAdvance is not compatible with the TMC2208 stepper driver in Standalone mode (using StealthChop), so will not worth it with Creality “silent” boards v1.1.4 and v1.1.5.</li>
+<li>To save space, comment out #define <code>ARC_SUPPORT</code>. This feature is used by other types of CNC machines, but usually not 3D printers.</li>
+<li>If you want to display progress and time remaining from another system with the M73 command, such as OctoPrint, uncomment <code>LCD_SET_PROGRESS_MANUALLY</code>. If your system will also send the M73 R parameter to update the time remaining, uncomment <code>USE_M73_REMAINING_TIME</code>.</li>
+<li>Marlin watches the rate of temperature increase for hot-end and bed. If it’s too slow, it will trigger an error and halt your print. If you have the windows open for ventilation and it’s cold out, this can be a problem. Increase <code>WATCH_BED_TEMP_PERIOD</code> a little if you have this issue.
+Save your changes and close the file.</li>
+</ol>
+<h2>To The Printer!</h2>
+<p>Take a copy of your <code>M503</code> output to save your current printer settings. You’ll need to put some of these back later.</p>
+<p>Open Marlin/Marlin.ino with the Visual Studio Code, compile with PlateformIO, and write the new firmware to your printer.</p>
+<p>Run M502 to set all settings to those specified in your firmware files, then M500 to store these settings in the EEPROM.</p>
+<p>Depending on your configuration, you’ll now want to calibrate your Z-Probe Offset, PID for Hotend and Heated Bed and Linear Advance, or set them from your previous values.</p>
+<p>Enjoy!</p>
+
+  </main>
+
+  <footer>
+   
+  </footer>
+</article>
+    </main>
+
+    <footer id="footer">
+      &copy; Marc Dobler - 2022
+    </footer>
+    <!-- Current page: /posts/configuring-marlin-2-0-for-an-ender-3-pro-and-bltouch/ -->
+  </body>
+</html>

@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc Dobler | Web Developer, DIY Maker</title>
+    <title>Marc Dobler | Obsessive Coral Disorder, DIY Maker</title>
     <meta name="description" content="Experiences, Self development DIY projects, How to sharing...">
+    <link rel="canonical" href="/posts/" />
 
     <link rel="manifest" href="/site.webmanifest"/>
-    <link rel="apple-touch-icon" href="/img/icon/apple/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/ios/32.png">
     <meta name="theme-color" content="#4285f4">
-    <link rel="icon" type="image/png" href="/img/icon/chrome/chrome-favicon-16-16.png">
+    <link rel="icon" type="image/png" href="/assets/images/icons/android/android-launchericon-48-48.png">
     
-    <link rel="preload" href="/css/index.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/index.css"></noscript>
+    <link rel="preload" href="/assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/index.css"></noscript>
 
     <!-- connect to domain of font files -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
     <!-- optionally increase loading priority -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" onload="this.rel='stylesheet'">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- no-JS fallback -->
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </noscript>
-
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Web Developer, DIY Maker">
-    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Web Developer, DIY Maker">
-    <script async src="/js/main.js"></script>
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Marc Dobler | Obsessive Coral Disorder, DIY Maker">
+    <script async src="/assets/javascripts/main.js"></script>
+    
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,6 +38,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PPWXDW4');</script>
     <!-- End Google Tag Manager -->
+    
   <!-- Register service worker for PWA offline mode support. -->
       <script>
         if ("serviceWorker" in window.navigator) {
@@ -50,7 +52,9 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    
     <header>
+      
       <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
         <label class="menu-icon white " for="nav-trigger">
@@ -70,7 +74,7 @@
         <label class="trigger" for="nav-trigger">
         <ul>
             <li class="nav-item">
-              <a href="/">Start Here</a>
+              <a href="/">Start here</a>
             </li>
             <li class="nav-item">
               <a href="/projects/">Projects</a>
@@ -79,10 +83,13 @@
               <a href="/posts/">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="/about/">About Me</a>
+              <a href="/corals/">Corals</a>
             </li>
             <li class="nav-item">
               <a href="/fish/">Fish</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About Me</a>
             </li>
             <li class="nav-item">
               <a href="/me-curriculum-vitae/">Me Curriculum Vitæ</a>
@@ -90,80 +97,72 @@
         </ul>
         </label>
       </nav>
-      <div class="home">
-        <h1 class="sr-text">Marc Dobler | Web Developer, DIY Maker</h1>
+      <div class="logo">
         <a href="/">
-
-          <picture><source type="image/webp" srcset="/img/KINtVbES59-128.webp 128w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler" loading="lazy" decoding="async" src="/img/KINtVbES59-128.jpeg" width="128" height="128"></picture>
-          
-          
+          <img src="/assets/images/icon/android/android-launchericon-144-144.png" width="144" height="144" alt="Marc Dobler"/>
         </a>
       </div>
-      <div></div>
-
+      <div class="cart"></div>
     </header>
 
     <main class="tmpl-home">
-      <section>
+      
+<section>
 <h1>Blogs.</h1>
 
 
 
-<ul reversed class="postlist" style="counter-reset: start-from 5">
+<ul reversed class="postsList" style="counter-reset: start-from 5">
   
-    <li class="postlist-item color-bg amber">
-      <a href="/posts/fish-for-20G-nano-reefs/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
+    <li class="item color-bg amber">
+      <a href="/posts/fish-for-20G-nano-reefs/" class="link">
+        <h3 class="title">
           Fish for 20G Nano Reefs
           
         </h3>
         
-          <div class="post-excerpt">The purpose of this thread is to provide you with a comprehensive guide to fish for the nano reef aquarium.</div>
+          <div class="excerpt">The purpose of this thread is to provide you with a comprehensive guide to fish for the nano reef aquarium.</div>
         
-        <time class="postlist-date" datetime="2021-11-30">30 Nov 2021</time>
+        <time class="date" datetime="2021-11-30">30 Nov 2021</time>
       </a>
     </li>
   
-    <li class="postlist-item color-bg teal">
-      <a href="/posts/how-to-calibrate-z-offset-with-a-bltouch-bed-leveling-probe/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
+    <li class="item color-bg teal">
+      <a href="/posts/how-to-calibrate-z-offset-with-a-bltouch-bed-leveling-probe/" class="link">
+        <h3 class="title">
           How to calibrate Z-Offset with a BLTouch bed leveling probe?
           
         </h3>
         
-          <div class="post-excerpt">Make calibration of z-offset through the terminal</div>
+          <div class="excerpt">Make calibration of z-offset through the terminal</div>
         
-        <time class="postlist-date" datetime="2020-05-28">28 May 2020</time>
+        <time class="date" datetime="2020-05-28">28 May 2020</time>
       </a>
     </li>
   
-    <li class="postlist-item color-bg bluegrey">
-      <a href="/posts/Configuring-Marlin-2-0-for-an-Ender-3-Pro-and-BLTouch/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
+    <li class="item color-bg green">
+      <a href="/posts/build-wxpython-on-raspberry-pi/" class="link">
+        <h3 class="title">
+          Build wxPython On Raspberry Pi
+          
+        </h3>
+        
+          <div class="excerpt">If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.</div>
+        
+        <time class="date" datetime="2020-05-18">18 May 2020</time>
+      </a>
+    </li>
+  
+    <li class="item color-bg bluegrey">
+      <a href="/posts/configuring-marlin-2-0-for-an-ender-3-pro-and-bltouch/" class="link">
+        <h3 class="title">
           How to configure Marlin 2.0 for an Ender 3 / Pro and BLTouch
           
         </h3>
         
-          <div class="post-excerpt">A good start to get how firmware work, and nice tips to make it custom version for Ender 3 BLTouch</div>
+          <div class="excerpt">A good start to get how firmware work, and nice tips to make it custom version for Ender 3 BLTouch</div>
         
-        <time class="postlist-date" datetime="2020-05-20">20 May 2020</time>
-      </a>
-    </li>
-  
-    <li class="postlist-item color-bg green">
-      <a href="/posts/how-to-compile-and-install-wxPython-on-raspberry-pi/" class="postlist-link">
-        <span class="more">Read more</span>
-        <h3>
-          How to compile and install wxPython on Raspberry Pi?
-          
-        </h3>
-        
-          <div class="post-excerpt">If you need to install wxPython on Raspbian Buster for a project, the installation of that module can be a little bit tricky. It needs to be compiled for Raspbian from source files to have something working nicely.</div>
-        
-        <time class="postlist-date" datetime="2020-05-18">18 May 2020</time>
+        <time class="date" datetime="2019-05-20">20 May 2019</time>
       </a>
     </li>
   
@@ -175,8 +174,7 @@
   <h2>Say hi.</h2>
   <div class="color-bg teal info one-half">
     <div class="padding">
-      <a class="fake-post-title" href="mailto:me@marcdobler.com"
-        >me@marcdobler.com</a
+      <a class="fake-post-title" href="mailto:me@marcdobler.com">me@marcdobler.com</a
       >
       <p>
         I am <script>howOldIAm.inYears("1982, 08, 23");</script>, IoT enthusiast from France. Although I have built most of my professional carrer in programming, my passion is IoT projects. I independatly studied using different sources many aspects of it and managed to implement several projects for my own use
@@ -185,13 +183,13 @@
         <br />
         Marc Dobler
         <br />
-        Vienna, Austria
+        Agiez, Swiss
       </p>
       <div class="social-links"></div>
     </div>
   </div>
   <div class="info-image one-half">
-    <picture><source type="image/webp" srcset="/img/x_ds1MX-bb-300.webp 300w, /img/x_ds1MX-bb-600.webp 600w" sizes="(min-width: 30em) 50vw, 100vw"><source type="image/jpeg" srcset="/img/x_ds1MX-bb-300.jpeg 300w, /img/x_ds1MX-bb-600.jpeg 600w" sizes="(min-width: 30em) 50vw, 100vw"><img alt="Marc Dobler - 2019 by Tatiana Dobler" loading="lazy" decoding="async" src="/img/x_ds1MX-bb-300.jpeg" width="600" height="400"></picture>
+    <img src="/assets/images/avatars/marc-dobler-avatar.png">
   </div>
 </section>
 <section class="say-hi">
@@ -255,10 +253,8 @@
 
     </main>
 
-    <footer>
-    
-      &copy; Marc Dobler - 2021
-
+    <footer id="footer">
+      &copy; Marc Dobler - 2022
     </footer>
     <!-- Current page: /posts/ -->
   </body>
