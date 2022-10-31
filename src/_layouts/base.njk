@@ -7,10 +7,10 @@
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="canonical" href="{{ page.url | url }}" />
 
-    <link rel="manifest" href="{{ '/manifest.json' | url }}"/>
-    <link rel="apple-touch-icon" href="{{ '/assets/images/icons/ios/32.png' | url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
+    <link rel="apple-touch-icon" href="{{ '/assets/images/icon/ios/32.png' | url }}">
     <meta name="theme-color" content="#4285f4">
-    <link rel="icon" type="image/png" href="{{ '/assets/images/icons/android/android-launchericon-48-48.png' | url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/icon/android/android-launchericon-48-48.png' | url }}">
     
     <link rel="preload" href="{{ '/assets/css/index.css' | url }}" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ '/assets/css/index.css' | url }}"></noscript>
