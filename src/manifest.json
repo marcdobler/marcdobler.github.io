@@ -15,6 +15,12 @@
     "shopping",
     "social"
   ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+corals",
+      "url": "/corals/%s"
+    }
+  ],
   "icons": [
     {
       "src": "assets/images/icon/windows11/SmallTile.scale-100.png",
