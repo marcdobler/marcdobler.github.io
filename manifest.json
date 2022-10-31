@@ -8,6 +8,7 @@
   "scope": "/",
   "start_url": "/",
   "orientation": "portrait",
+  "id": "https://www.marcdobler.com/",
   "prefer_related_applications": false,
   "icons": [
     {
