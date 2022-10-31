@@ -1624,7 +1624,7 @@ article > header img,
 .tmpl-tags > header img {
   height: inherit;
   left: 0;
-  max-width: 50%;
+  width: 50%;
   object-fit: cover;
   object-position: 25%;
   position: absolute;
@@ -1946,100 +1946,6 @@ article > footer time,
     font-size: 0.8rem;
   }
 }
-/**
-   * Posts
-   */
-article > header,
-.tmpl-tags > header {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: 0;
-  height: 85vh;
-  padding: 0 1em;
-  position: relative;
-}
-@media screen and (max-width: 600px) {
-  article > header,
-.tmpl-tags > header {
-    flex-direction: column;
-  }
-}
-article > header h1,
-.tmpl-tags > header h1 {
-  font-size: 2.625rem;
-  z-index: 0;
-  padding: 0.5em;
-}
-@media screen and (max-width: 600px) {
-  article > header h1,
-.tmpl-tags > header h1 {
-    font-size: 2.025rem;
-  }
-}
-article > header img,
-.tmpl-tags > header img {
-  height: inherit;
-  left: 0;
-  max-width: 50%;
-  object-fit: cover;
-  object-position: 25%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-}
-@media screen and (max-width: 600px) {
-  article > header img,
-.tmpl-tags > header img {
-    max-width: 100%;
-  }
-}
-article > main,
-.tmpl-tags > main {
-  max-width: 75ch;
-  padding: 0 1em;
-  margin: auto;
-}
-article > main > p:first-child,
-.tmpl-tags > main > p:first-child {
-  margin-top: 2em;
-}
-article > footer,
-.tmpl-tags > footer {
-  margin-top: 2em;
-}
-article > footer .post-meta,
-.tmpl-tags > footer .post-meta {
-  padding: 3em 1em;
-  box-sizing: border-box;
-  font-weight: bold;
-  font-size: 2rem;
-}
-@media screen and (max-width: 600px) {
-  article > footer .post-meta,
-.tmpl-tags > footer .post-meta {
-    font-size: 1rem;
-  }
-}
-article > footer .post-meta a,
-.tmpl-tags > footer .post-meta a {
-  text-transform: capitalize;
-  color: black;
-}
-article > footer time,
-.tmpl-tags > footer time {
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding: 1em;
-  color: var(--black);
-  position: absolute;
-  margin-top: 1.8em;
-  right: 0;
-}
-
 .tmpl-tags > header > h1 {
   height: 50vh;
 }
