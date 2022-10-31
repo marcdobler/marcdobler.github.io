@@ -6,15 +6,10 @@
   "name": "Marc Dobler",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "Marc Dobler",
+  "short_name": "MD",
   "start_url": "/",
   "theme_color": "#529ed0",
-  "categories": [
-    "news",
-    "productivity",
-    "shopping",
-    "social"
-  ],
+  "categories": ["news", "productivity", "shopping", "social"],
   "protocol_handlers": [
     {
       "protocol": "web+corals",
@@ -601,7 +596,11 @@
       "short_name": "Blog",
       "url": "/blog/",
       "icons": [
-        { "src": "assets/images/shortcuts/1x/blog.png", "sizes": "128x128", "type": "image/png" }
+        { 
+          "src": "assets/images/shortcuts/1x/blog.png", 
+          "sizes": "128x128", 
+          "type": "image/png" 
+        }
       ]
     },
     {
@@ -611,7 +610,7 @@
       "icons": [
         {
           "src": "assets/images/shortcuts/1x/projects.png",
-          "sizes": "128x128",
+          "sizes": "128x129",
           "type": "image/png"
         }
       ]
@@ -626,8 +625,6 @@
     }
   ],
   "lang": "en",
-  "display_override": [
-    "standalone"
-  ],
+  "display_override": ["standalone"],
   "prefer_related_applications": false
 }
