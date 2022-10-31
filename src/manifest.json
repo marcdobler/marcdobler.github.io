@@ -1,15 +1,20 @@
 {
-  "name": "Marc Dobler",
-  "short_name": "MD",
-  "categories": ["education", "lifestyle"],
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "background_color": "#529ed0",
+  "description": "A guy with a huge obsessive corals dissorder",
+  "dir": "ltr",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "name": "Marc Dobler",
   "orientation": "portrait",
-  "id": "https://www.marcdobler.com/",
-  "prefer_related_applications": false,
+  "scope": "/",
+  "short_name": "Marc Dobler",
+  "start_url": "/",
+  "theme_color": "#529ed0",
+  "categories": [
+    "news",
+    "productivity",
+    "shopping",
+    "social"
+  ],
   "icons": [
     {
       "src": "assets/images/icon/windows11/SmallTile.scale-100.png",
@@ -614,6 +619,9 @@
       ]
     }
   ],
-  "lang": "en-US",
-  "description": "Making thing it an art, let do something beautiful!"
+  "lang": "en",
+  "display_override": [
+    "standalone"
+  ],
+  "prefer_related_applications": false
 }
