@@ -31,12 +31,9 @@ eleventyComputed:
     <img src="{{ site.base }}/assets/images/fish/{{ image }}" alt="{{ title }}"/>
 
     <h1>{{ title }}</h1>
-    <ul class="card invert">
-      <li>Temperature: {{ parameter.temp }}</li>
-      <li>pH: {{ parameter.ph }}</li>
-      <li>Size: {{ parameter.size }}</li>
-      <li>Geography: {{ parameter.geography }}</li>
-    </div>
+    
+    {% include "partials/card-alive.njk" %}
+
   </header>
   <main>
     {{ content | safe }}

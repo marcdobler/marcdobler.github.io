@@ -1,14 +1,14 @@
 ---
 layout: animal
-title: "Elactinus Oceanops"
-excerpt: 
+title: Elactinus Oceanops
+excerpt: Found in small groups in live corals of lagoons and sheltered coastal reefs at 1-15 m deep (Ref. 90102). In Papua New Guinea, various individuals were seen swimming around large coral heads on reef slopes and would not rest on the corals like those seen in Indonesia.
 tags:
     - Gobiidae
     - Nano Reef tank
 color: blue
 author:
 - Marc Dobler
-meta: "Here the description of the article"
+description: Elacatinus is a genus of small marine gobies, often known collectively as the neon gobies.
 image: elactinus_oceanops.jpg
 date: 1904-05-25
 
