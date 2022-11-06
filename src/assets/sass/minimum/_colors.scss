@@ -1,25 +1,25 @@
 $themeColours: (
   'amber': #c1605c,
-  'black': #000,
-  'blue': #082840,
+  'black': #211f1f,
+  'blue': #475795,
   'bluedark': #2b2f3c,
   'bluegrey': #98bec8,
   'bluelight': #d1e1e0,
   'brown': #965630,
-  'chrysiptera': #0502e5,
   'darkgray': #333,
   'gray': #c0c0c0,
-  'green': #3bab87,
+  'green': #92d9cb,
   'greylight': #9ba5b5,
   'lightgray': #fefbf5,
   'navy': #17050f,
   'orange': #bf3100,
-  'pink': #fdf0ec,
+  'pink': #e7617c,
   'purple': #571af9,
   'teal': #224a54,
   'violet': #9e20ff,
   'white': #fff,
   'yellow': #a38f10,
+  'redstraight': #f00,
 );
 
 /* Colors */
@@ -34,14 +34,14 @@ $themeColours: (
 
 @function coloraria($bg) {
   @if (lightness($bg) > 50) {
-    @return var(--black);
+    @return var(--site-title-color);
   } @else {
     @return var(--white);
   }
 }
 
 @each $themeColour, $color in $themeColours {
-  .color-bg {
+  .color {
     &.#{$themeColour} {
       ::selection {
         background: complement($color); /* WebKit/Blink Browsers */
@@ -70,16 +70,15 @@ $themeColours: (
       background-color: var(--#{$themeColour});
       color: coloraria($color);
 
-      * {
-        background-color: var(--#{$themeColour});
-        color: coloraria($color);
-      }
-
       *:after {
         background-color: coloraria($color);
       }
 
       /* exception */
+
+      .no-color {
+        background-color: transparent;
+      }
 
       .link:after {
         background-color: darken($color, 25%);
@@ -90,8 +89,12 @@ $themeColours: (
 
 @each $themeColour, $color in $themeColours {
   .menu-icon {
-    &.#{$themeColour} span {
-      background-color: coloraria($color);
+    .color {
+      &.#{$themeColour} {
+        background-color: coloraria($color);
+      }
     }
   }
 }
+
+

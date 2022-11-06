@@ -1,29 +1,24 @@
-body > header > nav {
+nav {
   display: inline-block;
   min-width: 30px;
+  max-width: fit-content;
   justify-self: left;
+  z-index: 9999;
 
   label {
-    top: $spacing-unit;
-    height: 1.8em;
-    width: 2.3em;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 4em;
+    width: 5em;
+    transition: $animation-timing;
     display: flex;
     align-items: center;
     padding: $spacing-unit;
 
-    @media screen and (max-width: $on-large) {
-      padding: calc($spacing-unit / 2);
-    }
-
-    z-index: 4;
-
     .round {
       position: absolute;
       top: 1.2em;
-      left: -0.6em;
+      left: -0.3em;
       transform: scale(0);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $animation-timing;
     }
   }
 
@@ -31,12 +26,27 @@ body > header > nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     cursor: pointer;
+    
     
     span {
       display: block;
-      width: 100%;
-      height: calc($spacing-unit / 3);
+      width: 3em;
+      height: calc($spacing-unit/3);
+      transition: $animation-timing;
+    }
+
+    &:hover {
+      span:nth-child(1) {
+        width: 2em;
+      }
+      span:nth-child(2) {
+        width: 3em;
+      }
+      span:nth-child(3) {
+        width: 2.5em;
+      }
     }
   }
 

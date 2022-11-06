@@ -594,7 +594,7 @@
     {
       "name": "Read blog",
       "short_name": "Blog",
-      "url": "/blog/",
+      "url": "/posts/",
       "icons": [
         { 
           "src": "assets/images/shortcuts/1x/blog.png", 

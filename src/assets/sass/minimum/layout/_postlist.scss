@@ -1,107 +1,21 @@
-.postsList {
+.homeList {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  width: 100%;
 
-  > .item {
-    width: calc(50% - 0.5em);
-    overflow: hidden;
-
+  > .card {
     &:nth-child(3n + 1) {
-      width: 100%;
-    }
-
-    .link {
-      display: flex;
-      flex-flow: column nowrap;
-      text-decoration: none;
-      text-align: center;
-      height: 100%;
-      position: relative;
-
-      &:after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        content: '';
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: #ffffff51;
-        border-top-color: var(--background-color);
-        border-right-color: var(--background-color);
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 4px 4px 20px 0px #00000075;
-        border-bottom-left-radius: 3px;
-      }
-
-      &:hover {
-        &:after,
-        &:visited:after {
-          border-width: 2em;
-          border-bottom-left-radius: 10px;
-        }
-
-        .title {
-          transform: translateY(-10px);
-          &:after {
-            transform: scaleX(2);
-          }
-        }
-      }
-
-      .title {
-        transform: translateY(0px);
-        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        text-align: center;
-        margin: $spacing-unit;
-
-        &:after {
-          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          content: '';
-          display: block;
-          margin: 1em auto 0 auto;
-          height: 4px;
-          width: 2em;
-          align-items: center;
-        }
-      }
-
-      .excerpt {
-        padding: 0 $spacing-unit * 4;
-        @include relative-font-size(1);
-      }
-
-      .date {
-        margin-top: auto;
-        display: block;
-        font-size: $small-font-size;
-        padding: $spacing-unit;
-        font-weight: bold;
-      }
+      flex: 0 0 calc(100% - $spacing-unit);
     }
   }
 }
 
-@media screen and (max-width: $on-large) {
-  .postsList {
-    > .item {
-      width: 100%;
-      .link {
-        h3 {
-          @include relative-font-size(2);
-        }
+.shopList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-        .excerpt {
-          padding: 0 $spacing-unit;
-          @include relative-font-size(0.8);
-        }
-      }
-    }
+  > .card {
+    aspect-ratio: 1/1;
   }
 }

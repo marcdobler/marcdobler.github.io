@@ -5,11 +5,11 @@ type: post
 ---
 
 <article>
-  <header class="color-bg {{ color }}">
+  <header class="color {{ color }}">
 
     <img src="{{ site.base }}/assets/images/corals/{{ image }}" alt="{{ title }}" title="{{ title }}"/>
 
-    <h1>{{ title }}</h1>
+    <h1 class="color {{ color }}">{{ title }}</h1>
     
     {% include "partials/card-alive.njk" %}
 
@@ -19,7 +19,7 @@ type: post
   </main>
   <footer>
     {% include "partials/section-postmeta.njk" %}
-  <footer>
+  </footer>
 </article>
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}

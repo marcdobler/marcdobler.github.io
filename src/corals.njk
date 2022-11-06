@@ -6,13 +6,13 @@ eleventyNavigation:
   order: 5
 ---
 
-<section>
-<h1>Corals.</h1>
+<section class="section">
+  <h1>Corals.</h1>
 
-{% set postslist = collections.corals %}
-{% set collectionLink = '/corals/' %}
-{% set collectionReadMore = 'hide' %}
-{% include "postslist.njk" %}
+  {% set postslist = collections.corals %}
+  {% set collectionLink = '/corals/' %}
+  {% set collectionReadMore = 'hide' %}
+  {% include "postslist.njk" %}
 </section>
 
 {% include "partials/section-sayhi.njk" %}

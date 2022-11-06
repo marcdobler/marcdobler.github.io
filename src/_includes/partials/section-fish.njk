@@ -1,9 +1,10 @@
-<section>
+<section class="section">
     {% set maxPosts = collections.fish.length | min(6) %}
     <h2>{% if maxPosts == 1 %}Fish.{% else %}Fish.{% endif %}</h2>
 
     {% set postslist = collections.fish | head(-6) %}
     {% set postslistCounter = collections.fish | length %}
+    {% set collectionClass = 'homeList' %}
     {% set collectionId = 'fish'%}
     {% set collectionLink = '/fish/' %}
     {% set collectionReadMore = 'show' %}

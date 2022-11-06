@@ -1,0 +1,20 @@
+<nav role="navigation">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+    <label class="menu-icon" for="nav-trigger">
+        <span class="{% if color %}color {{ color }}{% else %}color white{% endif %}"></span>
+        <span class="{% if color %}color {{ color }}{% else %}color white{% endif %}"></span>
+        <span class="{% if color %}color {{ color }}{% else %}color white{% endif %}"></span>
+        <svg height="100" width="100" class="round">
+            <circle cx="50" cy="50" r="40" fill="#1f4954"/>
+        </svg>
+    </label>
+    <label class="trigger" for="nav-trigger">
+        <ul>
+        {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+        {%- endfor %}
+        </ul>
+    </label>
+</nav>

@@ -1,0 +1,56 @@
+---
+layout: base
+templateClass: tmpl-checkout
+type: post
+---
+
+<div class="grid">
+    <section class="col-6">
+        <div class="logo">
+                <a href="{{ '/' | url }}">
+                <img src="/assets/images/icon/android/android-launchericon-144-144.png" loading="lazy" width="144" height="144" alt="Marc Dobler" title="Logo who tell since important date I was born in second"/>
+                </a>
+        </div>
+        <nav class="breadcrumb"><ul class="no-style"><li>Information</li><li>Shipping</li><li>Payment</li></nav> 
+        <form>
+            <h2>Contact information</h2>
+        
+            <label for="email" class="sr-text">E-mail</label>
+            <input id="email" type="email" placeholder="E-nmail or mobile phone number"/>
+            
+            <label for="optin" class="checkbox">Email me with news and offer</label>
+            <input id="optin" type="checkbox"/>
+        
+            <h2>Shipping address</h2>
+
+            <label for="country" class="sr-text">Country/region</label>
+            <input id="country" type="email" placeholder="E-nmail or mobile phone number"/>
+            
+            <label for="firstname">Email me with news and offer</label>
+            <input id="optin" type="checkbox"/>
+
+            <label for="email" class="sr-text">E-mail</label>
+            <input id="email" type="email" placeholder="E-nmail or mobile phone number"/>
+            
+            <label for="optin" class="checkbox">Email me with news and offer</label>
+            <input id="optin" type="checkbox"/>
+
+            <label for="email" class="sr-text">E-mail</label>
+            <input id="email" type="email" placeholder="E-nmail or mobile phone number"/>
+            
+            <label for="optin" class="checkbox">Email me with news and offer</label>
+            <input id="optin" type="checkbox"/>
+
+            <label for="email" class="sr-text">E-mail</label>
+            <input id="email" type="email" placeholder="E-nmail or mobile phone number"/>
+            
+            <label for="optin" class="checkbox">Email me with news and offer</label>
+            <input id="optin" type="checkbox"/>
+
+        </form>
+    </section>
+    <section class="color bluelight col-6">
+        cart in process
+        {{ content | safe }}
+    </section>  
+</div>

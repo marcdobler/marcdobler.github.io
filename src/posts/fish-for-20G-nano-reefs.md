@@ -98,7 +98,7 @@ If it is all gone before 5 min, perhaps add a little more. If there is a lot of 
 
 For that reason, it can be easier to use frozen flat packs which make it easier to break off only what you need, if the frozen food type you want is available that way.
 
-### **How to use the feeding suggestion guide**
+### How to use the feeding suggestion guide
 
 There are two different ways you can use the feeding guide. I will provide feeding suggestions based on if the fish is a carnivore, herbivore, omnivore, piscivore, or detrivore and I will also provide feeding suggestions for each specific group of fish, noting species that do not follow trends of the group as a whole or have additional special needs. 
 

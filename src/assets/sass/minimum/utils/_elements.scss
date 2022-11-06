@@ -1,0 +1,127 @@
+// Checkbox
+
+$size: 1em;
+$lenght: 2em;
+
+$checkbox: $size * 2;
+$padding: 0.2em;
+$width: $lenght + $size * 1.5 + $padding;
+
+input {
+&[type='email'] {
+  border: none;
+  padding: $spacing-unit;
+  width: -webkit-fill-available;
+  margin-bottom: $spacing-unit;
+  border-radius: $radius;
+}
+
+  &[type='checkbox'] {
+    position: relative;
+    width: $checkbox;
+
+    // sliding element
+    &::after {
+      cursor: pointer;
+      content: '';
+      background-color: red;
+      display: block;
+      height: $size;
+      width: $size;
+      border-radius: calc($size / 2);
+      position: absolute;
+      left: $padding;
+      top: calc($padding / -2);
+      transform: rotateY(0deg);
+      animation-name: expand;
+      animation-fill-mode: forwards;
+      animation-timing-function: $animation-function;
+      animation-duration: $animation-duration;
+    }
+
+    &:checked::after {
+      left: calc($size / 2) + ($padding * 2) + $lenght;
+      opacity: 1;
+      transform: rotateY(0deg);
+      animation-name: expand;
+      animation-fill-mode: forwards;
+      animation-timing-function: $animation-function;
+      animation-duration: $animation-duration;
+    }
+
+    // sliding container
+    &::before {
+      cursor: pointer;
+      opacity: 1;
+      content: '';
+      background-color: var(--background-color);
+      display: block;
+      height: $size;
+      width: $width;
+      top: calc(-1 * ($padding + ($padding / 2)));
+      border-radius: calc($size / 2) + $padding;
+      padding: $padding;
+      position: absolute;
+    }
+  }
+}
+
+@keyframes expand {
+  0% {
+    left: $padding;
+    width: $size;
+  }
+  25% {
+    left: $padding;
+    width: $width;
+  }
+  50% {
+    left: auto;
+    right: $padding;
+    width: $size;
+  }
+  100% {
+    right: $padding;
+    width: $size;
+  }
+}
+
+@keyframes contract {
+  0% {
+    right: $padding;
+    width: $size;
+  }
+  25% {
+    right: $padding;
+    width: $width;
+  }
+  50% {
+    right: auto;
+    left: $padding;
+    width: $size;
+  }
+  100% {
+    left: $padding;
+    width: $size;
+  }
+}
+
+img {
+  border-style: none;
+  object-fit: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: -webkit-fill-available;
+}
+
+a {
+  text-decoration: none;
+  color: var(--site-title-color);
+  font-weight: bold;
+}
+
+button, .btn {
+  padding: $spacing-unit;
+  width: 100%;
+  margin-top: $spacing-unit;
+}
