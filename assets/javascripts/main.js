@@ -1,7 +1,14 @@
+document.addEventListener('DOMContentLoaded', function (event) {
+  if (document.body.contains(document.getElementById('howoldyouare'))) {
+    howOldIAm.inYears('1982/08/23');
+  }
+});
+
 let howOldIAm = {
   inYears: function (date) {
-    // Get date now 
+    // Get date now
     let now = Date.now();
+
     // Get date birth
     let birthdate = new Date(date).getTime();
 
@@ -10,13 +17,11 @@ let howOldIAm = {
 
     // define as a date
     let age = new Date(diff);
-    
+
     // Show only years diff
     var howoldyouare = Math.abs(age.getUTCFullYear() - 1970);
 
-    if( document.body.contains( document.getElementById('hOIA') ) ) {
-      return document.getElementById('hOIA').innerHTML = howoldyouare;
-    }
+    return (document.getElementById('howoldyouare').innerHTML = howoldyouare);
   },
 };
 
