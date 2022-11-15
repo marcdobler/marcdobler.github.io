@@ -25,6 +25,10 @@ body {
   overflow-wrap: break-word;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}
+
 main {
   flex-grow: 1;
 }
@@ -41,7 +45,8 @@ main {
 }
 
 .tmpl-post,
-.tmpl-page {
+.tmpl-page,
+.tmpl-product {
   > header {
     position: absolute;
     z-index: 9;

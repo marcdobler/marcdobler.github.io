@@ -4,25 +4,25 @@ templateClass: tmpl-post
 type: post
 ---
 
-<article>
+<article class="post">
   <header class="color {{ color }}">
 
-    <img src="{{ site.base }}/assets/images/corals/{{ image }}" alt="{{ title }}" title="{{ title }}"/>
-
-    <h1 class="color {{ color }}">{{ title }}</h1>
+    {% if image %}
+      <img src="{{ site.base }}/assets/images/corals/{{ image }}" alt="{{ genus }} {{ species }}" title="{{ genus }} {{ species }}"/>
+    {% else %}
+      <img src="{{ site.base }}/assets/images/corals/{{ genus | lower }}-{{ species | lower}}.jpg" alt="{{ genus }} {{ species }}" title="{{ genus }} {{ species }}"/>
+    {% endif %}
+    <h1 class="color {{ color }}">{{ genus }} {{ species }}</h1>
     
     {% include "partials/card-alive.njk" %}
-
+    {% include "partials/waves.njk" %}
   </header>
   <main>
     {{ content | safe }}
   </main>
   <footer>
-    {% include "partials/section-postmeta.njk" %}
-  </footer>
-</article>
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+    {%- set nextPost = collections.corals | getNextCollectionItem(page) %}
+{%- set previousPost = collections.corals | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}
   <ul>
     {%- if nextPost %}
@@ -33,4 +33,11 @@ type: post
     {% endif %}
   </ul>
 {%- endif %}
-{% include "partials/section-subscribe.njk" %}
+
+
+    {% include "partials/section-postmeta.njk" %}
+
+    {% include "partials/section-subscribe.njk" %}
+  </footer>
+</article>
+

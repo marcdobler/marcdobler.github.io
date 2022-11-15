@@ -1,0 +1,13 @@
+<section class="section">
+{% set maxPosts = collections.foods.length | min(6) %}
+<h2>{% if maxPosts == 1 %}Foods.{% else %}Foods.{% endif %}</h2>
+
+{% set postslist = collections.foods | head(-6) %}
+{% set postslistCounter = collections.foods | length %}
+{% set collectionClass = 'productList' %}
+{% set collectionLink = '/foods/' %}
+{% set collectionReadMore = 'show' %}
+{% set collectionReadMoreTitle = 'View all corals foods' %}
+{% set collectionReadMoreText = 'Feed, obsessive corals disorder' %}
+{% include "productslist.njk" %}
+</section>

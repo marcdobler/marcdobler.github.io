@@ -1,25 +1,56 @@
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$base-font-family: 'Open Sans', sans-serif !default; 
+$heading-font-family: 'Signika', sans-serif !default; 
+
 $code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
+$heading-1: 9;
+$heading-2: $heading-1 - 1.333*5;
+$heading-3: $heading-2 - 1.333*4;
+$heading-4: $heading-3 - 1.333*3;
+$heading-5: $heading-4 - 1.333*2;
+$heading-6: $heading-5 - 1.333*1;
+
 $small-font-size:  $base-font-size * 0.875 !default;
+
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     1em !default;
 
 $table-text-align: left !default;
 
+$columns: 12;
+
 // Width of the content area
 $content-width:    100vw !default;
 $content-main:     70em;
 $radius:           3px;
 
-$on-mobile:        400px !default;
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
 
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
+$on-extra-small: 600px !default;
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+$on-small: 600px !default;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+$on-medium: 768px !default;
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+$on-large: 992px !default;
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+$on-extra-large: 120px !default;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
 
 $animation-duration: 250ms;
 $animation-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); 
@@ -44,3 +75,5 @@ $animation-timing: all $animation-duration $animation-function;
 @mixin relative-font-size($ratio) {
   font-size: #{$ratio}rem;
 }
+
+

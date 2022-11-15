@@ -1,9 +1,10 @@
 ---
 layout: product
-title: "Acropora Spathulata"
+title: Nannochloropsis Salina
+ref: as-1
 excerpt: 
 tags:
-    - Acroporidae
+    - Phytoplankton
 color: green
 author:
 - Marc Dobler

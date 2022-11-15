@@ -3,36 +3,10 @@ layout: shop
 permalink: /shop/
 ---
 
+{% include "partials/section-shop-frags.njk" %}
 
+{% include "partials/section-shop-foods.njk" %}
 
-<section class="section">
-<h2>Corals Frags.</h2>
-
-{% set postslist = collections.corals %}
-{% set collectionClass = 'shopList' %}
-{% set collectionLink = '/corals/' %}
-{% set collectionReadMore = 'hide' %}
-{% include "postslist.njk" %}
-</section>
-
-<section class="section">
-<h2>Foods.</h2>
-
-{% set postslist = collections.corals %}
-{% set collectionClass = 'shopList' %}
-{% set collectionLink = '/corals/' %}
-{% set collectionReadMore = 'hide' %}
-{% include "postslist.njk" %}
-</section>
-
-<section class="section">
-<h2>Hardware.</h2>
-
-{% set postslist = collections.corals %}
-{% set collectionClass = 'shopList' %}
-{% set collectionLink = '/corals/' %}
-{% set collectionReadMore = 'hide' %}
-{% include "postslist.njk" %}
-</section>
+{% include "partials/section-shop-hardware.njk" %}
 
 {% include "partials/section-subscribe.njk" %}

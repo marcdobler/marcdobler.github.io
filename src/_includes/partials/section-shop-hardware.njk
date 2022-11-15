@@ -1,0 +1,13 @@
+<section class="section">
+{% set maxPosts = collections.hardware.length | min(6) %}
+<h2>{% if maxPosts == 1 %}Hardware.{% else %}Hardware.{% endif %}</h2>
+
+{% set postslist = collections.hardware | head(-6) %}
+{% set postslistCounter = collections.hardware | length %}
+{% set collectionClass = 'productList' %}
+{% set collectionLink = '/hardware/' %}
+{% set collectionReadMore = 'show' %}
+{% set collectionReadMoreTitle = 'View all corals hardware' %}
+{% set collectionReadMoreText = 'For a better, obsessive corals disorder' %}
+{% include "productslist.njk" %}
+</section>

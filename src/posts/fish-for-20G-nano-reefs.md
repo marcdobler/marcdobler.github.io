@@ -198,19 +198,19 @@ Note Mandarins / Dragonets: There is a lot of controversy around the idea of kee
 
 Note: Keep in mind that the display area of all-in-one tanks holds less water than the total tank since some of that water is in the filtration area. When picking out fish, pick fish based on the display area volume, not the total tank volume.
  
-- Blue Neon Goby — <a href="/fish/elactinus-oceanops/" title="Read the card of this fish">Elactinus oceanops</a>
-- Blue and Gold Blenny — Ecsenius lividanalis
-- Broadstripe Goby — Elacatinus prochilos
-- Catalina Goby — Lythrypnus dalli [cold water]
-- Citron Goby — Gobiodon citrinus
-- Clown Gobies — Gobiodon okinawae **
-- Clown Goby, Black — Gobiodon strangulatus
-- Court Jester Goby — Koumansetta rainfordi  
-- Deepwater Candy Basslet — Liopropoma carmabi
-- Dracula Goby — Stonogobiops dracula
-- Gold Neon Eviota Goby — Eviota pellucida
-- Greenbanded Goby — Tigrigobius multifasciatus **
-- Longspine Cardinalfish — Zoramia leptacantha 
+- Blue Neon Goby — [Elactinus oceanops](/fish/elactinus-oceanops/ "Read the card of this fish")
+- Blue and Gold Blenny — [Ecsenius lividanalis](/fish/ecsenius-lividanalis/ "Read the card of this fish")
+- Broadstripe Goby — [Elacatinus prochilos]
+- Catalina Goby — [Lythrypnus dalli] [cold water]
+- Citron Goby — [Gobiodon citrinus]
+- Clown Gobies — [Gobiodon okinawae] **
+- Clown Goby, Black — [Gobiodon strangulatus]
+- Court Jester Goby — [Koumansetta rainfordi]  
+- Deepwater Candy Basslet — [Liopropoma carmabi]
+- Dracula Goby — [Stonogobiops dracula]
+- Gold Neon Eviota Goby — [Eviota pellucida]
+- Greenbanded Goby — [Tigrigobius multifasciatus] **
+- Longspine Cardinalfish — [Zoramia leptacantha] 
 - Orange Spotted Goby — Amblyeleotris guttata
 - Orange Stripe Goby — Amblyeleotris randalli
 - Panda Goby — Paragobius lacunicolus

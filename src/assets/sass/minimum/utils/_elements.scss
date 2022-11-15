@@ -1,9 +1,9 @@
 // Checkbox
 
 $size: 1em;
-$lenght: 2em;
+$lenght: 1em;
 
-$checkbox: $size * 2;
+$checkbox: $size * 1.75;
 $padding: 0.2em;
 $width: $lenght + $size * 1.5 + $padding;
 
@@ -18,7 +18,7 @@ input {
 
   &[type='checkbox'] {
     position: relative;
-    width: $checkbox;
+    width: $checkbox*2;
 
     // sliding element
     &::after {
@@ -110,18 +110,33 @@ img {
   border-style: none;
   object-fit: cover;
   min-width: 100%;
-  max-width: 100%;
-  min-height: -webkit-fill-available;
+  min-height: 100%;
 }
 
 a {
   text-decoration: none;
   color: var(--site-title-color);
-  font-weight: bold;
 }
 
 button, .btn {
   padding: $spacing-unit;
   width: 100%;
   margin-top: $spacing-unit;
+}
+
+.icon {
+  padding: calc($spacing-unit / 2);
+  &.big {
+    font-size: 48px;
+  }
+}
+
+.left {
+  float: left;
+  margin-right:auto;
+}
+
+.right {
+  float: right;
+  margin-left: auto;
 }

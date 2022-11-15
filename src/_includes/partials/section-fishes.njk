@@ -1,0 +1,14 @@
+<section class="section">
+    {% set maxPosts = collections.fishes.length | min(6) %}
+    <h2>{% if maxPosts == 1 %}Fish.{% else %}Fishes.{% endif %}</h2>
+
+    {% set postslist = collections.fishes | head(-6) %}
+    {% set postslistCounter = collections.fishes | length %}
+    {% set collectionClass = 'homeList' %}
+    {% set collectionId = 'fishes'%}
+    {% set collectionLink = '/fishes/' %}
+    {% set collectionReadMore = 'show' %}
+    {% set collectionReadMoreTitle = 'View all fishes' %}
+    {% set collectionReadMoreText = 'Only pico and nano reef aquarium fish are listed here' %}
+    {% include "postslist.njk" %}
+</section>

@@ -1,18 +1,24 @@
 ---
 layout: home
+
+title: Company name
+excerpt: Short Text about what the goals
+author: Marc Dobler
+image: home.jpg
+ogtype: website
+showPageNumbers: yes
+
 eleventyNavigation:
   key: Start here
   order: 1
 ---
-
+{% include "partials/section-projects.njk" %}
 
 {% include "partials/section-blog.njk" %}
 
-{% include "partials/section-projects.njk" %}
-
 {% include "partials/section-corals.njk" %}
 
-{% include "partials/section-fish.njk" %}
+{% include "partials/section-fishes.njk" %}
 
 {% include "partials/section-sayhi.njk" %}
 

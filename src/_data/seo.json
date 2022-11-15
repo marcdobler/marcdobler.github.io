@@ -1,0 +1,9 @@
+{
+  "title": "Marc Dobler",
+  "options": {
+    "titleDivider": "by",
+    "imageWithBaseUrl": true,
+    "twitterCardType": "summary_large_image",
+    "showPageNumbers": false
+  }
+}

@@ -1,9 +1,10 @@
 ---
 layout: coral
-title: "Micromussa Lordhowensis"
+genus: Micromussa
+species: Lordhowensis
 excerpt: 
 tags:
-    - Acanthastrea
+    - Lobophylliidae
 color: orange
 author:
 - Marc Dobler

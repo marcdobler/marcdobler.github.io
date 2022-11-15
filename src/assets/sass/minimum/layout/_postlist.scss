@@ -4,8 +4,9 @@
   list-style: none;
 
   > .card {
+    border-radius: $radius;
     &:nth-child(3n + 1) {
-      flex: 0 0 calc(100% - $spacing-unit);
+      grid-column: span 12 / span 12;
     }
   }
 }

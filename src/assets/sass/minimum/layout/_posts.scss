@@ -2,9 +2,8 @@
    * Posts
    */
 
-article,
-.tmpl-tags {
-  & > header {
+.post {
+  header {
     align-content: center;
     align-items: center;
     display: flex;
@@ -12,6 +11,7 @@ article,
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 0;
+    min-height: 750px;
     height: 85vh;
     padding: 0 $spacing-unit;
     position: relative;
@@ -24,6 +24,7 @@ article,
       @include relative-font-size(2.625);
       z-index: 0;
       padding: calc($spacing-unit/2);
+      text-align: center;
 
       @media screen and (max-width: $on-medium) {
         @include relative-font-size(2.025);
@@ -48,19 +49,27 @@ article,
       position: absolute;
       bottom: calc($spacing-unit * -3);
       right: 0;
+      z-index: 1;
     }
   }
 
-  & > main {
+  main {
     max-width: 75ch;
     padding: 0 $spacing-unit;
     margin: auto;
     & > p:first-child {
       margin-top: $spacing-unit * 2;
     }
+
+    a {
+      &::after {
+        content: 'link';
+        font-family: 'Material Symbols Outlined';
+      }
+    }
   }
 
-  & > footer {
+  footer {
     margin-top: $spacing-unit * 7;
     max-width: $content-main;
     margin-left: auto;

@@ -1,0 +1,13 @@
+<section class="section">
+{% set maxPosts = collections.frags.length | min(6) %}
+<h2>{% if maxPosts == 1 %}Frag.{% else %}Frags.{% endif %}</h2>
+
+{% set postslist = collections.frags | head(-6) %}
+{% set postslistCounter = collections.frags | length %}
+{% set collectionClass = 'productList' %}
+{% set collectionLink = '/frags/' %}
+{% set collectionReadMore = 'show' %}
+{% set collectionReadMoreTitle = 'View all corals frags' %}
+{% set collectionReadMoreText = 'For a better, obsessive corals disorder' %}
+{% include "productslist.njk" %}
+</section>

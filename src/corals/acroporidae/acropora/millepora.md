@@ -1,6 +1,7 @@
 ---
 layout: coral
-title: "Acropora Millepora"
+genus: Acropora
+species: Millepora
 excerpt: 
 tags:
     - Acroporidae

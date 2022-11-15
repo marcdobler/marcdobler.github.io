@@ -1,36 +1,35 @@
-<div class="color black customer-action padding">
-    <input id="cart-toggle" type="checkbox">
-    <div class="actions grid">
+<div class="color black customer-action padding grid">
+    <input class="sr-text" id="cart-toggle" type="checkbox">
+    <div class="col-12 actions grid">
         <label for="cart-toggle" class="material-symbols-outlined col-1">
             close
         </label>
-        <span items="5" class="material-symbols-outlined cart align-right">
+        <span items="5" class="material-symbols-outlined col-10 cart">
             shopping_bag
         </span>
         <span class="material-symbols-outlined col-1">
             account_circle
         </span>
     </div>
-    <span>My cart</span>
-    <ul class="items no-style grid">
-        <li class="col-12">
-            <div class="grid">
-                <div class="col-2">
-                    <img class="image" src="/assets/images/corals/acropora-millepora.jpg" alt="Item" width="64" height="64"/>
-                </div>
-                <div class="col-8">
-                    <div class="name strong">Name Item</div>
-                    <div class="smaller col-2">
-                        <span class="variation size" alt="Medium">
-                            M
-                        <span>
-                    </div>
-                </div>
-                <div class="total-price smaller col-2">
-                    <span class="cureency align-right">CHF <span class="amount">125</span></span>
+    <span class="col-12 title">My cart</span>
+    <ul class="col-12 items no-style">
+        <li class="grid item">
+            <div class="col-2">
+                <img class="image" src="/assets/images/corals/acropora-millepora.jpg" alt="Item" width="64" height="64"/>
+            </div>
+            <div class="col-8 grid">
+                <div class="col-12 name strong">Name Item</div>
+                <div class="smaller col-12">
+                    <span class="variation size" alt="Medium">
+                        M
+                    <span>
                 </div>
             </div>
-            <form action="" class="item-action grid">
+            <div class="total-price smaller col-2">
+                <span class="cureency align-right">CHF <span class="amount">125</span></span>
+            </div>
+            
+            <form action="" class="item-action col-12 grid">
                 <div class="col-1">
                     <button class="delete">
                         <span class="icon material-symbols-outlined">delete</span>
@@ -40,11 +39,48 @@
                     <input type="number" min="1" max="10" value="5" class=""/>
                 </div>
                 <div class="col-2">
-                    <div class="align-right">
-                        <button>
+                    <div class="align-right grid">
+                        <button class="col-6">
                             <span class="icon material-symbols-outlined">add</span>
                         </button>
-                        <button>
+                        <button class="col-6">
+                            <span class="icon material-symbols-outlined">remove</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </li>
+        <li class="grid">
+            <div class="col-2">
+                <img class="image" src="/assets/images/corals/acropora-millepora.jpg" alt="Item" width="64" height="64"/>
+            </div>
+            <div class="col-8 grid">
+                <div class="col-12 name strong">Name Item</div>
+                <div class="smaller col-12">
+                    <span class="variation size" alt="Medium">
+                        M
+                    <span>
+                </div>
+            </div>
+            <div class="total-price smaller col-2">
+                <span class="cureency align-right">CHF <span class="amount">125</span></span>
+            </div>
+            
+            <form action="" class="item-action col-12 grid">
+                <div class="col-1">
+                    <button class="delete">
+                        <span class="icon material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <div class="col-9">   
+                    <input type="number" min="1" max="10" value="5" class=""/>
+                </div>
+                <div class="col-2">
+                    <div class="align-right grid">
+                        <button class="col-6">
+                            <span class="icon material-symbols-outlined">add</span>
+                        </button>
+                        <button class="col-6">
                             <span class="icon material-symbols-outlined">remove</span>
                         </button>
                     </div>
@@ -52,7 +88,7 @@
             </form>
         </li>
     </ul>
-    <ul class="totals no-style smaller grid">
+    <ul class="col-12 totals no-style smaller">
         <li class="col-12">
             <span>Subtotals</span>
             <span class="currency align-right">CHF <span class="amount">285<span></span> 
@@ -67,7 +103,7 @@
             <span>Total</span> <span class="currency align-right">CHF <span class="amount">285<span>
         </li><span> 
     </ul>
-    <form action="/checkout/">
+    <form class="col-12" action="/checkout/">
         <button type="submit" class="btn wide color blue padding">Proceed to checkout</button>
     </form>
 </div>

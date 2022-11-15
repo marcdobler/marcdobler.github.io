@@ -1,0 +1,26 @@
+---
+layout: home
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+
+<ol>
+{% set taglist = collections[ tag ] %}
+
+{% for post in taglist | reverse %}
+    <li>
+        <a href="{{ post.url }}">
+            {% if post.data.genus %}
+                {{ post.data.genus }} {{ post.data.species }}
+            {% else %}
+                {{ post.data.title }}
+            {% endif %}
+        </a> 
+    </li>
+{% endfor %}
+
+</ol>

@@ -35,6 +35,7 @@ nav {
       width: 3em;
       height: calc($spacing-unit/3);
       transition: $animation-timing;
+      border-radius: calc($spacing-unit/6);
     }
 
     &:hover {

@@ -3,8 +3,8 @@
 @import 'layout/cart';
 @import 'layout/card';
 @import 'layout/postlist';
+@import 'layout/waves';
 
-@import 'utils/grid';
 @import 'utils/prism-base16-monokai.dark';
 @import 'utils/elements';
 /**
@@ -28,7 +28,7 @@ body > header {
   }
 }
 
-@media screen and (max-width: $on-mobile) {
+@media screen and (max-width: $on-small) {
   body > header {
     picture,
     img {
@@ -81,7 +81,8 @@ body > footer {
 .tmpl-home,
 .tmpl-post,
 .tmpl-page,
-.tmpl-tags {
+.tmpl-tags,
+.tmpl-shop {
   .section {
     position: relative;
     margin: auto;
@@ -98,7 +99,7 @@ body > footer {
     h2 {
       font-weight: bold;
       position: absolute;
-      margin-top: -1.1em;
+      margin-top: -1em;
       margin-left: 0px;
       margin-right: 0px;
       margin-bottom: 0px;
@@ -118,17 +119,17 @@ body > footer {
     }
 
     h3 {
-      @include relative-font-size(2.625);
+      @include relative-font-size($heading-2);
       letter-spacing: -1px;
       line-height: 1.15;
       font-weight: bold;
 
       @media screen and (max-width: $on-large) {
-        @include relative-font-size(1.8);
+        @include relative-font-size(1);
       }
     }
 
-    @media screen and (max-width: $on-mobile) {
+    @media screen and (max-width: $on-small) {
       h1 {
         @include relative-font-size(3.5);
       }
@@ -155,6 +156,10 @@ body > footer {
 
 .margin {
   margin: calc($spacing-unit * 2);
+}
+
+.radius {
+  border-radius: 5px;
 }
 
 .page-content {
@@ -256,39 +261,3 @@ body > footer {
     }
   }
 }
-
-$default-grid-columns: 12;
-$default-grid-gutter: $spacing-unit;
-
-.grid {
-  @include grid($gutter: $default-grid-gutter, $flex-wrap: wrap);
-
-  @for $i from 1 through $default-grid-columns {
-    > .col-#{$i} {
-      @include grid-col(
-        $col: $i,
-        $grid-columns: $default-grid-columns,
-        $gutter: $default-grid-gutter
-      );
-
-      @media screen and (max-width: $on-medium) {
-        flex: 0 0 calc(100% - $spacing-unit);
-      }  
-    }
-  }
-}
-
-.grid.no-margin {
-  @include grid($gutter: 0px, $flex-wrap: wrap);
-
-  @for $i from 1 through $default-grid-columns {
-    > .col-#{$i} {
-      @include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: 0em);
-      @media screen and (max-width: $on-medium) {
-        flex: 0 0 100%;
-      }  
-    }
-  }
-}
-
-
