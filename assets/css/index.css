@@ -2292,7 +2292,7 @@ body > footer {
   .tmpl-page .section h3,
   .tmpl-tags .section h3,
   .tmpl-shop .section h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2320,7 +2320,7 @@ body > footer {
   .tmpl-shop .section h2 {
     font-weight: bold;
     margin-left: 2.5px;
-    margin-top: -11px;
+    margin-top: -62px;
     position: absolute;
     font-size: 3.5rem;
   }
