@@ -87,13 +87,9 @@ body > footer {
     position: relative;
     margin: auto;
     display: flex;
-    padding-top: $spacing-unit * 15;
+    padding-top: $spacing-unit * 20;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-
-    &:first-child {
-      padding-top: $spacing-unit * 7;
-    }
 
     h1,
     h2 {
@@ -151,7 +147,7 @@ body > footer {
 }
 
 .padding {
-  padding: calc($spacing-unit * 2);
+  padding: calc($spacing-unit * 6);
 }
 
 .margin {

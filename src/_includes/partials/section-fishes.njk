@@ -1,6 +1,6 @@
 <section class="section">
     {% set maxPosts = collections.fishes.length | min(6) %}
-    <h2>{% if maxPosts == 1 %}Fish.{% else %}Fishes.{% endif %}</h2>
+    <h2>{% if maxPosts == 1 %}Fish.{% else %}Fish.{% endif %}</h2>
 
     {% set postslist = collections.fishes | head(-6) %}
     {% set postslistCounter = collections.fishes | length %}

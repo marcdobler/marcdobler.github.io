@@ -6,9 +6,7 @@ html {
   font-size: $base-font-size;
 }
 
-/**
- * Basic styling
- */
+/* Basic styling */
 body {
   scroll-behavior: smooth;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
@@ -33,24 +31,20 @@ main {
   flex-grow: 1;
 }
 
-.tmpl-home {
-  > main {
-    max-width: 70em;
-    margin: auto;
+.tmpl-home > main {
+  max-width: 70em;
+  margin: auto;
 
-    @media screen and (max-width: $on-medium) {
-      max-width: 100%;
-    }
+  @media screen and (max-width: $on-medium) {
+    max-width: 100%;
   }
 }
 
-.tmpl-post,
-.tmpl-page,
-.tmpl-product {
-  > header {
-    position: absolute;
-    z-index: 9;
-  }
+.tmpl-post > header,
+.tmpl-page > header,
+.tmpl-product > header {
+  position: absolute;
+  z-index: 9;
 }
 
 .sr-text {
@@ -65,8 +59,7 @@ main {
   @include relative-font-size(0.5);
 }
 
-.btn,
-button {
+.btn, button {
   border: none;
   font-size: smaller;
   font-weight: bold;
@@ -81,14 +74,12 @@ button {
 
   &:hover {
     background-color: var(--green);
-    color: coloraria(#92d9cb);
+    color: white;
   }
 }
 
-.icon {
-  &.delete {
-    color: var(--redstraight);
-  }
+.icon.delete {
+  color: var(--redstraight);
 }
 
 .no-style {
@@ -120,16 +111,10 @@ button {
   float: left;
 }
 
-// Separator definition
-// size opacity margintop marginright marginbottom marginleft
-
+/* Separator definition */
 $separatorSizes: (
-  'separator-thin': (
-    1px 0.5 0
-  ),
-  'separator-large': (
-    2px 1 -2.5em
-  ),
+  'separator-thin': (1px, 0.5, 0),
+  'separator-large': (2px, 1, -2.5em),
 );
 
 @each $className, $option in $separatorSizes {
@@ -137,12 +122,12 @@ $separatorSizes: (
     background-color: white;
     content: '';
     display: block;
-    height: #{nth($option, 1)};
+    height: nth($option, 1);
     margin-bottom: 1em;
-    margin-left: #{nth($option, 3)};
-    margin-right: #{nth($option, 3)};
+    margin-left: nth($option, 3);
+    margin-right: nth($option, 3);
     margin-top: 1em;
-    opacity: #{nth($option, 2)};
+    opacity: nth($option, 2);
     width: inherit;
   }
 }

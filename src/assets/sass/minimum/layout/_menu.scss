@@ -1,3 +1,9 @@
+$animation-timing: 0.3s;
+$spacing-unit: 10px;
+$text-color: #000000;
+$base-line-height: 1.5;
+$on-medium: 768px;
+
 nav {
   display: inline-block;
   min-width: 30px;
@@ -6,8 +12,7 @@ nav {
   z-index: 9999;
 
   label {
-    height: 4em;
-    width: 5em;
+    height: 3em;
     transition: $animation-timing;
     display: flex;
     align-items: center;
@@ -28,14 +33,13 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
     cursor: pointer;
-    
-    
+
     span {
       display: block;
       width: 3em;
-      height: calc($spacing-unit/3);
+      height: 4px;
       transition: $animation-timing;
-      border-radius: calc($spacing-unit/6);
+      border-radius: calc($spacing-unit / 6);
     }
 
     &:hover {
@@ -74,10 +78,10 @@ nav {
       a {
         text-align: center;
         color: white;
-        @include relative-font-size(2);
+        font-size: 2rem;
         font-weight: bold;
         display: block;
-        padding: calc($spacing-unit/2) $spacing-unit;
+        padding: calc($spacing-unit / 2) $spacing-unit;
         text-decoration: none;
 
         &:hover {
@@ -137,12 +141,11 @@ nav {
   }
 
   .page-link {
-    color: var(--text-color);
+    color: $text-color;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
 
-    // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 0;
     }

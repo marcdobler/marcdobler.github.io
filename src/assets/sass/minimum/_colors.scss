@@ -6,23 +6,22 @@ $themeColours: (
   'bluegrey': #98bec8,
   'bluelight': #d1e1e0,
   'brown': #965630,
-  'darkgray': #333,
-  'gray': #c0c0c0,
-  'green': #92d9cb,
+  'darkgray': #333333,
+  'gray': #808080,
+  'green': #3a6351, // adjusted
   'greylight': #9ba5b5,
-  'lightgray': #fefbf5,
-  'navy': #17050f,
+  'lightgray': #f3f3f3, // adjusted
+  'navy': #0f1a24, // adjusted
   'orange': #bf3100,
   'pink': #e7617c,
-  'purple': #571af9,
-  'teal': #224a54,
-  'violet': #9e20ff,
-  'white': #fff,
+  'purple': #7d63d0, // adjusted
+  'teal': #247b8a, // adjusted
+  'violet': #a246d6, // adjusted
+  'white': #ffffff, // adjusted
   'yellow': #a38f10,
-  'redstraight': #f00,
+  'redstraight': #ff0000,
 );
 
-/* Colors */
 :root {
   @each $themeColour, $color in $themeColours {
     --#{$themeColour}: #{$color};
@@ -33,68 +32,38 @@ $themeColours: (
 }
 
 @function coloraria($bg) {
-  @if (lightness($bg) > 50) {
-    @return var(--site-title-color);
-  } @else {
-    @return var(--white);
-  }
+  @return if(lightness($bg) > 50, var(--site-title-color), var(--white));
 }
 
 @each $themeColour, $color in $themeColours {
-  .color {
-    &.#{$themeColour} {
-      ::selection {
-        background: complement($color); /* WebKit/Blink Browsers */
-        color: coloraria($color);
-      }
-      ::-moz-selection {
-        background: complement($color); /* Gecko Browsers */
-        color: coloraria($color);
-      }
-
-      .invert {
-        background: complement($color); /* Gecko Browsers */
-        color: coloraria($color);
-      }
-
-      .invert * {
-        background: complement($color); /* Gecko Browsers */
-        color: coloraria($color);
-      }
-
-      .invert *::selection {
-        background-color: var(--#{$themeColour});
-        color: coloraria($color);
-      }
-
-      background-color: var(--#{$themeColour});
+  .color.#{$themeColour} {
+    ::selection,
+    ::-moz-selection {
+      background: complement($color);
       color: coloraria($color);
+    }
 
-      *:after {
-        background-color: coloraria($color);
-      }
+    background-color: var(--#{$themeColour});
+    color: coloraria($color);
 
-      /* exception */
+    .no-color {
+      background-color: transparent;
+    }
 
-      .no-color {
-        background-color: transparent;
-      }
-
-      .link:after {
-        background-color: darken($color, 25%);
-      }
+    .link:after {
+      background-color: darken($color, 25%);
     }
   }
-}
 
-@each $themeColour, $color in $themeColours {
-  .menu-icon {
-    .color {
-      &.#{$themeColour} {
-        background-color: coloraria($color);
-      }
-    }
+  .color.#{$themeColour}.invert,
+  .color.#{$themeColour}.invert *,
+  .color.#{$themeColour}.invert *::selection {
+    background: complement($color);
+    color: coloraria($color);
+  }
+
+  .title.color.#{$themeColour}::after,
+  .menu-icon .color.#{$themeColour} {
+    background-color: coloraria($color);
   }
 }
-
-

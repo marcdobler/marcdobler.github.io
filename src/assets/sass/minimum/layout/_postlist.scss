@@ -4,7 +4,7 @@
   list-style: none;
 
   > .card {
-    border-radius: $radius;
+    
     &:nth-child(3n + 1) {
       grid-column: span 12 / span 12;
     }

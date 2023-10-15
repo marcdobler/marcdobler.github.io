@@ -8,23 +8,23 @@ $padding: 0.2em;
 $width: $lenght + $size * 1.5 + $padding;
 
 input {
-&[type='email'] {
-  border: none;
-  padding: $spacing-unit;
-  width: -webkit-fill-available;
-  margin-bottom: $spacing-unit;
-  border-radius: $radius;
-}
+  &[type='email'] {
+    border: none;
+    padding: $spacing-unit * 2;
+    width: -webkit-fill-available;
+    margin-bottom: $spacing-unit;
+    border-radius: $radius;
+  }
 
   &[type='checkbox'] {
     position: relative;
-    width: $checkbox*2;
+    width: $checkbox * 2;
 
     // sliding element
     &::after {
       cursor: pointer;
       content: '';
-      background-color: red;
+      background-color: lightgray;
       display: block;
       height: $size;
       width: $size;
@@ -32,21 +32,16 @@ input {
       position: absolute;
       left: $padding;
       top: calc($padding / -2);
-      transform: rotateY(0deg);
-      animation-name: expand;
-      animation-fill-mode: forwards;
-      animation-timing-function: $animation-function;
-      animation-duration: $animation-duration;
+      transform: translateX(0);
+      transition: transform $animation-duration $animation-function;
     }
 
     &:checked::after {
-      left: calc($size / 2) + ($padding * 2) + $lenght;
+      left: calc($size / 2) + ($padding * 2) ;
       opacity: 1;
-      transform: rotateY(0deg);
-      animation-name: expand;
-      animation-fill-mode: forwards;
-      animation-timing-function: $animation-function;
-      animation-duration: $animation-duration;
+      transform: translateX(100%);
+      background-color: darkgray;
+      transition: transform $animation-duration $animation-function;
     }
 
     // sliding container
@@ -118,10 +113,12 @@ a {
   color: var(--site-title-color);
 }
 
-button, .btn {
-  padding: $spacing-unit;
+button,
+.btn {
+  padding: $spacing-unit * 2;
   width: 100%;
   margin-top: $spacing-unit;
+  border-radius: 6px;
 }
 
 .icon {
@@ -133,7 +130,7 @@ button, .btn {
 
 .left {
   float: left;
-  margin-right:auto;
+  margin-right: auto;
 }
 
 .right {

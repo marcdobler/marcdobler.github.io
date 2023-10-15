@@ -23,7 +23,7 @@
     h1 {
       @include relative-font-size(2.625);
       z-index: 0;
-      padding: calc($spacing-unit/2);
+      padding: $spacing-unit * 2;
       text-align: center;
 
       @media screen and (max-width: $on-medium) {
@@ -47,9 +47,22 @@
 
     .info {
       position: absolute;
-      bottom: calc($spacing-unit * -3);
+      bottom: calc($spacing-unit * -8);
       right: 0;
       z-index: 1;
+
+      li {
+        width: 250px; /* Adjust the width according to your design */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: bold;
+        padding-bottom: 40px;
+      }
+
+      li:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
