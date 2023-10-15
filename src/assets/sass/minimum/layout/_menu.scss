@@ -10,6 +10,7 @@ nav {
   max-width: fit-content;
   justify-self: left;
   z-index: 9999;
+  margin-left: 40px;
 
   label {
     height: 3em;
@@ -21,7 +22,7 @@ nav {
     .round {
       position: fixed;
       top: 1.2em;
-      left: -0.3em;
+      left: 1.5em;
       transform: scale(0);
       transition: $animation-timing;
     }
