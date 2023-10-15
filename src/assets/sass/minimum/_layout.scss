@@ -121,7 +121,7 @@ body > footer {
       font-weight: bold;
 
       @media screen and (max-width: $on-large) {
-        @include relative-font-size(1);
+        @include relative-font-size(1.5);
       }
     }
 
@@ -138,7 +138,7 @@ body > footer {
       h2 {
         font-weight: bold;
         margin-left: calc($spacing-unit / 4);
-        margin-top: calc($spacing-unit * -1.1);
+        margin-top: -62px;
         position: absolute;
         font-size: 3.5rem;
       }
