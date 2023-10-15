@@ -47,7 +47,7 @@
 
     .info {
       position: absolute;
-      bottom: calc($spacing-unit * -8);
+      bottom: calc($spacing-unit * -11);
       right: 0;
       z-index: 1;
 
@@ -68,10 +68,10 @@
 
   main {
     max-width: 75ch;
-    padding: 0 $spacing-unit;
+    padding: $spacing-unit * 9 $spacing-unit $spacing-unit * 6 $spacing-unit;
     margin: auto;
     & > p:first-child {
-      margin-top: $spacing-unit * 2;
+      margin-top: $spacing-unit * 4;
     }
 
     a {
