@@ -1,8 +1,10 @@
 <ul reversed class="grid no-style {{ collectionClass }}">
   {% for post in postslist | reverse %}
-    <li class="col-6 card{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ post.data.color }}{% endif %}">
+
+  {% set colors = post.data.color.split(',') %}
+    <li class="col-6 card{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
       <a href="{{ post.url | url }}" class="link">
-        <h3 class="margin title {% if post.color == url %}color {{ post.data.color }}{% endif %} ">
+        <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
           {% if post.data.title %}
             {{ post.data.title }}
           {% elseif post.data.genus %}
@@ -12,9 +14,9 @@
           {% endif %}
         </h3>
         {% if post.data.excerpt %}
-          <div class="margin excerpt {% if post.color == url %}color {{ post.data.color }}{% endif %}">{{ post.data.excerpt }}</div>
+          <div class="margin excerpt {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}">{{ post.data.excerpt }}</div>
         {% endif %}
-        <time class="date {% if post.color == url %}color {{ post.data.color }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <time class="date {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </a>
     </li>
   {% endfor %}
