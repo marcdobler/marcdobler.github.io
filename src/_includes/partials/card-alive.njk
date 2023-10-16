@@ -1,6 +1,40 @@
 <ul class="info no-style invert padding margin radius color {{ color.toLowerCase() }} invert">
     <li>Temperature: {{ parameter.temp }}</li>
     <li>pH: {{ parameter.ph }}</li>
+    {% if parameter.size %}
     <li>Size: {{ parameter.size }}</li>
+    {% endif %}
+    {% if parameter.geography %}
     <li>Geography: {{ parameter.geography }}</li>
+    {% endif %}
+    {% if parameter.diet %}
+    <li>Diet: {{ parameter.diet }}</li>
+    {% endif %}
+    {% if parameter.temperament %}
+    <li>Temperament: {{ parameter.temperament }}</li>
+    {% endif %}
+    {% if parameter.color %}
+    <li>Color: {{ parameter.color }}</li>
+    {% endif %}
+    {% if parameter.status %}
+    <li>Status: {{ parameter.status }}</li>
+    {% endif %}
+    {% if parameter.level %}
+    <li>Level: {{ parameter.level }}</li>
+    {% endif %}
+    {% if parameter.volume %}
+    <li>Volume: {{ parameter.volume }}</li>
+    {% endif %}
+    {% if parameter.calcium %}
+    <li>Calcium: {{ parameter.calcium }}</li>
+    {% endif %}
+    {% if parameter.salinity %}
+    <li>Salinity: {{ parameter.salinity }}</li>
+    {% endif %}
+    {% if parameter.kh %}
+    <li>Alkalinity: {{ parameter.kh }}</li>
+    {% endif %}
+    {% if parameter.mg %}
+    <li>Magnesium: {{ parameter.mg }}</li>
+    {% endif %}
 </ul>

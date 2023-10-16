@@ -2,33 +2,78 @@
 layout: coral
 genus: Micromussa
 species: Lordhowensis
-excerpt: 
+excerpt: A comprehensive guide to understanding Micromussa Lordhowensis, its habitat, care requirements, and conservation status.
 tags:
     - Lobophylliidae
 color: orange
 author:
 - Marc Dobler
-meta: "Acropora tenuis is a species of acroporid coral found in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea and the oceanic west and central Pacific Ocean. It occurs in tropical shallow reefs on upper slopes and in subtidal habitats, at depths of 8 to 20 metres"
+meta: "A species of large-polyp stony coral highly sought after in the marine aquarium trade for its vibrant colors and stunning appearance."
 image: micromussa-lordhowensis.webp
 date: 1846-10-28
 
 parameter:
-    geography: Eastern Central Pacific - Costa Rica, Panama
-    diet: Herbivore
-    temp: 23.2°C - 30.3°C
-    ph: 8.0 - 8.4
-    size: 3½"
-    temperament: Peacefull
-    color: Black, Tan, White
-    status: LC
-    level: Easy
-    volume: 10G
+    geography: Indo-Pacific region
+    diet: Microplankton, zooplankton, finely chopped seafood
+    temp: 75°F - 80°F (24°C - 27°C)
+    pH: 8.1 - 8.4
+    size: Large polyp
+    temperament: Generally peaceful
+    color: Red, green, blue, purple, orange, and combinations
+    status: Species of concern
+    level: Intermediate
+    volume: Moderate
+    calcium: 400 - 450 ppm
+    salinity: 1.023 - 1.025
+    kh: 8 - 12 dKH
+    mg: 1250 - 1350 ppm
 ---
 
-## Description
+# Micromussa Lordhowensis
 
- occurs in corymbose colonies containing orderly-spaced branchlets. It has tube-shaped axial corallites and radial corallites have flaring lips. It is blue, cream, yellow or green in colour, and is similar to Acropora vermiculata.
+Micromussa Lordhowensis, commonly known as the "Acan Lord" or "Micromussa Lord," is a species of large-polyp stony coral (LPS) that belongs to the family Mussidae. This species is highly sought after in the marine aquarium trade for its vibrant colors and stunning appearance.
 
-## Distribution
+## Appearance
 
-It is classed as a near threatened species on the IUCN Red List and it is believed that its population is decreasing; the species is listed under Appendix II of CITES. Figures of its population are unknown, but is likely to be threatened by the global reduction of coral reefs, the increase of temperature causing coral bleaching, climate change, human activity, the crown-of-thorns starfish (Acanthaster planci) and disease.[1] It occurs in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea, and the oceanic western and central Pacific Ocean. It is found at depths of between 8 and 20 metres (26 and 66 ft) in tropical shallow reefs on upper slopes and in subtidal areas.
+Micromussa Lordhowensis corals typically exhibit the following characteristics:
+
+- **Polyps:** Large and fleshy, with a wide range of color variations including shades of red, green, blue, purple, orange, and combinations thereof.
+- **Morphology:** Corallites are prominent and can have a smooth or subtly textured surface. They often have distinct walls separating individual polyps.
+- **Tentacles:** Long, flowing tentacles, which can extend during nighttime or when the coral is feeding.
+
+## Habitat
+
+This species is native to the Indo-Pacific region, specifically found in the waters of Australia, including the Great Barrier Reef, as well as in various other regions across the Pacific Ocean.
+
+- **Water Conditions:** Micromussa Lordhowensis thrives in well-established reef aquariums with stable water parameters. They prefer moderate to high lighting and moderate water flow.
+- **Placement:** They are often placed in lower or middle parts of the aquarium, as they do not require extremely high light.
+
+## Feeding
+
+These corals are primarily photosynthetic, deriving much of their nutrition from the symbiotic zooxanthellae living within their tissues. However, they also benefit from supplemental feedings.
+
+- **Feeding Regimen:** Offer small meaty foods, such as microplankton, zooplankton, or finely chopped seafood, a few times a week to ensure adequate nutrition.
+
+## Care Requirements
+
+Maintaining a healthy environment for Micromussa Lordhowensis involves careful attention to water quality and lighting.
+
+- **Water Parameters:**
+  - Temperature: 75°F - 80°F (24°C - 27°C)
+  - Salinity: 1.023 - 1.025
+  - pH: 8.1 - 8.4
+  - Alkalinity: 8 - 12 dKH
+  - Calcium: 400 - 450 ppm
+  - Magnesium: 1250 - 1350 ppm
+
+- **Compatibility:** While generally peaceful, they should be given adequate space to prevent aggressive interactions with neighboring corals. Maintain a safe distance from other corals with extended sweeper tentacles.
+
+## Reproduction
+
+Micromussa Lordhowensis can reproduce both sexually and asexually. Sexual reproduction occurs through the release of eggs and sperm into the water column, where fertilization takes place. Asexual reproduction can occur through budding, where new polyps develop from the parent colony.
+
+## Conservation Status
+
+Due to the high demand for this species in the aquarium trade, populations of Micromussa Lordhowensis have experienced significant declines in the wild. As a result, they are listed as a species of concern, and sustainable collection practices are being encouraged to preserve wild populations.
+
+For more information about Micromussa Lordhowensis, consult reputable marine biology resources and trusted aquarium keeping guides.

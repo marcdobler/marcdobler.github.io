@@ -1,34 +1,79 @@
 ---
 layout: coral
-genus: Stylophora
-species: Pistillata
-excerpt: 
+genus: Pocillopora
+species: Damicornis
+excerpt: A comprehensive guide to understanding Pocillopora Damicornis corals, their habitat, care requirements, and conservation status.
 tags:
     - Pocilloporidae
-color: orange
+color: Various, often brown, green, or cream
 author:
-- Marc Dobler
-meta: "Acropora tenuis is a species of acroporid coral found in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea and the oceanic west and central Pacific Ocean. It occurs in tropical shallow reefs on upper slopes and in subtidal habitats, at depths of 8 to 20 metres"
-image: micromussa-lordhowensis.webp
-date: 1846-10-28
+- [Insert Author Name]
+meta: "A species of small, encrusting stony coral known for its rapid growth and adaptability, found in various marine habitats."
+image: pocillopora-damicornis.webp
+date: 1835-07-19
 
 parameter:
-    geography: Eastern Central Pacific - Costa Rica, Panama
-    diet: Herbivore
-    temp: 23.2°C - 30.3°C
-    ph: 8.0 - 8.4
-    size: 3½"
-    temperament: Peacefull
-    color: Black, Tan, White
-    status: LC
-    level: Easy
-    volume: 10G
+    geography: Found in various marine environments, especially in the Indo-Pacific region
+    diet: Microplankton, zooplankton, and dissolved organic matter
+    temp: 72°F - 80°F (22°C - 27°C)
+    pH: 8.0 - 8.4
+    size: Encrusting, small colonies
+    temperament: Peaceful
+    color: Various, often brown, green, or cream
+    status: Not endangered
+    level: Beginner to Intermediate
+    volume: Low to Moderate
+    calcium: 380 - 420 ppm
+    salinity: 1.024 - 1.026
+    kh: 7 - 11 dKH
+    mg: 1200 - 1350 ppm
 ---
 
-## Description
+# Pocillopora Damicornis
 
- occurs in corymbose colonies containing orderly-spaced branchlets. It has tube-shaped axial corallites and radial corallites have flaring lips. It is blue, cream, yellow or green in colour, and is similar to Acropora vermiculata.
+Pocillopora Damicornis is a species of small, encrusting stony coral known for its rapid growth and adaptability, found in various marine habitats. It is widely recognized for its hardy nature and intricate, encrusting growth forms.
 
-## Distribution
+## Appearance
 
-It is classed as a near threatened species on the IUCN Red List and it is believed that its population is decreasing; the species is listed under Appendix II of CITES. Figures of its population are unknown, but is likely to be threatened by the global reduction of coral reefs, the increase of temperature causing coral bleaching, climate change, human activity, the crown-of-thorns starfish (Acanthaster planci) and disease.[1] It occurs in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea, and the oceanic western and central Pacific Ocean. It is found at depths of between 8 and 20 metres (26 and 66 ft) in tropical shallow reefs on upper slopes and in subtidal areas.
+Pocillopora Damicornis corals are characterized by the following features:
+
+- **Growth Form:** Encrusting, with small, intricate structures and a distinctive encrusting pattern.
+- **Coloration:** Varied, commonly appearing in shades of brown, green, or cream.
+- **Polyps:** Small and retracted during the day, often extending during feeding and nighttime.
+
+## Habitat
+
+These corals are found in various marine environments, especially in the Indo-Pacific region, thriving in diverse conditions with moderate water flow and light.
+
+- **Water Conditions:** Pocillopora Damicornis prefers well-maintained reef aquariums with stable water parameters. They require moderate lighting and moderate water movement.
+- **Placement:** Ensure they have adequate space to expand their encrusting growth forms and access to moderate lighting for optimal health.
+
+## Feeding
+
+Pocillopora Damicornis primarily feeds on microplankton, zooplankton, and dissolved organic matter present in the water column.
+
+- **Feeding Regimen:** Offer small, particulate foods several times a week to supplement their nutritional requirements and promote healthy growth.
+
+## Care Requirements
+
+Maintaining stable water parameters is crucial for the well-being of Pocillopora Damicornis.
+
+- **Water Parameters:**
+  - Temperature: 72°F - 80°F (22°C - 27°C)
+  - Salinity: 1.024 - 1.026
+  - pH: 8.0 - 8.4
+  - Alkalinity: 7 - 11 dKH
+  - Calcium: 380 - 420 ppm
+  - Magnesium: 1200 - 1350 ppm
+
+- **Compatibility:** They are generally peaceful and can be placed near other small-polyp stony corals and peaceful fish species.
+
+## Reproduction
+
+Pocillopora Damicornis reproduces both sexually and asexually. Sexual reproduction involves the release of eggs and sperm into the water column, while asexual reproduction occurs through fragmentation and budding.
+
+## Conservation Status
+
+Currently, Pocillopora Damicornis is not considered endangered. However, it is susceptible to the impacts of environmental changes, emphasizing the importance of preserving natural marine ecosystems and practicing sustainable aquarium care.
+
+For comprehensive information on Pocillopora Damicornis, consult reputable marine biology resources and trusted aquarium keeping guides.

@@ -1,34 +1,79 @@
 ---
 layout: coral
-genus: Pocillopora
+genus: Acropora
 species: Damicornis
-excerpt: 
+excerpt: A comprehensive guide to understanding Acropora Damicornis corals, their habitat, care requirements, and conservation status.
 tags:
-    - Pocilloporidae
-color: purple
+    - Acroporidae
+color: Various, often brown, green, or cream
 author:
-- Marc Dobler
-meta: "Acropora tenuis is a species of acroporid coral found in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea and the oceanic west and central Pacific Ocean. It occurs in tropical shallow reefs on upper slopes and in subtidal habitats, at depths of 8 to 20 metres"
-image:
-date: 1846-10-28
+- [Insert Author Name]
+meta: "A species of staghorn coral known for its rapid growth and hardy nature, found in various marine habitats."
+image: acropora-damicornis.webp
+date: 1846-09-12
 
 parameter:
-    geography: Eastern Central Pacific - Costa Rica, Panama
-    diet: Herbivore
-    temp: 23.2°C - 30.3°C
-    ph: 8.0 - 8.4
-    size: 3½"
-    temperament: Peacefull
-    color: Black, Tan, White
-    status: LC
-    level: Easy
-    volume: 10G
+    geography: Found in various marine environments, especially in the Indo-Pacific region
+    diet: Microplankton, zooplankton, and dissolved organic matter
+    temp: 74°F - 82°F (23°C - 28°C)
+    pH: 8.0 - 8.5
+    size: Large colony-forming
+    temperament: Aggressive
+    color: Various, often brown, green, or cream
+    status: Not endangered
+    level: Intermediate to Advanced
+    volume: Moderate to High
+    calcium: 380 - 420 ppm
+    salinity: 1.025 - 1.027
+    kh: 7 - 11 dKH
+    mg: 1200 - 1350 ppm
 ---
 
-## Description
+# Acropora Damicornis
 
- occurs in corymbose colonies containing orderly-spaced branchlets. It has tube-shaped axial corallites and radial corallites have flaring lips. It is blue, cream, yellow or green in colour, and is similar to Acropora vermiculata.
+Acropora Damicornis is a species of staghorn coral known for its rapid growth and hardy nature, found in various marine habitats. It is widely recognized for its intricate, branching structures and vibrant coloration.
 
-## Distribution
+## Appearance
 
-It is classed as a near threatened species on the IUCN Red List and it is believed that its population is decreasing; the species is listed under Appendix II of CITES. Figures of its population are unknown, but is likely to be threatened by the global reduction of coral reefs, the increase of temperature causing coral bleaching, climate change, human activity, the crown-of-thorns starfish (Acanthaster planci) and disease.[1] It occurs in the Red Sea, the Gulf of Aden, the southwest, northwest and northern Indian Ocean, the Persian Gulf, the central Indo-Pacific, Australia, Southeast Asia, Japan, the East China Sea, and the oceanic western and central Pacific Ocean. It is found at depths of between 8 and 20 metres (26 and 66 ft) in tropical shallow reefs on upper slopes and in subtidal areas.
+Acropora Damicornis corals are characterized by the following features:
+
+- **Growth Form:** Staghorn-like branching, with intricate, delicate structures and vibrant colors.
+- **Coloration:** Varied, commonly appearing in shades of brown, green, or cream.
+- **Polyps:** Small and numerous, with extended tentacles during feeding.
+
+## Habitat
+
+These corals are found in various marine environments, especially in the Indo-Pacific region. They thrive in areas with moderate water flow and abundant sunlight.
+
+- **Water Conditions:** Acropora Damicornis thrives in well-maintained reef aquariums with stable water parameters. They require moderate to high lighting and moderate water movement.
+- **Placement:** Provide ample space for their expansive growth and ensure they have access to direct light for optimal health.
+
+## Feeding
+
+Acropora Damicornis primarily feeds on microplankton, zooplankton, and dissolved organic matter present in the water column.
+
+- **Feeding Regimen:** Offer small, particulate foods several times a week to supplement their nutritional requirements and promote healthy growth.
+
+## Care Requirements
+
+Maintaining stable water parameters is crucial for the well-being of Acropora Damicornis.
+
+- **Water Parameters:**
+  - Temperature: 74°F - 82°F (23°C - 28°C)
+  - Salinity: 1.025 - 1.027
+  - pH: 8.0 - 8.5
+  - Alkalinity: 7 - 11 dKH
+  - Calcium: 380 - 420 ppm
+  - Magnesium: 1200 - 1350 ppm
+
+- **Compatibility:** Due to their aggressive nature, keep them away from other corals to prevent overgrowth and damage to neighboring corals.
+
+## Reproduction
+
+Acropora Damicornis reproduces both sexually and asexually. Sexual reproduction involves the release of eggs and sperm into the water column, while asexual reproduction occurs through fragmentation and budding.
+
+## Conservation Status
+
+Currently, Acropora Damicornis is not considered endangered. However, it is susceptible to the impacts of environmental changes, highlighting the importance of preserving natural marine ecosystems and practicing sustainable aquarium care.
+
+For comprehensive information on Acropora Damicornis, consult reputable marine biology resources and trusted aquarium keeping guides.
