@@ -1,10 +1,11 @@
 {
   "site_name": "20G", 
   "title": "Marc Dobler",
-  "description": "Need a short description connect to the short descrition in say hi", 
+  "description": "Cultivate your reef tank passion with Reef Garbage, your trusted companion for premium-quality reef tank essentials and sustainable marine solutions.", 
   "language": "en_US",
   "languageHTML": "en",
   "titleDivider": "by",
+  "image": "assets/images/icon/android/android-launchericon-512-512.png",
   "ogtype": "website",
   "jsonfeed": {
     "path": "/feed/feed.json",

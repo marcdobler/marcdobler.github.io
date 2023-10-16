@@ -6,15 +6,15 @@
       {% else %}
         {{ metadata.title }} {{ metadata.titleDivider}} {{ metadata.slogan }}
       {% endif %}">
-<meta property="og:type" content="{{ metadata.ogtype }}" />
-<meta property="og:image" content="{{ metadata.image or image}}">
+<meta property="og:type" content="{{ metadata.ogtype | default(ogtype) }}" />
+<meta property="og:image" content="{{ metadata.image | default(image) }}">
 <meta property="og:url" content="{{ page.url | url }}">
 <meta name="twitter:card" content="summary_large_image">
 
 <!--  Non-Essential, But Recommended -->
-<meta property="og:description" content="{{ metadata.description or description }}">
+<meta property="og:description" content="{{ metadata.description | default(description) }}">
 <meta property="og:site_name" content="{{ metadata.site_name }}" />
-<meta name="twitter:image:alt" content="{{ metadata.imagealt or imagealt }}" />
+<meta name="twitter:image:alt" content="{{ metadata.imagealt | default(imagealt) }}" />
 <meta property="og:locale" content="{{ metadata.language }}" />
 
 <!--  Non-Essential, But Required for Analytics -->
