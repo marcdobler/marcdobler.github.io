@@ -1,270 +1,181 @@
 ---
 layout: posts
-title: "Fish for 20G Nano Reefs"
-excerpt: The purpose of this thread is to provide you with a comprehensive guide to fish for the nano reef aquarium.
+title: "Comprehensive Guide to Fish for 20G Nano Reefs: Best Practices, Compatibility, and Feeding Tips"
+excerpt: Discover the ultimate guide to selecting the perfect fish for your 20G Nano Reef aquarium. Learn about feeding tips, compatibility, and best practices for maintaining a thriving nano reef environment.
 tags:
   - Nano Reef
+  - 20G Nano Reef
+  - Nano Fish
 color: amber
 image: "/assets/images/ender-3-pro-desktop-1536x1152.jpg"
-image-desc: "My personnal desktop with 3d printer ender3 pro"
+image-desc: "Personal desktop setup with Ender3 Pro 3D printer"
 author:
 - Marc Dobler
-meta: "Fish guide for nano reef tank"
-date: 2021-11-30
+meta: "Comprehensive fish guide for your 20G Nano Reef tank"
+date: 2023-10-16
 ---
 
 ## Introduction
 
-The purpose of this thread is to provide you with a comprehensive guide to fish for the nano reef aquarium.
+Welcome to the comprehensive guide for selecting fish for your 20G Nano Reef aquarium. In this guide, we will explore the best practices and considerations for maintaining a healthy and vibrant aquatic environment.
 
-As for reefing, in general, is not an exact science the approach, I have taken to organizing this information is to provide a framework that includes my knowledge and experience with nano fish both as a hobbyist and professionally but also to encourage others to share their experience and knowledge for the benefit of everyone.
+### Your Responsibility as a Fish Owner
 
-### Your responsibility as a fish owner
+Caring for fish requires dedication and responsibility. It's crucial to ensure that their habitat closely mimics their natural environment. Neglecting these factors can be detrimental to the well-being of your fish.
 
-Fish are living things and deserve to be cared for as you would any other animal. Their life and well-being should not be valued by their price or just because they are easy to replace.
+### Essential Considerations
 
-As a fish owner, you should strive to give your fish the most natural life possible, respecting that you have removed this animal from its natural environment.
+- Tailor your aquarium setup to accommodate the specific needs of the fish you wish to keep.
+- Plan for the maximum size that the fish will grow to, and ensure the tank size is adequate.
+- Exercise caution when seeking advice from fish stores; ensure the advice aligns with the best practices for fish care.
+- Conduct thorough research before making any decisions related to fish selection and tank management.
 
-To be straightforward, if you aren't willing to put forth the effort, time, money, and do the necessary research to properly take care of and create the ideal environment for your fish, you need to find a different hobby.
+## How to Use This Guide
 
-### Words of wisdom
+### Sections Overview
 
-- Design your aquarium around what fish you would like to inhabit it with. Never expect a fish to just adapt to a less than adequate tank size.
-- Plan your aquarium around the maximum size the fish will get. Just because it is a baby does not give you an excuse to keep it in a smaller tank.
-- Regardless of what the fish guy at Walmart told you, fish do not only grow to the size of the tank you put them in.
-- Fish stores are businesses and looking to make money. Some great fish stores really do care about their customers, their customer's tanks, and give out great advice. Unfortunately, that is not as often the case as it should be. Exercise extreme caution when taking advice from fish stores until you know they are really interested in helping you have an amazing tank and not just taking your money. 
-- Research, research, and more research! Learn everything you can! 
+This guide is organized into several sections: feeding tips, fish compatibility, fish suggestions based on tank size, and fish suggestions based on specific groups. These sections are designed to provide comprehensive information to help you make informed decisions about your fish selection.
 
-## How to use this guide
+### Important Notes
 
-### Basic overview
+- The information provided is based on experience and research. Different opinions may exist, so further research is recommended.
+- This guide is meant to serve as a starting point. It's essential to conduct additional research based on your specific fish choice.
+- Be mindful of the bioload and adjust feeding quantities accordingly to maintain optimal water quality.
 
-There are four major sections in this guide: feeding, compatibility (coming soon), fish suggestions by tank size, and fish suggestions by a group. The feeding section allows you to get feeding suggestions based on diet type (carnivore, herbivore, omnivore, etc.) and more specifically by fish group, which includes more detailed info.
+### Contributing to the Guide
 
-The compatibility section will most likely be in the form of a table in which you will be able to see how the species interact with other fish species, corals, and invertebrates.
+Your experience and knowledge are valuable. Feel free to contribute additional insights or suggest any necessary changes to enhance the guide.
 
-In the fish, by tank size section a list of appropriate fish will follow each of the major divisions of tank sizes, as well, include a brief estimation of how many fish would be appropriate for that tank size. In the fish by group section, more detailed information will be provided about the major group each fish belongs to with some specific notes about each fish when necessary.
+## General Feeding Guidelines
 
-You will also see an estimated maximum size the fish will grow to and the ideal tank size. The ideal tank size will be a compromise based on what is socially practiced by many nano-reefers and what is often recommended by experts. Some of these ideal tank sizes may be controversial and if you believe so, you are welcome to bring that up in this thread so we can all as a community discuss it.
+### Feeding Categories
 
-### Things to keep in mind
+Feeding preferences can be categorized into five groups: carnivores, herbivores, omnivores, piscivores, and detritivores. It's crucial to understand these distinctions to meet the dietary requirements of your fish effectively.
 
-- Some of this will surely be my opinion or the opinion of others. If you feel strongly against something I have said, please pm me so we can discuss it and make changes if necessary.
-- This is just to get you started--ultimately you need to do more research on your fish choice before buying
-- Also, keep in mind I may list some things that are pushing it. I don’t know whether you are a beginner or expert if you know how to do a water change or not, so I will assume anyone who uses this guide has some common sense and basic understanding of nano reefing. For example, the fact that I list some fish appropriate for a 0.5g and 2.5g tank, does not automatically mean you should keep a fish in a tank that size. Rather, it means if you are capable of maintaining the added bioload of keeping a fish in a tank that size, then these fish would be appropriate choices.
-- Don’t forget to keep your bioload in mind. While a dwarf lionfish may only get 4-6”, due to their diet, the contribution to the bioload of your tank will be much more significant. 
+### Key Feeding Tips
 
-### How you can contribute to this thread
+- Introduce a variety of foods to meet the nutritional needs of your fish.
+- Opt for high-quality, nutrient-rich food with low moisture and ash content.
+- Avoid overfeeding to maintain water quality.
+- Implement a feeding schedule that incorporates different types of food to ensure a balanced diet for your fish.
 
-Again, I would like to strongly encourage everyone to share his or her knowledge and experience. Please feel free to suggest additions, corrections, or other changes. 
+### How to Use the Feeding Suggestion Guide
 
-Also, I've tried to make a note when a species is available captive-bred, so if you learn of a new species that is available, let me know!
+The guide provides feeding recommendations based on specific fish dietary types. Refer to the list of common foods from reputable manufacturers for convenience and variety in your fish's diet.
 
-## General feeding info
+### Recommended Fish Food Brands
 
-### General thoughts
+- Ocean Nutrition: [Products](http://www.oceannutrition.com/product_marine.php?lang=&file=marine_formula.php&head=)
+- H2O Life: [Products](http://www.h2olifefoods.com/old_standard.html)
+- San Francisco Bay Brand: [Products](http://www.sfbb.com/frozen.asp)
 
-Meeting the nutritional needs of your fish is absolutely essential to their growth, survival, and reproduction. When feeding fish, we are trying to replicate not only what a fish eats, but when and how it eats in nature. The feeding preference of fish typically falls into one of five categories: carnivores, who eat meaty foods; herbivores, who eat plant matter; omnivores, who eat both meat and plants; piscivores, who eat other fish; and finally omnivores (detrivores), who obtain their energy from eating the animal and plant matter found within detritus. 
+### Feeding Suggestions by Diet Type
 
-You can get a good idea of what to feed your fish just by figuring out what feeding category your fish falls into. It's important to remember that not only can you starve your fish, but you can actually overfeed them too, both of which can have negative health consequences. 
+- **Carnivores:** 1,3,4,5,6,9,11,14,15,18,19,20,22,24,25,26,30,31
+- **Herbivores:**
+  - Strictly Plant/Algae based: 2,7,10,13,21,27
+  - Blends that include Plant/Algae: 1,8,9,12,17,23
+- **Omnivores:** Vary the diet with a mix of carnivore and herbivore frozen/flake formulas.
+- **Piscivores:** 19,20,30,31
 
-Fish are opportunistic eaters, meaning they never know when they will get their next meal, so eat whenever food is available. You may notice your fish eats anytime you put food in the aquarium, but that doesn't mean they are hungry, rather just taking advantage of an opportunity. 
-
-While you need to feed your fish, you also need to limit feeding too. 
-
-Overfeeding usually has drastic consequences on water quality anyways, so why would you want to put food in your tank if you don't have to. There are a few different types of food commonly available: live, flake/pellet / freeze-dried, frozen, and some hobbyists feed fresh meats and/or vegetable/algae.
-
-To keep things simple I am mostly going to stick with what the average reefer is feeding, which is usually a commercially prepared flake/pellet and/or commercially frozen foods. I am revisiting this topic later at some point to include live and fresh foods, but I won't really get into that right now. 
-
-### A few things to keep in mind
-
-- The more variety the better...keep multiple types of food and switch things up frequently. Feed a general staple food such as plain frozen brine shrimp or a general omnivore flake food (such as ocean nutrition formula one) and then supplement that with a variety of other frozen, flake, fresh, and live foods.
-- Stick with high-quality foods that are low in moisture, ash, and high in vitamins and nutrients. 
-- Use or mix in foods that are enhanced with HUFA, omega-3 fatty acids, and vitamin C. Liquid supplements are also available that can be added to any type of food.
-- ***Do not overfeed!***
-- Again, I will provide you with suggestions, but ultimately it is up to you to research the nutritional requirements of your fish.
-
-Note: In making my suggestions I will refer to foods specifically made by Ocean Nutrition, H2O Life, and San Fransisco Bay Brand, given these are the brands I use and have the most experience with. There are many other high-quality manufactures of fish food though and those manufactures often have comparable products that you could use in place of the brands I mention if you wish.
-
-### Feeding schedule
-
-There really isn't a great well-summarizing answer to how often or how much you should feed your fish with a lot of what you hear being based on experience and/or opinion. Some people feed once a day, some feed every other day, and others feed small amounts several times a day. I don't think one way is right over the other, but for simplicity, will suggest a small amount once or twice a day. 
-
-You want to try to incorporate in as much variety as you can. If you feed once a day, feed something different, or switch back and forth every day. If you feed twice a day, perhaps try frozen at the first feeding and flake at the second. Again, with feeding twice a day I'd suggest your second feeding complement what you did with your first feeding. 
-
-For example, if in the morning you are fed a meaty high protein frozen food then use an algae/seaweed flake for the second feeding. The amount you feed...although I'm not a fan of rules of thumb, I think only feeding what your fish can fully eat in about 5 minutes is a good place to start. 
-
-If it is all gone before 5 min, perhaps add a little more. If there is a lot of extra food flying around after 5 min, obviously you need to cut back. Any extra uneaten food will harm your water quality. Have a good sharp knife too because most likely you will be using fractions of frozen cubes, not the whole cube. 
-
-For that reason, it can be easier to use frozen flat packs which make it easier to break off only what you need, if the frozen food type you want is available that way.
-
-### How to use the feeding suggestion guide
-
-There are two different ways you can use the feeding guide. I will provide feeding suggestions based on if the fish is a carnivore, herbivore, omnivore, piscivore, or detrivore and I will also provide feeding suggestions for each specific group of fish, noting species that do not follow trends of the group as a whole or have additional special needs. 
-
-To save time, so I don't have to repeat myself, I'm going to make a list of the common foods by the manufacture, and then will refer to those foods by number in both sections of the guide.
-
-### Food list by the manufacture
-
-- [Ocean Nutrition](http://www.oceannutrition.com/product_marine.php?lang=&file=marine_formula.php&head=) 
-
-  - Frozen:
-    1. Formula 1
-    2. Formula 2 
-    3. Brine Shrimp Plus 
-    4. Brine Shrimp Plus w/ HUFA
-    5. Prime Reef
-    6. Angel Formula
-    7. Spirulina Formula
-    8. Pygmy Angel Formula
-
-  - Flake/Other: 
-    9. Formula 1 
-    10. Formula 2 
-    11. Prime Reef 
-    12. Nano Formula
-
-  - Dry Seaweed: 
-    13. Green/Brown/Red Algae/Seaweed
-
-- [H2O Life](http://www.h2olifefoods.com/old_standard.html) 
-
-  - Frozen: 
-    14. Brine Shrimp 
-    15. Mysis Shrimp  
-    16. Cyclops 
-    17. Spirulina/Brine Shrimp/Mysis Special Mix 
-    18. Marine Fusion 
-    19. Silversides IQF 
-    20. Fresh Krill
-
-  - Dry Seaweed: 
-    21. Green/Brown Seaweed
-
-- [San Fransisco Bay Brand](http://www.sfbb.com/frozen.asp) 
-
-  - Frozen: 
-    22. Brine Shrimp 
-    23. Spirulina Enhanced Brine Shrimp 
-    24. Marine Cuisine 
-    25. Omega Brine 
-    26. Angel and Butterfly 
-    27. Emerald Entrée 
-    28. Cyclops 
-    29. Reef Plankton 
-    30. Krill 
-    31. Silversides 
-
-### Feeding suggestions by diet type
-
-**Carnivores:** 1,3,4,5,6,9,11,14,15,18,19,20,22,24,25,26,30,31
-
-**Herbivores:**
-
-- Strictly Plant/Algae based: 2,7,10,13,21,27
-- Blends that include Plant/Algae which herbivores can feed on 1,8,9,12,17,23
-
-**Omnivores:** They will basically eat most of what is listed above. I'd recommend using the blended frozen/flake mixes and/or alternating between carnivore and herbivore froze/flake formulas.
-
-**Piscivores:** 19,20,30,31
-
-### Feeding suggestions by fish group
+### Feeding Suggestions by Fish Group
 
 Coming soon!
 
-## Nano fish compatibility
+## Nano Fish Compatibility
 
-Coming Soon!
+| Fish Species           | Compatible with          | Not Compatible with                | Notes |
+|------------------------|--------------------------|------------------------------------|-------|
+| Blue Neon Goby         | Clown Gobies, Blennies   | Large Aggressive Fish              | Ideal for peaceful community tanks. |
+| Ocellaris Clownfish    | Chromis, Royal Gramma    | Aggressive or Territorial Fish     | Pair or small group in larger tanks. |
+| Percula Clownfish      | Damsels, Firefish        | Semi-aggressive or Dominant Fish   | Ideal for peaceful community tanks. |
+| Firefish Goby          | Dartfish, Cardinalfish   | Large Predatory Fish               | Shy and peaceful, avoid aggressive tankmates. |
+| Red/Orange Angler      | Peaceful Reef Fish       | Small Shrimp or Invertebrates      | Needs plenty of hiding spots in the tank. |
+| Wartskin Angler        | Peaceful Tankmates       | Small Shrimp or Invertebrates      | Camouflages well, may eat small tankmates. |
+| Painted frogfish       | Gobies, Cardinalfish     | Small Tank Inhabitants              | Needs ample space and live food. |
+| Firefish, Helfrichi    | Peaceful Community Fish  | Aggressive or Large Tankmates      | Best kept in pairs or small groups. |
+| Elegant firefish       | Small Peaceful Fish      | Large Aggressive Fish              | Peaceful and may be shy in the tank. |
+| Pajama Cardinalfish    | Peaceful Tankmates       | Large Aggressive Fish              | Schools well, avoid aggressive tankmates. |
+| Exquisite Firefish     | Peaceful Community Fish  | Aggressive or Large Tankmates      | Best kept in pairs or small groups. |
 
-## Nano fish listed by tank size
+*Note: The compatibility information provided above serves as a general guideline. Actual compatibility may vary based on individual fish behavior and tank dynamics.*
 
-Note: Suggestions for Seahorses by tank size can be found under the "Seahorse" heading in the next section of the guide, Nano Fish Listed By Group, for the time being.
+## Nano Fish Listed by Tank Size
 
-**Key**
+Note: When selecting fish, consider the total volume of the display area in all-in-one tanks, as some water is reserved for filtration purposes.
 
-- B = Beginner (Ideal for first-time fish owners and or new tanks)
-- I = Intermediate (Ideal for hobbyists with established tanks)
-- D = Difficult (Ideal for experience hobbyists who can meet the special needs of these fish)
-- ** = Available Tank Raised (Please let me know if I am missing any)
-- V = Venomous 
+### 10G (38 L) Tank
 
-Note: There is a lot of controversy around the idea of keeping saltwater fish in tanks under 10g. Whether or not it is ethical will be up to you to decide and not something I'm going to get into. Like it or not, the fact is there are going to be people who do it. Therefore, I would rather at least provide those people with some guidance to make good choices instead of just leaving them in the dark.
+### 10G (38 L) Tank
 
-Note Mandarins / Dragonets: There is a lot of controversy around the idea of keeping fish from the Dragonet family in nano tanks. Whether or not it is ethical will be for you to decide and not something I'm going to get into. I personally do not encourage people to keep dragonets in nano tanks, however, despite my feelings there a many who have successfully kept them in smaller tanks, therefore I will include them in this guide.
-
-### 10G (38 L)
-
-(1 - 2 fish)
-
-Note: Keep in mind that the display area of all-in-one tanks holds less water than the total tank since some of that water is in the filtration area. When picking out fish, pick fish based on the display area volume, not the total tank volume.
- 
 - Blue Neon Goby — [Elactinus oceanops](/fish/elactinus-oceanops/ "Read the card of this fish")
 - Blue and Gold Blenny — [Ecsenius lividanalis](/fish/ecsenius-lividanalis/ "Read the card of this fish")
-- Broadstripe Goby — [Elacatinus prochilos]
-- Catalina Goby — [Lythrypnus dalli] [cold water]
-- Citron Goby — [Gobiodon citrinus]
-- Clown Gobies — [Gobiodon okinawae] **
-- Clown Goby, Black — [Gobiodon strangulatus]
-- Court Jester Goby — [Koumansetta rainfordi]  
-- Deepwater Candy Basslet — [Liopropoma carmabi]
-- Dracula Goby — [Stonogobiops dracula]
-- Gold Neon Eviota Goby — [Eviota pellucida]
-- Greenbanded Goby — [Tigrigobius multifasciatus] **
-- Longspine Cardinalfish — [Zoramia leptacantha] 
-- Orange Spotted Goby — Amblyeleotris guttata
-- Orange Stripe Goby — Amblyeleotris randalli
-- Panda Goby — Paragobius lacunicolus
-- Pygmy Coral Croucher Goby — Caracanthus unipinna
-- Pinkbar Goby — Amblyeleotris aurora
-- Panamic Barnacle Blenny — Acanthemblemaria hancocki
-- Red Neon Eviota Goby — Eviota nigriventris
-- Red Sea Mimic Blenny — Ecsenius gravieri
-- Red Spotted Goby — Trimma rubromaculatus
-- Red Striped Goby — Trimma cana
-- Redhead Goby — Elacatinus puncticulatus **
-- Swissguard Basslet — Liopropoma rubre
-- Two Spot Goby — Signigobius biocellatus
-- Tail Spot Blenny — Ecsenius stigmatura
-- Trimma Goby — Trimma maiandros
-- Two Spot Bimaculatus Blenny — Ecsenius bimaculatus
-- Wheeler’s Shrimp Goby — Amblyeleotris wheeleri
-- White Spotted Dwarf Goby — Trimma cf. caesiura
-- Yasha White Ray Shrimp Goby — Stonogobiops yasha
-- Yellow Neon Goby — Elacatinus figaro **
-- Yellow Trimma Goby — Trimma kitrinum
-- Zebra Catalina Goby — Lythrypnus zebra D
-- Hi Fin Red Banded Goby — Stonogobiops nematodes
-- Hector's Goby — Koumansetta hectori
-- Jaguar Goby — Gobiopsis quinquecincta
-- Cave Transparent Goby — Fusigobius pallidus
+- Broadstripe Goby — [Elacatinus prochilos](/fish/elacatinus-prochilos/ "Read the card of this fish")
+- Catalina Goby — [Lythrypnus dalli](/fish/lythrypnus-dalli/ "Read the card of this fish") [cold water]
+- Citron Goby — [Gobiodon citrinus](/fish/gobiodon-citrinus/ "Read the card of this fish")
+- Clown Gobies — [Gobiodon okinawae](/fish/gobiodon-okinawae/ "Read the card of this fish") **
+- Clown Goby, Black — [Gobiodon strangulatus](/fish/gobiodon-strangulatus/ "Read the card of this fish")
+- Court Jester Goby — [Koumansetta rainfordi](/fish/koumansetta-rainfordi/ "Read the card of this fish")  
+- Deepwater Candy Basslet — [Liopropoma carmabi](/fish/liopropoma-carmabi/ "Read the card of this fish")
+- Dracula Goby — [Stonogobiops dracula](/fish/stonogobiops-dracula/ "Read the card of this fish")
+- Gold Neon Eviota Goby — [Eviota pellucida](/fish/eviota-pellucida/ "Read the card of this fish")
+- Greenbanded Goby — [Tigrigobius multifasciatus](/fish/tigrigobius-multifasciatus/ "Read the card of this fish") **
+- Longspine Cardinalfish — [Zoramia leptacantha](/fish/zoramia-leptacantha/ "Read the card of this fish") 
+- Orange Spotted Goby — [Amblyeleotris guttata](/fish/amblyeleotris-guttata/ "Read the card of this fish")
+- Orange Stripe Goby — [Amblyeleotris randalli](/fish/amblyeleotris-randalli/ "Read the card of this fish")
+- Panda Goby — [Paragobius lacunicolus](/fish/paragobius-lacunicolus/ "Read the card of this fish")
+- Pygmy Coral Croucher Goby — [Caracanthus unipinna](/fish/caracanthus-unipinna/ "Read the card of this fish")
+- Pinkbar Goby — [Amblyeleotris aurora](/fish/amblyeleotris-aurora/ "Read the card of this fish")
+- Panamic Barnacle Blenny — [Acanthemblemaria hancocki](/fish/acanthemblemaria-hancocki/ "Read the card of this fish")
+- Red Neon Eviota Goby — [Eviota nigriventris](/fish/eviota-nigriventris/ "Read the card of this fish")
+- Red Sea Mimic Blenny — [Ecsenius gravieri](/fish/ecsenius-gravieri/ "Read the card of this fish")
+- Red Spotted Goby — [Trimma rubromaculatus](/fish/trimma-rubromaculatus/ "Read the card of this fish")
+- Red Striped Goby — [Trimma cana](/fish/trimma-cana/ "Read the card of this fish")
+- Redhead Goby — [Elacatinus puncticulatus](/fish/elacatinus-puncticulatus/ "Read the card of this fish") **
+- Swissguard Basslet — [Liopropoma rubre](/fish/liopropoma-rubre/ "Read the card of this fish")
+- Two Spot Goby — [Signigobius biocellatus](/fish/signigobius-biocellatus/ "Read the card of this fish")
+- Tail Spot Blenny — [Ecsenius stigmatura](/fish/ecsenius-stigmatura/ "Read the card of this fish")
+- Trimma Goby — [Trimma maiandros](/fish/trimma-maiandros/ "Read the card of this fish")
+- Two Spot Bimaculatus Blenny — [Ecsenius bimaculatus](/fish/ecsenius-bimaculatus/ "Read the card of this fish")
+- Wheeler’s Shrimp Goby — [Amblyeleotris wheeleri](/fish/amblyeleotris-wheeleri/ "Read the card of this fish")
+- White Spotted Dwarf Goby — [Trimma cf. caesiura](/fish/trimma-caesiura/ "Read the card of this fish")
+- Yasha White Ray Shrimp Goby — [Stonogobiops yasha](/fish/stonogobiops-yasha/ "Read the card of this fish")
+- Yellow Neon Goby — [Elacatinus figaro](/fish/elacatinus-figaro/ "Read the card of this fish") **
+- Yellow Trimma Goby — [Trimma kitrinum](/fish/trimma-kitrinum/ "Read the card of this fish")
+- Zebra Catalina Goby — [Lythrypnus zebra](/fish/lythrypnus-zebra/ "Read the card of this fish") D
+- Hi Fin Red Banded Goby — [Stonogobiops nematodes](/fish/stonogobiops-nematodes/ "Read the card of this fish")
+- Hector's Goby — [Koumansetta hectori](/fish/koumansetta-hectori/ "Read the card of this fish")
+- Jaguar Goby — [Gobiopsis quinquecincta](/fish/gobiopsis-quinquecincta/ "Read the card of this fish")
+- Cave Transparent Goby — [Fusigobius pallidus](/fish/fusigobius-pallidus/ "Read the card of this fish")
 
-### 15G (56 L)
 
-- Yellow Banded Possum Wrasse — Wetmorella nigropinnata D
-- Caribbean Deepwater Cave Basslet — Liopropoma mowbrayi D
-- Tanaka's Pygmy Wrasse — Wetmorella tanakai D
-- White Banded Possum Wrasse — Wetmorella albofasciata D
-- Pink-Streaked Wrasse — Pseudocheilinops ataenia D
+### 15G (56 L) Tank
 
-### 20G (76 L)
+- Yellow Banded Possum Wrasse — [Wetmorella nigropinnata](/fish/wetmorella-nigropinnata/ "Read the card of this fish") D
+- Caribbean Deepwater Cave Basslet — [Liopropoma mowbrayi](/fish/liopropoma-mowbrayi/ "Read the card of this fish") D
+- Tanaka's Pygmy Wrasse — [Wetmorella tanakai](/fish/wetmorella-tanakai/ "Read the card of this fish") D
+- White Banded Possum Wrasse — [Wetmorella albofasciata](/fish/wetmorella-albofasciata/ "Read the card of this fish") D
+- Pink-Streaked Wrasse — [Pseudocheilinops ataenia](/fish/pseudocheilinops-ataenia/ "Read the card of this fish") D
+
+
+### 20G (76 L) Tank
 
 (2 - 3 fish)
 
-Note: Keep in mind that the display area of all-in-one tanks holds less water than the total tank since some of that water is in the filtration area. When picking out fish, pick fish based on the display area volume, not the total tank volume.
+- Comical Blenny — [Ecsenius opsifrontalis](/fish/ecsenius-opsifrontalis/ "Read the card of this fish")
+- Ocellaris Clownfish (False Percula) — [Amphiprion ocellaris](/fish/amphiprion-ocellaris/ "Read the card of this fish") B **
+- Percula Clownfish (True Percula)** (1, if you want a pair, move up to 20G) — [Amphiprion percula](/fish/amphiprion-percula/ "Read the card of this fish") B
+- Firefish Goby B — [Nemateleotris magnifica](/fish/nemateleotris-magnifica/ "Read the card of this fish")
+- Red/Orange Angler — [Antennarius sp.](/fish/antennarius-sp/ "Read the card of this fish")
+- Wartskin Angler — [Antennarius maculatus](/fish/antennarius-maculatus/ "Read the card of this fish")
+- Painted frogfish — [Antennarius pictus](/fish/antennarius-pictus/ "Read the card of this fish") D
+- Firefish, Helfrichi — [Nemateleotris helfrichi](/fish/nemateleotris-helfrichi/ "Read the card of this fish")
+- Elegant firefish — [Nemateleotris decora](/fish/nemateleotris-decora/ "Read the card of this fish")
+- Pajama Cardinalfish — [Sphaeramia nematoptera](/fish/sphaeramia-nematoptera/ "Read the card of this fish")
+- Exquisite Firefish — [Nemateleotris exquisita](/fish/nemateleotris-exquisita/ "Read the card of this fish")
 
-- Comical Blenny — Ecsenius opsifrontalis
-- Ocellaris Clownfish (False Percula) — Amphiprion ocellaris B **
-- Percula Clownfish (True Percula)** (1, if you want a pair, move up to 20G) — Amphiprion percula B
-- Firefish Goby B —  Nemateleotris magnifica 
-- Red/Orange Angler — Antennarius sp.
-- Wartskin Angler — Antennarius maculatus
-- Painted frogfish — Antennarius pictus D
-- Firefish, Helfrichi — Nemateleotris helfrichi  
-- Elegant firefish — Nemateleotris decora    
-- Pajama Cardinalfish — Sphaeramia nematoptera
-- Exquisite Firefish — Nemateleotris exquisita
 
-## Nano fish listed by fish group
+## Nano Fish Listed by Fish Group
 
 Coming Soon!
 
