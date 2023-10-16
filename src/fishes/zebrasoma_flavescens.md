@@ -9,7 +9,7 @@ color: Yellow
 author:
 - Rachel White
 description: Zebrasoma Flavescens is a beloved species recognized for its vibrant appearance and calm disposition.
-image: zebrasoma_flavescens.jpg
+image: /assets/images/fish/zebrasoma_flavescens.jpg
 date: 2023-10-15
 date_discovered: 1831-09-01
 

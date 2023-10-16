@@ -12,7 +12,7 @@
         {{ metadata.title }} {{ metadata.titleDivider}} {{ metadata.slogan }}
       {% endif %}
     </title>
-    <meta name="description" content="{{ metadata.description | default(description) }}"/>
+    <meta name="description" content="{{ description | default(metadata.description) }}"/>
     <link rel="canonical" href="{{ page.url | url }}" />
 
     <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
@@ -52,7 +52,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+  
     <header id="header">
       {% include "partials/menu.njk" %}
 
