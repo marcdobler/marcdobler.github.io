@@ -9,7 +9,7 @@ color: orange
 author:
 - Emily Chen
 description: Pseudanthias Bartlettorum is a dazzling species sought after for its lively nature and stunning hues.
-image: pseudanthias_bartlettorum.jpg
+image: /assets/images/fish/pseudanthias_bartlettorum.jpg
 date: 2019-11-02
 
 parameter:

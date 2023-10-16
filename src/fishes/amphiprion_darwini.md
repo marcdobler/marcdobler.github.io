@@ -9,7 +9,7 @@ color: black, orange
 author:
 - Sarah Johnson
 description: Amphiprion Darwini is an iconic species admired for its distinct appearance and captivating interactions with sea anemones.
-image: amphiprion_darwini.jpg
+image: /assets/images/fish/amphiprion_darwini.jpg
 date: 2019-03-12
 date_discovered: 1862-07-17
 

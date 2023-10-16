@@ -9,7 +9,7 @@ color: orange, white
 author:
 - Emily Davis
 description: Amphiprion Sandaracinos is a beloved species known for its bright appearance and calm demeanor.
-image: amphiprion_sandaracinos.jpg
+image: /assets/images/fish/amphiprion_sandaracinos.jpg
 date: 2023-10-15
 
 parameter:

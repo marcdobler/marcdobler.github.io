@@ -9,7 +9,7 @@ color: yellow, purple, blue
 author:
 - Elizabeth Brown
 description: Pseudochromis Flavivertex is an iconic species admired for its striking appearance and lively demeanor.
-image: pseudochromis_flavivertex.jpg
+image: /assets/images/fish/pseudochromis_flavivertex.jpg
 date: 2023-10-15
 
 parameter:

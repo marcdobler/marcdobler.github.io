@@ -9,7 +9,7 @@ color: deep red
 author:
 - Michael Davis
 description: Premnas Epigrammata is an iconic species admired for its vibrant appearance and captivating interactions with sea anemones.
-image: premnas_epigrammata.jpg
+image: /assets/images/fish/premnas_epigrammata.jpg
 date: 2021-08-27
 
 parameter:

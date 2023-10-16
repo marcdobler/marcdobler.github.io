@@ -9,7 +9,7 @@ color: yellow, white
 author:
 - Emily Rodriguez
 description: Cryptocentrus Cinctus is a beloved species celebrated for its engaging behavior and beneficial influence on the aquarium environment.
-image: cryptocentrus_cinctus.jpg
+image: /assets/images/fish/cryptocentrus_cinctus.jpg
 date: 2023-10-15
 
 parameter:

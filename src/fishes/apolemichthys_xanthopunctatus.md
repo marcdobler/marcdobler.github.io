@@ -9,7 +9,7 @@ color: blue, yellow
 author:
 - Jennifer Smith
 description: Apolemichthys Xanthopunctatus is a majestic species celebrated for its graceful appearance and captivating golden spots.
-image: apolemichthys_xanthopunctatus.jpg
+image: /assets/images/fish/apolemichthys_xanthopunctatus.jpg
 date: 2023-10-15
 
 parameter:

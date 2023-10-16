@@ -9,7 +9,7 @@ color: White, Black, Yellow
 author:
 - Emma White
 description: Chaetodontoplus Duboulayi is an exquisite species admired for its striking patterns and tranquil demeanor.
-image: chaetodontoplus_duboulayi.jpg
+image: /assets/images/fish/chaetodontoplus_duboulayi.jpg
 date: 2023-10-15
 date_discovered: 1866-11-24
 

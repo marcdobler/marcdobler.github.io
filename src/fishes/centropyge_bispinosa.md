@@ -9,7 +9,7 @@ color: Purple, Orange
 author:
 - Emily Wilson
 description: Centropyge Bispinosa is a cherished species recognized for its exquisite appearance and serene presence.
-image: centropyge_bispinosa.jpg
+image: /assets/images/fish/centropyge_bispinosa.jpg
 date: 2023-10-15
 date_discovered: 1873-05-11
 

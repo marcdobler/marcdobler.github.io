@@ -9,7 +9,7 @@ color: brown
 author:
 - Jennifer Lee
 description: Acanthemblemaria Hancocki is a captivating species with intriguing behavioral adaptations and distinctive physical features.
-image: acanthemblemaria_hancocki.jpg
+image: /assets/images/fish/acanthemblemaria_hancocki.jpg
 date: 2010-02-19
 date_discovered: 1968-06-12
 

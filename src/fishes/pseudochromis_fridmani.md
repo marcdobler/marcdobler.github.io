@@ -9,7 +9,7 @@ color: purple
 author:
 - Samantha Williams
 description: Pseudochromis Fridmani is a captivating species celebrated for its striking appearance and lively demeanor.
-image: pseudochromis_fridmani.jpg
+image: /assets/images/fish/pseudochromis_fridmani.jpg
 date: 2018-09-14
 
 parameter:

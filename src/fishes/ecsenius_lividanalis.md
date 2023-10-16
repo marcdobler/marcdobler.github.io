@@ -9,7 +9,7 @@ color: yellow
 author:
 - Sarah Johnson
 description: Ecsenius Lividanalis is a species of blenny known for its striking coloration and engaging personality.
-image: ecsenius_lividanalis.jpg
+image: /assets/images/fish/ecsenius_lividanalis.jpg
 date: 2003-08-12
 
 parameter:

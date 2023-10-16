@@ -9,7 +9,7 @@ color: Blue, Orange, Green
 author:
 - Laura Thompson
 description: Synchiropus Splendidus is an esteemed species renowned for its captivating coloration and elegant presence.
-image: synchiropus_splendidus.jpg
+image: /assets/images/fish/synchiropus_splendidus.jpg
 date: 2023-10-15
 date_discovered: 1824-08-12
 

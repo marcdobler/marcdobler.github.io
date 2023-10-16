@@ -9,7 +9,7 @@ color: black, white
 author:
 - Jessica Adams
 description: Pterapogon Kauderni is a graceful species admired for its distinctive features and tranquil demeanor.
-image: pterapogon_kauderni.jpg
+image: /assets/images/fish/pterapogon_kauderni.jpg
 date: 2017-04-25
 
 parameter:

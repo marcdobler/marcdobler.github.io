@@ -9,7 +9,7 @@ color: Blue, Yellow
 author:
 - Emily Wilson
 description: Centropyge Bicolor is a cherished species recognized for its exquisite appearance and serene presence.
-image: centropyge_bicolor.jpg
+image: /assets/images/fish/centropyge_bicolor.jpg
 date: 2023-10-15
 date_discovered: 1931-05-12
 

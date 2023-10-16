@@ -9,7 +9,7 @@ color: black, yellow
 author:
 - Jessica White
 description: Elacatinus Figaro is a beloved species admired for its distinctive appearance and beneficial cleaning behavior.
-image: elacatinus_figaro.jpg
+image: /assets/images/fish/elacatinus_figaro.jpg
 date: 2023-10-15
 
 parameter:

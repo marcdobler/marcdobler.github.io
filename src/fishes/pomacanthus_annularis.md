@@ -9,7 +9,7 @@ color: Blue, Yellow
 author:
 - Emily Wilson
 description: Pomacanthus Annularis is a cherished species recognized for its exquisite appearance and serene presence.
-image: pomacanthus_annularis.jpg
+image: /assets/images/fish/pomacanthus_annularis.jpg
 date: 2023-10-15
 date_discovered: 1824-06-20
 

@@ -9,7 +9,7 @@ color: Orange
 author:
 - Sophia Martinez
 description: Amphiprion Sebae is a captivating species celebrated for its energetic presence and distinctive features.
-image: amphiprion_sebae.jpg
+image: /assets/images/fish/amphiprion_sebae.jpg
 date: 2023-10-15
 date_discovered: 1758-07-07
 

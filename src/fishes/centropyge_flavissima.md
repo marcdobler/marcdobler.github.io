@@ -9,7 +9,7 @@ color: yellow, blue
 author:
 - Jessica Martinez
 description: Centropyge Flavissima is a beloved species celebrated for its lively demeanor and vibrant appearance.
-image: centropyge_flavissima.jpg
+image: /assets/images/fish/centropyge_flavissima.jpg
 date: 2023-10-15
 
 parameter:

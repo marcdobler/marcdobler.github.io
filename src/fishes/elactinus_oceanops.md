@@ -9,7 +9,7 @@ color: blue
 author:
 - Marc Dobler
 description: Elacatinus is a genus of small marine gobies, often known collectively as the neon gobies.
-image: elactinus_oceanops.jpg
+image: /assets/images/fish/elactinus_oceanops.jpg
 date: 1904-05-25
 
 parameter:

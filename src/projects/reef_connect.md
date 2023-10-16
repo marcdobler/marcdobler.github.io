@@ -1,11 +1,11 @@
 ---
 layout: posts
 ogtype: article
-title: "Reef Connect: Revolutionizing the Reef Keeping Community with an Innovative Mobile and Desktop App"
+title: "Reef Connect: Innovating the Reef-Keeping Community with a Cutting-Edge Mobile and Desktop App"
 image: "/assets/images/reef-connect.jpg"
-imagealt: "Reef Connect App Interface"
-excerpt: Dive into the world of reef keeping with Reef Connect, an innovative app that brings the reefing community together like never before.
-description: Explore the features and benefits of Reef Connect, the ultimate solution for reef enthusiasts to stay connected and share their passion for marine ecosystems.
+imagealt: "Reef Connect - Enhancing Reef Keeping Experience"
+excerpt: Explore Reef Connect, the ultimate app for the reefing community, fostering connections and passion for marine ecosystems.
+description: Dive into the world of reef keeping with Reef Connect, an innovative app that unites and empowers reef enthusiasts globally.
 section: Project
 tags:
     - Reef

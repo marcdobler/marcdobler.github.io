@@ -9,7 +9,7 @@ color: brown, white
 author:
 - Kevin Anderson
 description: Acreichthys Tomentosus is a peaceful species celebrated for its algae-controlling capabilities and tranquil demeanor.
-image: acreichthys_tomentosus.jpg
+image: /assets/images/fish/acreichthys_tomentosus.jpg
 date: 2016-10-07
 date_discovered: 1972-03-15
 

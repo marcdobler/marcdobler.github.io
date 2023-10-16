@@ -9,7 +9,7 @@ color: Purple, Yellow
 author:
 - Emily Davis
 description: Pseudochromis Aldabraensis is an esteemed species renowned for its captivating coloration and resilient nature.
-image: pseudochromis_aldabraensis.jpg
+image: /assets/images/fish/pseudochromis_aldabraensis.jpg
 date: 2023-10-15
 date_discovered: 1972-06-18
 

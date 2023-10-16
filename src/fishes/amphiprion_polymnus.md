@@ -9,7 +9,7 @@ color: black, white, yellow
 author:
 - Michael Thompson
 description: Amphiprion Polymnus is an iconic species admired for its distinctive coloration and lively interactions with sea anemones.
-image: amphiprion_polymnus.jpg
+image: /assets/images/fish/amphiprion_polymnus.jpg
 date: 2023-10-15
 date_discovered: 1850-03-20
 

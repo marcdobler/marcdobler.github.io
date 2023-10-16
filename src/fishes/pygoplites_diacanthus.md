@@ -9,7 +9,7 @@ color: Blue, Yellow, White
 author:
 - Samantha Roberts
 description: Pygoplites Diacanthus is an esteemed species renowned for its regal appearance and peaceful demeanor.
-image: pygoplites_diacanthus.jpg
+image: /assets/images/fish/pygoplites_diacanthus.jpg
 date: 2023-10-15
 date_discovered: 1831-09-23
 

@@ -9,7 +9,7 @@ color: yellow, black, white
 author:
 - David Miller
 description: Elacatinus Puncticulatus is a beloved species admired for its striking appearance and diligent cleaning behavior.
-image: elacatinus_puncticulatus.jpg
+image: /assets/images/fish/elacatinus_puncticulatus.jpg
 date: 2023-10-15
 
 parameter:

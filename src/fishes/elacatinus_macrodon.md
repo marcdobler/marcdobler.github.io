@@ -9,7 +9,7 @@ color: blue, black, yellow
 author:
 - Sarah Johnson
 description: Elacatinus Macrodon is a beloved species admired for its distinctive appearance and beneficial cleaning behavior.
-image: elacatinus_macrodon.jpg
+image: /assets/images/fish/elacatinus_macrodon.jpg
 date: 2023-10-15
 
 parameter:

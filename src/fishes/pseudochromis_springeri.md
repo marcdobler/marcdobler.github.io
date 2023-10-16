@@ -9,7 +9,7 @@ color: Purple, Yellow
 author:
 - Jessica Brown
 description: Pseudochromis Springeri is a cherished species recognized for its stunning appearance and dynamic behavior.
-image: pseudochromis_springeri.jpg
+image: /assets/images/fish/pseudochromis_springeri.jpg
 date: 2023-10-15
 date_discovered: 1975-06-12
 

@@ -9,7 +9,7 @@ color: purple
 author:
 - Michael Smith
 description: Pseudocheilinus Hexataenia is a striking species of wrasse, sought after for its vivid hues and lively behavior.
-image: pseudocheilinus_hexataenia.jpg
+image: /assets/images/fish/pseudocheilinus_hexataenia.jpg
 date: 2015-06-08
 
 parameter:

@@ -9,7 +9,7 @@ color: Blue, Black, Yellow
 author:
 - Emily Davis
 description: Paracanthurus Hepatus is a cherished species admired for its striking appearance and lively behavior.
-image: paracanthurus_hepatus.jpg
+image: /assets/images/fish/paracanthurus_hepatus.jpg
 date: 2023-10-15
 date_discovered: 1842-05-03
 

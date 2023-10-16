@@ -9,7 +9,7 @@ color: red
 author:
 - David Wilson
 description: Amphiprion Frenatus is an iconic species admired for its striking appearance and engaging interactions with sea anemones.
-image: amphiprion_frenatus.jpg
+image: /assets/images/fish/amphiprion_frenatus.jpg
 date: 2023-10-15
 date_discovered: 1923-05-28
 

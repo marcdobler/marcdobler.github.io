@@ -9,7 +9,7 @@ color: silver, black
 author:
 - Christopher Adams
 description: Platax Pinnatus is a beloved species celebrated for its graceful demeanor and striking appearance.
-image: platax_pinnatus.jpg
+image: /assets/images/fish/platax_pinnatus.jpg
 date: 2023-10-15
 
 parameter:

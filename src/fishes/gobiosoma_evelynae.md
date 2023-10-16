@@ -9,7 +9,7 @@ color: White, Brown
 author:
 - Emily Roberts
 description: Gobiosoma Evelynae is an endearing species adored for its captivating patterns and tranquil disposition.
-image: gobiosoma_evelynae.jpg
+image: /assets/images/fish/gobiosoma_evelynae.jpg
 date: 2023-10-15
 date_discovered: 1977-06-19
 

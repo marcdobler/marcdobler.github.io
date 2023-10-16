@@ -9,7 +9,7 @@ color: blue, yellow
 author:
 - Rachel Lee
 description: Pomacanthus Navarchus is a majestic species celebrated for its elegance and commanding presence.
-image: pomacanthus_navarchus.jpg
+image: /assets/images/fish/pomacanthus_navarchus.jpg
 date: 2022-02-18
 
 parameter:

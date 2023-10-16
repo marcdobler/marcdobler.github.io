@@ -9,7 +9,7 @@ color: Blue, Yellow, Orange
 author:
 - Samantha White
 description: Paracentropyge Venusta is a cherished species recognized for its exquisite appearance and tranquil demeanor.
-image: paracentropyge_venusta.jpg
+image: /assets/images/fish/paracentropyge_venusta.jpg
 date: 2023-10-15
 date_discovered: 1927-09-20
 

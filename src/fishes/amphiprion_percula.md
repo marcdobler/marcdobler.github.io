@@ -9,7 +9,7 @@ color: orange, white
 author:
 - Jennifer Lee
 description: Amphiprion Percula is a beloved species admired for its bright appearance and lively interactions with sea anemones.
-image: amphiprion_percula.jpg
+image: /assets/images/fish/amphiprion_percula.jpg
 date: 2023-10-15
 date_discovered: 1927-08-28
 

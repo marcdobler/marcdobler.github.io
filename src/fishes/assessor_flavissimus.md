@@ -9,7 +9,7 @@ color: Yellow
 author:
 - Emily Wilson
 description: Assessor Flavissimus is a cherished species recognized for its vivid appearance and calm presence.
-image: assessor_flavissimus.jpg
+image: /assets/images/fish/assessor_flavissimus.jpg
 date: 2023-10-15
 date_discovered: 1843-08-20
 

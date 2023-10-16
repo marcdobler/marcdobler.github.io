@@ -9,7 +9,7 @@ color: orange
 author:
 - David Miller
 description: Amphiprion Ocellaris is a popular species adored for its striking appearance and engaging personality.
-image: amphiprion_ocellaris.jpg
+image: /assets/images/fish/amphiprion_ocellaris.jpg
 date: 2020-07-15
 date_discovered: 1930-09-12
 

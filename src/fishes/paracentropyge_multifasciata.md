@@ -9,7 +9,7 @@ color: Orange, Blue, White
 author:
 - Amanda Sanchez
 description: Paracentropyge Multifasciata is an esteemed species renowned for its captivating coloration and peaceful temperament.
-image: paracentropyge_multifasciata.jpg
+image: /assets/images/fish/paracentropyge_multifasciata.jpg
 date: 2023-10-15
 date_discovered: 1956-08-12
 
