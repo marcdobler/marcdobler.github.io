@@ -1751,6 +1751,9 @@ nav .page-link:not(:last-child) {
   bottom: -110px;
   right: 0;
   z-index: 1;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 .post header .info li {
   width: 250px; /* Adjust the width according to your design */
@@ -1758,7 +1761,7 @@ nav .page-link:not(:last-child) {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .post header .info li:last-child {
   padding-bottom: 0;
