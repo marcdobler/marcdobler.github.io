@@ -119,6 +119,7 @@ body > footer {
       letter-spacing: -1px;
       line-height: 1.15;
       font-weight: bold;
+      text-wrap: pretty;
 
       @media screen and (max-width: $on-large) {
         @include relative-font-size(1.5);

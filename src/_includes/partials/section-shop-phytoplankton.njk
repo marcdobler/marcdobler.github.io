@@ -1,0 +1,13 @@
+<section class="section">
+{% set maxPosts = collections.phytoplankton.length | min(6) %}
+<h2>{% if maxPosts == 1 %}Phytoplankton.{% else %}Phytoplanktons.{% endif %}</h2>
+
+{% set postslist = collections.phytoplankton | head(-6) %}
+{% set postslistCounter = collections.phytoplankton | length %}
+{% set collectionClass = 'productList' %}
+{% set collectionLink = '/phytoplankton/' %}
+{% set collectionReadMore = 'show' %}
+{% set collectionReadMoreTitle = 'View all corals phytoplankton' %}
+{% set collectionReadMoreText = 'Feed, obsessive corals disorder' %}
+{% include "productslist.njk" %}
+</section>
