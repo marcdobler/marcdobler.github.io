@@ -624,6 +624,11 @@ template {
   --redstraight: #ff0000;
   --red: #c22203;
   --silver: #d1d1d1;
+  --seagreen: #2E8B57;
+  --cyan: #00FFFF;
+  --darkgreen: #006400;
+  --olivegreen: #808000;
+  --gold: #FFD700;
   --background-color: var(--lightgray);
   --site-title-color: var(--darkgray);
 }
@@ -1270,6 +1275,146 @@ template {
 .title.color.silver::after,
 .menu-icon .color.silver {
   background-color: var(--site-title-color);
+}
+
+.color.seagreen {
+  background-color: var(--seagreen);
+  color: var(--white);
+}
+.color.seagreen ::selection,
+.color.seagreen ::-moz-selection {
+  background: #8b2e62;
+  color: var(--white);
+}
+.color.seagreen .no-color {
+  background-color: transparent;
+}
+.color.seagreen .link:after {
+  background-color: #0e2b1b;
+}
+
+.color.seagreen.invert,
+.color.seagreen.invert *,
+.color.seagreen.invert *::selection {
+  background: #8b2e62;
+  color: var(--white);
+}
+
+.title.color.seagreen::after,
+.menu-icon .color.seagreen {
+  background-color: var(--white);
+}
+
+.color.cyan {
+  background-color: var(--cyan);
+  color: var(--white);
+}
+.color.cyan ::selection,
+.color.cyan ::-moz-selection {
+  background: red;
+  color: var(--white);
+}
+.color.cyan .no-color {
+  background-color: transparent;
+}
+.color.cyan .link:after {
+  background-color: teal;
+}
+
+.color.cyan.invert,
+.color.cyan.invert *,
+.color.cyan.invert *::selection {
+  background: red;
+  color: var(--white);
+}
+
+.title.color.cyan::after,
+.menu-icon .color.cyan {
+  background-color: var(--white);
+}
+
+.color.darkgreen {
+  background-color: var(--darkgreen);
+  color: var(--white);
+}
+.color.darkgreen ::selection,
+.color.darkgreen ::-moz-selection {
+  background: #640064;
+  color: var(--white);
+}
+.color.darkgreen .no-color {
+  background-color: transparent;
+}
+.color.darkgreen .link:after {
+  background-color: black;
+}
+
+.color.darkgreen.invert,
+.color.darkgreen.invert *,
+.color.darkgreen.invert *::selection {
+  background: #640064;
+  color: var(--white);
+}
+
+.title.color.darkgreen::after,
+.menu-icon .color.darkgreen {
+  background-color: var(--white);
+}
+
+.color.olivegreen {
+  background-color: var(--olivegreen);
+  color: var(--white);
+}
+.color.olivegreen ::selection,
+.color.olivegreen ::-moz-selection {
+  background: navy;
+  color: var(--white);
+}
+.color.olivegreen .no-color {
+  background-color: transparent;
+}
+.color.olivegreen .link:after {
+  background-color: #010100;
+}
+
+.color.olivegreen.invert,
+.color.olivegreen.invert *,
+.color.olivegreen.invert *::selection {
+  background: navy;
+  color: var(--white);
+}
+
+.title.color.olivegreen::after,
+.menu-icon .color.olivegreen {
+  background-color: var(--white);
+}
+
+.color.gold {
+  background-color: var(--gold);
+  color: var(--white);
+}
+.color.gold ::selection,
+.color.gold ::-moz-selection {
+  background: #0028ff;
+  color: var(--white);
+}
+.color.gold .no-color {
+  background-color: transparent;
+}
+.color.gold .link:after {
+  background-color: #806c00;
+}
+
+.color.gold.invert,
+.color.gold.invert *,
+.color.gold.invert *::selection {
+  background: #0028ff;
+  color: var(--white);
+}
+
+.title.color.gold::after,
+.menu-icon .color.gold {
+  background-color: var(--white);
 }
 
 * {
@@ -2285,6 +2430,7 @@ body > footer {
   letter-spacing: -1px;
   line-height: 1.15;
   font-weight: bold;
+  text-wrap: pretty;
 }
 @media screen and (max-width: 992px) {
   .tmpl-home .section h3,
