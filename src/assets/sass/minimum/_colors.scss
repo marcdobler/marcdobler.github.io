@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 $themeColours: (
   'amber': #c1605c,
   'black': #211f1f,
@@ -34,12 +36,40 @@ $themeColours: (
     --#{$themeColour}: #{$color};
   }
 
-  --background-color: var(--lightgray);
-  --site-title-color: var(--darkgray);
+  --background-color: map-get($themeColours, 'white');
+  --site-title-color: map-get($themeColours, 'darkgray');
+}
+
+@function luminance($color) {
+  $red: math.div(red($color), 255);
+  $green: math.div(green($color), 255);
+  $blue: math.div(blue($color), 255);
+
+  $red: if($red <= 0.03928, math.div($red, 12.92), pow(math.div(($red + 0.055), 1.055), 2.4));
+  $green: if($green <= 0.03928, math.div($green, 12.92), pow(math.div(($green + 0.055), 1.055), 2.4));
+  $blue: if($blue <= 0.03928, math.div($blue, 12.92), pow(math.div(($blue + 0.055), 1.055), 2.4));
+
+  @return 0.2126 * $red + 0.7152 * $green + 0.0722 * $blue;
+}
+
+@function contrast($color1, $color2) {
+  $l1: luminance($color1) + 0.05;
+  $l2: luminance($color2) + 0.05;
+  @return math.div(max($l1, $l2), min($l1, $l2));
 }
 
 @function coloraria($bg) {
-  @return if(lightness($bg) > 50, var(--site-title-color), var(--white));
+  $white: map-get($themeColours, 'lightgray');
+  $black: map-get($themeColours, 'darkgray');
+
+  $contrastWithWhite: contrast($bg, $white);
+  $contrastWithBlack: contrast($bg, $black);
+
+  @if ($contrastWithWhite >= 3) {
+    @return $white;
+  } @else {
+    @return $black;
+  }
 }
 
 @each $themeColour, $color in $themeColours {
