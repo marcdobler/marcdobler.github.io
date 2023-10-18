@@ -40,6 +40,10 @@ Participate in live workshops conducted by leading experts in the field, providi
 
 Access a comprehensive database of marine species, complete with detailed care guides and vital information for nurturing a thriving reef ecosystem. Learn about various corals, fish, and invertebrates, their habitat requirements, and the intricacies of maintaining a balanced and healthy marine environment.
 
+### Maintenance Assistance
+
+Utilize our maintenance assistance tools, including water parameter chart tracking, step-by-step maintenance process guides, and a reefer calculator for efficient maintenance planning. Integrate IoT devices for seamless monitoring and control of your reef tank environment.
+
 ### Personalized Feeds
 
 Customize your feed to stay updated with the latest trends, news, and developments in the world of reef keeping. Receive tailored recommendations based on your interests, stay informed about upcoming events, and discover new tips and tricks to enhance your reef keeping experience.
@@ -48,8 +52,15 @@ Customize your feed to stay updated with the latest trends, news, and developmen
 
 Explore step-by-step tutorials and interactive guides catered to both beginners and experienced reef keepers. Learn about setting up and maintaining your aquarium, understanding the nitrogen cycle, controlling algae growth, and troubleshooting common reefing challenges.
 
+## Subscription Plans
+
+Reef Connect offers a premium subscription for access to exclusive content and advanced features. Choose between a monthly subscription of $6.99 or an annual subscription of $69.99, providing you with unlimited access to a wealth of reefing resources and a vibrant community of fellow enthusiasts.
+
 ## How to Get Started
 
 Getting started with Reef Connect is simple. Visit our website to download the app for your mobile device or desktop. Sign up for a free account, create your profile, and dive into a world of possibilities for enhancing your reef keeping journey.
 
 Join us in our mission to create a thriving and connected reefing community worldwide. Reef Connect is where the passion for reef keeping comes to life! Share your experiences, learn from others, and be a part of the global movement to protect and preserve our precious marine ecosystems.
+
+[![Download on the App Store](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg)](https://apps.apple.com/us/app/your-app-name/id1234567890)
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.yourcompany.yourappname)
