@@ -5,6 +5,10 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const { cache } = require('eleventy-plugin-workbox');
+const prodConfig = require('./config.prod');
+const devConfig = require('./config.dev');
+
+const config = process.env.ELEVENTY_ENV === 'production' ? prodConfig : devConfig;
 
 async function imageShortcode(src, cls, alt, sizes, widths) {
   let options = {

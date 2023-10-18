@@ -14,7 +14,7 @@
       {% endif %}
     </title>
     <meta name="description" content="{{ description | default(metadata.description) }}"/>
-    <link rel="canonical" href="{{ page.url | url }}" />
+    <link rel="canonical" href="{{ config.domain }}{{ page.url | url }}" />
 
     <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
     <link rel="apple-touch-icon" href="{{ '/assets/images/icon/ios/32.png' | url }}">
@@ -53,7 +53,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPWXDW4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  
+  {{ config.domain }}
     <header id="header">
       {% include "partials/menu.njk" %}
 
