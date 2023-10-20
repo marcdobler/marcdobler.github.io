@@ -8,6 +8,7 @@ $radius: 10px;
   overflow: hidden;
   position: relative;
   border-radius: $radius;
+  transition: 0.3s; 
 
   &:after {
     position: absolute;
@@ -24,6 +25,7 @@ $radius: 10px;
     transition: $animation-timing;
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.45);
     border-bottom-left-radius: calc($radius / 2);
+    color: white;
   }
 
   .title {
