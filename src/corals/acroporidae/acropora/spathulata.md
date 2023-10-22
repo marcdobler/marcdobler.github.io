@@ -1,7 +1,7 @@
 ---
 layout: coral
-genus: Spathulata
-species: 
+genus: Acropora
+species: Spathulata
 excerpt: A comprehensive guide to understanding Spathulata corals, their habitat, care requirements, and conservation status.
 tags:
     - Siderastreidae

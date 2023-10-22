@@ -84,34 +84,19 @@ body > footer {
 .tmpl-tags,
 .tmpl-shop {
   .section {
-    position: relative;
-    margin: auto;
-    display: flex;
     padding-top: $spacing-unit * 20;
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
-
     h1,
     h2 {
       font-weight: bold;
       position: absolute;
-      margin-top: -1em;
+      margin-top: -3.5rem;
       margin-left: 0px;
       margin-right: 0px;
       margin-bottom: 0px;
       z-index: 1;
 
-      @include relative-font-size(9);
-
-      &.tiny {
-        margin-top: -98px;
-        @include relative-font-size(5);
-
-        @media screen and (max-width: $on-large) {
-          margin-top: -48px;
-          @include relative-font-size(2.5);
-        }
-      }
+      @include relative-font-size(6);
+      line-height: 6rem;
     }
 
     h3 {
@@ -120,6 +105,7 @@ body > footer {
       line-height: 1.15;
       font-weight: bold;
       text-wrap: pretty;
+      margin: 0;
 
       @media screen and (max-width: $on-large) {
         @include relative-font-size(1.5);
@@ -147,16 +133,8 @@ body > footer {
   }
 }
 
-.padding {
-  padding: calc($spacing-unit * 6);
-}
-
 .margin {
   margin: calc($spacing-unit * 2);
-}
-
-.radius {
-  border-radius: 5px;
 }
 
 .page-content {

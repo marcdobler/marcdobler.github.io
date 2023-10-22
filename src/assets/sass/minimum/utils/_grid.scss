@@ -1,40 +1,76 @@
-.grid {
+// _grid.scss
+
+// Gutter width top and bottom for rows
+
+@mixin make-container {
+  max-width: $max-width;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: $max-width) {
+    padding-right: #{(calc($grid-gutter / 2))}; // Half of the gutter
+    padding-left: #{(calc($grid-gutter / 2))}; // Half of the gutter
+
+    @media (max-width: $mobile-breakpoint) {
+      padding-right: #{(calc($grid-gutter / 4))}; // Quarter of the gutter for mobile
+      padding-left: #{(calc($grid-gutter / 4))}; // Quarter of the gutter for mobile
+    }
+  }
+}
+
+@mixin make-row($hasGutter: true, $columnGap: $grid-gutter) {
+  width: 100%;
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(12, 1fr);
-  width: -webkit-fill-available;
+  grid-template-columns: repeat($grid-columns, 1fr);
 
-  &.no-gap {
-    grid-gap: 0em;
+  @if $hasGutter {
+    grid-column-gap: $grid-gutter;
   }
 }
 
-.col-auto {
-  grid-column: auto;
+@mixin make-column($size) {
+  grid-column: span $size;
+  margin: $gutter-top-bottom 0;
 }
 
-@media screen and (max-width: $on-small) {
-  @for $i from 1 through $columns {
-    .col-#{$i} {
-      grid-column: span $columns / span $columns;
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1024px;
+
+@media (max-width: $mobile-breakpoint) {
+  .col {
+    grid-column: 1 / -1;
+    margin: $gutter-top-bottom 0;
+  }
+}
+
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-tablet {
+      @include make-column($i);
     }
   }
 }
 
-@media screen and (min-width: $on-medium) {
-    $columns: $columns;
-    
-    @for $i from 1 through $columns {
-      .col-#{$i} {
-        grid-column: span $i / span $i;
-      }
+@media (min-width: $tablet-breakpoint) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-desktop {
+      @include make-column($i);
     }
   }
+}
 
-@media screen and (min-width: $on-large) {
-  @for $i from 1 through $columns {
-    .col-#{$i} {
-        grid-column: span $i / span $i;
-    }
+.container {
+  @include make-container;
+}
+
+.row {
+  @include make-row;
+  @media (max-width: $mobile-breakpoint) {
+    grid-column-gap: 0px; // Update grid-column-gap to 0px for mobile screens
   }
+}
+
+.no-gutter {
+  @include make-row(false); // No gutter for this row
 }

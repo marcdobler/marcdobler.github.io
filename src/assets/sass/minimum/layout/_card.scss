@@ -2,15 +2,12 @@ $animation-timing: 0.3s;
 $small-font-size: 15px;
 $spacing-unit: 10px;
 $background-color: var(--background-color);
-$radius: 10px;
 
 .card {
-  overflow: hidden;
   position: relative;
-  border-radius: $radius;
-  transition: 0.3s; 
+  transition: 0.3s;
 
-  &:after {
+  &.corner-effect:after {
     position: absolute;
     top: 0;
     right: 0;
@@ -23,17 +20,14 @@ $radius: 10px;
     border-top-color: $background-color;
     border-right-color: $background-color;
     transition: $animation-timing;
-    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.45);
-    border-bottom-left-radius: calc($radius / 2);
-    color: white;
+    border-bottom-left-radius: $radius;
+    color: var(--lightgray);
   }
 
   .title {
     transform: translateY(0);
     transition: $animation-timing;
     text-align: center;
-    padding: 90px;
-
     &:after {
       transition: $animation-timing;
       content: '';
@@ -57,9 +51,8 @@ $radius: 10px;
     }
   }
 
-  &:hover:after, &:visited:after {
+  &.corner-effect:hover:after {
     border-width: 2em;
-    border-bottom-left-radius: 10px;
   }
 
   .date {

@@ -15,16 +15,19 @@ $small-font-size:  $base-font-size * 0.875 !default;
 
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     1em !default;
+$spacing-unit:     1rem !default;
 
 $table-text-align: left !default;
 
-$columns: 12;
+$grid-columns: 12; // Number of columns in the grid
+$grid-gutter: $spacing-unit * 2; // Gutter width between columns
+$max-width: 1200px; // Maximum width of the row
+$gutter-top-bottom: calc($grid-gutter / 2);
 
 // Width of the content area
 $content-width:    100vw !default;
 $content-main:     70em;
-$radius:           6px;
+$radius:           8px;
 
 
 $on-extra-small: 600px !default;

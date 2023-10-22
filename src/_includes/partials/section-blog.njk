@@ -1,8 +1,8 @@
-<section class="section">
-{% set maxPosts = collections.posts.length | min(6) %}
+<section class="section container">
+{% set maxPosts = collections.posts.length | min(4) %}
 <h2>{% if maxPosts == 1 %}Blog.{% else %}Blogs.{% endif %}</h2>
 
-{% set postslist = collections.posts | head(-6) %}
+{% set postslist = collections.posts | head(-4) %}
 {% set postslistCounter = collections.posts | length %}
 {% set collectionClass = 'homeList' %}
 {% set collectionLink = '/posts/' %}

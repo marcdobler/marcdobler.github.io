@@ -12,32 +12,33 @@ type: post
     {% else %}
       <img src="{{ site.base }}/assets/images/corals/{{ genus | lower }}-{{ species | lower}}.jpg" alt="{{ genus }} {{ species }}" title="{{ genus }} {{ species }}"/>
     {% endif %}
-    <h1 class="color {{ color }}">{{ genus }} {{ species }}</h1>
-    
+    <h1 class="color {{ color }}">{{ genus }}
+      {{ species }}</h1>
+
     {% include "partials/card-alive.njk" %}
     {% include "partials/waves.njk" %}
   </header>
-  <main>
+  <main class="container padding">
     {{ content | safe }}
   </main>
   <footer>
     {%- set nextPost = collections.corals | getNextCollectionItem(page) %}
-{%- set previousPost = collections.corals | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-  <ul>
-    {%- if nextPost %}
-      <li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>
-    {% endif %}
-    {%- if previousPost %}
-      <li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>
-    {% endif %}
-  </ul>
-{%- endif %}
-
+    {%- set previousPost = collections.corals | getPreviousCollectionItem(page) %}
+    {%- if nextPost or previousPost %}
+      <ul>
+        {%- if nextPost %}
+          <li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.genus }} {{ nextPost.data.species }}</a>
+          </li>
+        {% endif %}
+        {%- if previousPost %}
+          <li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.genus }} {{ previousPost.data.species }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    {%- endif %}
 
     {% include "partials/section-postmeta.njk" %}
 
     {% include "partials/section-subscribe.njk" %}
   </footer>
 </article>
-

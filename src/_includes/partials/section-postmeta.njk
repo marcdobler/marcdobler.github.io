@@ -1,16 +1,21 @@
-<section>
-    <h2 class="post-list-heading tiny">Published in:</h2>
-    <div class="post-meta color pink wide">
-        
-            {%- for tag in tags | filterTagList -%}
-            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+<section class="section container">
+    <h2>Published in:</h2>
+    <div class="row">
 
-            {%- if not loop.last -%}
+        <div class="card radius padding col col-12-tablet col-12-desktop color pink wide">
+
+            {%- for tag in tags | filterTagList -%}
+                <span class="post-tag bold">
+                    {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+                    <a href="{{ tagUrl | url }}" class="">{{ tag }}</a>
+
+                    {%- if not loop.last -%}
                 &nbsp;/&nbsp;
             {%- endif -%}
+                </span>
             {%- endfor %}
-        
-        <time class="no-color" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+
+            <time class="no-color bold padding" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        </div>
     </div>
 </section>

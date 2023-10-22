@@ -10,25 +10,32 @@ $themeColours: (
   'brown': #965630,
   'darkgray': #333333,
   'gray': #808080,
-  'green': #3a6351, // adjusted
+  'green': #3a6351,
+  // adjusted
   'greylight': #9ba5b5,
-  'lightgray': #f3f3f3, // adjusted
-  'navy': #0f1a24, // adjusted
+  'lightgray': #f3f3f3,
+  // adjusted
+  'navy': #0f1a24,
+  // adjusted
   'orange': #bf3100,
   'pink': #e7617c,
-  'purple': #7d63d0, // adjusted
-  'teal': #247b8a, // adjusted
-  'violet': #a246d6, // adjusted
-  'white': #ffffff, // adjusted
+  'purple': #7d63d0,
+  // adjusted
+  'teal': #247b8a,
+  // adjusted
+  'violet': #a246d6,
+  // adjusted
+  'white': #ffffff,
+  // adjusted
   'yellow': #f8c713,
   'redstraight': #ff0000,
   'red': #c22203,
   'silver': #d1d1d1,
-  'seagreen': #2E8B57,
-  'cyan': #00FFFF,
+  'seagreen': #2e8b57,
+  'cyan': #00ffff,
   'darkgreen': #006400,
   'olivegreen': #808000,
-  'gold': #FFD700,
+  'gold': #ffd700,
 );
 
 :root {
@@ -36,7 +43,7 @@ $themeColours: (
     --#{$themeColour}: #{$color};
   }
 
-  --background-color: map-get($themeColours, 'white');
+  --background-color: map-get($themeColours, 'lightgray');
   --site-title-color: map-get($themeColours, 'darkgray');
 }
 
@@ -46,7 +53,11 @@ $themeColours: (
   $blue: math.div(blue($color), 255);
 
   $red: if($red <= 0.03928, math.div($red, 12.92), pow(math.div(($red + 0.055), 1.055), 2.4));
-  $green: if($green <= 0.03928, math.div($green, 12.92), pow(math.div(($green + 0.055), 1.055), 2.4));
+  $green: if(
+    $green <= 0.03928,
+    math.div($green, 12.92),
+    pow(math.div(($green + 0.055), 1.055), 2.4)
+  );
   $blue: if($blue <= 0.03928, math.div($blue, 12.92), pow(math.div(($blue + 0.055), 1.055), 2.4));
 
   @return 0.2126 * $red + 0.7152 * $green + 0.0722 * $blue;
@@ -77,7 +88,14 @@ $themeColours: (
     ::selection,
     ::-moz-selection {
       background: complement($color);
-      color: coloraria($color);
+      color: coloraria(complement($color));
+    }
+
+    &.invert,
+    &.invert *,
+    &.invert *::selection {
+      background: complement($color);
+      color: coloraria(complement($color));
     }
 
     background-color: var(--#{$themeColour});
@@ -90,13 +108,6 @@ $themeColours: (
     .link:after {
       background-color: darken($color, 25%);
     }
-  }
-
-  .color.#{$themeColour}.invert,
-  .color.#{$themeColour}.invert *,
-  .color.#{$themeColour}.invert *::selection {
-    background: complement($color);
-    color: coloraria($color);
   }
 
   .title.color.#{$themeColour}::after,

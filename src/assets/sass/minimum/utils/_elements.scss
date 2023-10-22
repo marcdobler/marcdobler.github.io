@@ -37,7 +37,7 @@ input {
     }
 
     &:checked::after {
-      left: calc($size / 2) + ($padding * 2) ;
+      left: calc($size / 2) + ($padding * 2);
       opacity: 1;
       transform: translateX(100%);
       background-color: darkgray;
@@ -101,11 +101,14 @@ input {
   }
 }
 
-img {
-  border-style: none;
+@mixin img-fill {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
+}
+
+.img-fill, img {
+  @include img-fill;
 }
 
 a {
@@ -128,6 +131,18 @@ button,
   }
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.padding {
+  padding: $grid-gutter * 2;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: #{(calc($grid-gutter / 2))}; // Half of the gutter for mobile devices
+  }
+}
+
 .left {
   float: left;
   margin-right: auto;
@@ -137,4 +152,36 @@ button,
   float: right;
   margin-left: auto;
   margin-right: 40px;
+}
+
+.square-ratio {
+  @media (min-width: 1200px) {
+    aspect-ratio: 1/1; // Or specify the desired aspect ratio for screens larger than 1200px
+  }
+}
+
+@mixin radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin radius-left($radius) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin radius-right($radius) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+.radius {
+  @include radius($radius); // Applying the radius mixin
+}
+
+.radius-left {
+  @include radius-left($radius); // Applying the radius-left mixin
+}
+
+.radius-right {
+  @include radius-right($radius); // Applying the radius-right mixin
 }

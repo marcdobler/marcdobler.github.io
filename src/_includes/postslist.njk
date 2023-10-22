@@ -1,27 +1,46 @@
-<ul reversed class="grid no-style {{ collectionClass }}">
+<ul reversed class="row no-style">
   {% for post in postslist | reverse %}
-
-  {% set colors = post.data.color.split(',') %}
-    <li class="col-6 card{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
-      <a href="{{ post.url | url }}" class="link">
-        <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
-          {% if post.data.title %}
-            {{ post.data.title }}
-          {% elseif post.data.genus %}
-            {{ post.data.genus }} {{ post.data.species }}
-          {% else %}
-            <code>{{ post.url }}</code>
+    {% set colors = post.data.color.split(',') %}
+    {% if loop.index == 1 or loop.index0 % 3 == 0 %}
+      <li class="col-12-tablet col-12-desktop card corner-effect radius padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
+        <a href="{{ post.url | url }}" class="link">
+          <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% elseif post.data.genus %}
+              {{ post.data.genus }} {{ post.data.species }}
+            {% else %}
+              <code>{{ post.url }}</code>
+            {% endif %}
+          </h3>
+          {% if post.data.excerpt %}
+            <div class="margin excerpt {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}">{{ post.data.excerpt }}</div>
           {% endif %}
-        </h3>
-        {% if post.data.excerpt %}
-          <div class="margin excerpt {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}">{{ post.data.excerpt }}</div>
-        {% endif %}
-        <time class="date {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      </a>
-    </li>
+          <time class="date {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        </a>
+      </li>
+    {% else %}
+      <li class="col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
+        <a href="{{ post.url | url }}" class="link">
+          <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% elseif post.data.genus %}
+              {{ post.data.genus }} {{ post.data.species }}
+            {% else %}
+              <code>{{ post.url }}</code>
+            {% endif %}
+          </h3>
+          {% if post.data.excerpt %}
+            <div class="margin excerpt {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}">{{ post.data.excerpt }}</div>
+          {% endif %}
+          <time class="date {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
   {% if collectionReadMore === "show" %}
-    <li class="col-12 card color bluelight">
+    <li class="col-12-tablet col-12-desktop card radius padding color bluelight">
       <a class="link" href="{{ collectionLink | url }}">
         <h3 class="title more color bluelight">{{ collectionReadMoreTitle }}</h3>
         <p class="excerpt color bluelight">
