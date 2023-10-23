@@ -9,7 +9,7 @@ color: Various, often blue, brown, or green
 author:
 - [Insert Author Name]
 meta: "A species of branching stony coral known for its fast growth and adaptability, found in various marine habitats."
-image: acropora-tenuis.webp
+image: acropora-tenuis.jpg
 date: 1822-11-30
 
 parameter:

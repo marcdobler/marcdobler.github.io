@@ -9,7 +9,7 @@ color: various
 author:
 - [Insert Author Name]
 meta: "A genus of fire corals known for their unique appearance and sting, found in various marine habitats."
-image: millepora-species.webp
+image: millepora-species.jpg
 date: 1758-10-10
 
 parameter:

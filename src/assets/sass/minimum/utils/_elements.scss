@@ -143,6 +143,10 @@ button,
   }
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .left {
   float: left;
   margin-right: auto;
@@ -185,3 +189,5 @@ button,
 .radius-right {
   @include radius-right($radius); // Applying the radius-right mixin
 }
+
+

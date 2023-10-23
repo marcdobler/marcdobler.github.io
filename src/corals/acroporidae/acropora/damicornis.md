@@ -9,7 +9,7 @@ color: Various, often brown, green, or cream
 author:
 - [Insert Author Name]
 meta: "A species of staghorn coral known for its rapid growth and hardy nature, found in various marine habitats."
-image: acropora-damicornis.webp
+image: acropora-damicornis.jpg
 date: 1846-09-12
 
 parameter:

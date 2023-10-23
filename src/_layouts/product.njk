@@ -4,12 +4,12 @@ templateClass: tmpl-product
 type: product
 ---
 
-<article>
+<article class="product">
   <header class="color {{ color }}">
-    <h1>{{ title }}</h1>
+    
     <div class="row">
 
-      <div class="col-6-tablet col-6-desktop">
+      <div class="col-6-tablet col-6-desktop no-margin">
         <div class="gallery square-ratio">
           <!-- Don't wrap targets in parent -->
           <s id="s1"></s>
@@ -34,20 +34,52 @@ type: product
 
           <div class="prevNext">
             <div>
-              <a class="color {{ color }}" href="#s4"></a>
-              <a class="color {{ color }}" href="#s2"></a>
+              <a class="color {{ color }}" href="#s4">
+                <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+              </a>
+              <a class="color {{ color }}" href="#s2">
+                <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+              </a>
             </div>
             <div>
-              <a class="color {{ color }}" href="#s1"></a>
-              <a class="color {{ color }}" href="#s3"></a>
+              <a class="color {{ color }}" href="#s1">
+                <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+              </a>
+              <a class="color {{ color }}" href="#s3">
+                <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+              </a>
             </div>
             <div>
-              <a class="color {{ color }}" href="#s2"></a>
-              <a class="color {{ color }}" href="#s4"></a>
+              <a class="color {{ color }}" href="#s2">
+                <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+              </a>
+              <a class="color {{ color }}" href="#s4">
+                <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+              </a>
             </div>
             <div>
-              <a class="color {{ color }}" href="#s3"></a>
-              <a class="color {{ color }}" href="#s1"></a>
+              <a class="color {{ color }}" href="#s3">
+                <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+              </a>
+              <a class="color {{ color }}" href="#s1">
+                <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+              </a>
             </div>
           </div>
 
@@ -58,6 +90,9 @@ type: product
             <a href="#s4"><img src="/assets/images/corals/acropora-millepora.jpg"/></a>
           </div>
         </div>
+      </div>
+      <div class="col-6-tablet col-6-desktop no-margin">
+        <h1>{{ title }}</h1>
       </div>
       {% include "partials/waves.njk" %}
     </header>

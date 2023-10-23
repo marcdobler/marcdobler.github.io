@@ -5,11 +5,11 @@ species: Nana
 excerpt: A comprehensive guide to understanding Acropora Nana, its habitat, care requirements, and conservation status.
 tags:
     - Acroporidae
-color: blue, pink, purple, green
+color: purple
 author:
 - [Insert Author Name]
 meta: "A species of small stony coral highly valued in reef aquariums for its vibrant colors and delicate appearance."
-image: acropora-nana.webp
+image: acropora-nana.jpg
 date: 1846-10-28
 
 parameter:
