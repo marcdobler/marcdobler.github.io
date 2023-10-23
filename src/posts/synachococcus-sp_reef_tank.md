@@ -9,7 +9,7 @@ tags:
 color: amber
 image: "/assets/images/posts/synechococcus-sp-microscopic-marvel.jpg"
 image-desc: "Illustration: Synechococcus SP under a Microscope"
-author: Julian Sprung
+author: Marc Dobler
 meta: "Synechococcus SP in Aquatic Environments"
 date: 2023-10-17
 ---
