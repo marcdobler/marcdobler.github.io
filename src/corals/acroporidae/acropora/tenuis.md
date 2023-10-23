@@ -5,7 +5,7 @@ species: Tenuis
 excerpt: A comprehensive guide to understanding Acropora Tenuis corals, their habitat, care requirements, and conservation status.
 tags:
     - Acroporidae
-color: Various, often blue, brown, or green
+color: green
 author:
 - [Insert Author Name]
 meta: "A species of branching stony coral known for its fast growth and adaptability, found in various marine habitats."
