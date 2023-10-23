@@ -2,7 +2,7 @@
   {% for post in postslist | reverse %}
     {% set colors = post.data.color.split(',') %}
     {% if loop.index == 1 or loop.index0 % 3 == 0 %}
-      <li class="col-12-tablet col-12-desktop card corner-effect radius padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
+      <li class="col col-12-tablet col-12-desktop card corner-effect radius padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
         <a href="{{ post.url | url }}" class="link">
           <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
             {% if post.data.title %}
@@ -20,7 +20,7 @@
         </a>
       </li>
     {% else %}
-      <li class="col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
+      <li class="col col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ colors[0].trim().toLowerCase() }}{% endif %}">
         <a href="{{ post.url | url }}" class="link">
           <h3 class="margin title {% if post.color == url %}color {{ colors[0].trim().toLowerCase() }}{% endif %} ">
             {% if post.data.title %}

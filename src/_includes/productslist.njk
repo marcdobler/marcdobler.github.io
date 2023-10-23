@@ -1,6 +1,6 @@
 <ul reversed class="row no-style {{ collectionClass }}">
   {% for post in postslist | reverse %}
-    <li class="col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ post.data.color }}{% endif %}">
+    <li class="col col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ post.data.color }}{% endif %}">
       <a href="{{ post.url | url }}" class="link">
         <h3 class="title {% if post.color == url %}color {{ post.data.color }}{% endif %}">
           {% if post.data.title %}
