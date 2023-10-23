@@ -1,0 +1,15 @@
+---
+layout: shop
+permalink: /shop/frags/
+---
+
+<section class="section container">
+<h1>{% if maxPosts == 1 %}Frag.{% else %}Frags.{% endif %}</h1>
+
+{% set postslist = collections.frags  %}
+{% set collectionLink = '/shops/frags/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "productslist.njk" %}
+</section>
+
+{% include "partials/section-subscribe.njk" %}

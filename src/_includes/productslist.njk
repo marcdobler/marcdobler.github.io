@@ -12,7 +12,7 @@
           {% endif %}
         </h3>
         {% if post.data.excerpt %}
-          <div class="excerpt {% if post.color == url %}color {{ post.data.color }}{% endif %}">{{ post.data.excerpt }}</div>
+          <div class="margin excerpt {% if post.color == url %}color {{ post.data.color }}{% endif %}">{{ post.data.excerpt }}</div>
         {% endif %}
         <time class="date {% if post.color == url %}color {{ post.data.color }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </a>

@@ -1,0 +1,15 @@
+---
+layout: shop
+permalink: /shop/phytoplankton/
+---
+
+<section class="section container">
+<h1>{% if maxPosts == 1 %}Phytoplankton.{% else %}Phytoplanktons.{% endif %}</h1>
+
+{% set postslist = collections.phytoplankton  %}
+{% set collectionLink = '/shops/phytoplankton/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "productslist.njk" %}
+</section>
+
+{% include "partials/section-subscribe.njk" %}

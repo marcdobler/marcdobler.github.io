@@ -104,6 +104,8 @@ module.exports = function (eleventyConfig) {
     return filterTagList([...tagSet]);
   });
 
+  eleventyConfig.setDataDeepMerge(true);
+
   // Watch CSS files for changes
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/assets/css/**/*.css',

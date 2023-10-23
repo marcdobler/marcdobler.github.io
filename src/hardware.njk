@@ -1,0 +1,15 @@
+---
+layout: shop
+permalink: /shop/hardware/
+---
+
+<section class="section container">
+<h1>{% if maxPosts == 1 %}hardware.{% else %}hardwares.{% endif %}</h1>
+
+{% set postslist = collections.hardware  %}
+{% set collectionLink = '/shops/hardwares/' %}
+{% set collectionReadMore = 'hide' %}
+{% include "productslist.njk" %}
+</section>
+
+{% include "partials/section-subscribe.njk" %}
