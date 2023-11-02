@@ -2,13 +2,13 @@
 layout: product
 title: Red Ruin Remedy - Anti-Red Phytoplankton
 ref: as-1
-excerpt: 
+excerpt: "Get rid of red algae and rejuvenate your reef with the Red Ruin Remedy - Anti-Red Phytoplankton. Join the anti-red revolution, and watch your aquarium transform into a vibrant, algae-free marine sanctuary. Empower your corals with the nurturing care they deserve. Trashy the Devastator approves of this product"
 tags:
     - Phytoplankton
 color: red
 author:
 - Marc Dobler
-description: ""
+description: "Get rid of red algae and rejuvenate your reef with the Red Ruin Remedy - Anti-Red Phytoplankton. Join the anti-red revolution, and watch your aquarium transform into a vibrant, algae-free marine sanctuary. Empower your corals with the nurturing care they deserve. Trashy the Devastator approves of this product"
 image: acropora-spathulata.jpg
 date: 2023-10-28
 price: 18.00

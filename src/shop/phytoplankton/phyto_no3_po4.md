@@ -2,7 +2,7 @@
 layout: product
 title: Nutri-Nemesis Nullifier - PO4 & NO3 Defense Phytoplankton
 ref: as-1
-excerpt: 
+excerpt: Say goodbye to unwanted levels of PO4 and NO3 in your aquarium with Nutri-Nemesis Nullifier. Discover a balanced and healthy aquarium with our Phytoplankton solution, designed to purify your marine habitat and promote a thriving and flourishing reef.
 tags:
     - Phytoplankton
 color: gold
@@ -11,7 +11,7 @@ author:
 description: Say goodbye to unwanted levels of PO4 and NO3 in your aquarium with Nutri-Nemesis Nullifier. Discover a balanced and healthy aquarium with our Phytoplankton solution, designed to purify your marine habitat and promote a thriving and flourishing reef.
 image: acropora-spathulata.jpg
 date: 2023-10-28
-price: 20
+price: 18.00
 ---
 
 **Say goodbye to unwanted levels of PO4 and NO3 in your aquarium with Nutri-Nemesis Nullifier.** 

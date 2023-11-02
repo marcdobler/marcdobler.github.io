@@ -1,8 +1,8 @@
-<ul reversed class="row no-style {{ collectionClass }}">
+<ul reversed class="row no-style {{ collectionClass }}" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
   {% for post in postslist | reverse %}
     <li class="col col-6-tablet col-6-desktop card corner-effect radius square-ratio padding{% if post.url == url %} postlist-item-active{% endif %}{% if post.color == url %} color {{ post.data.color }}{% endif %}">
       <a href="{{ post.url | url }}" class="link">
-        <h3 class="title {% if post.color == url %}color {{ post.data.color }}{% endif %}">
+        <h3 itemprop="name" class="title {% if post.color == url %}color {{ post.data.color }}{% endif %}">
           {% if post.data.title %}
             {{ post.data.title }}
           {% elseif post.data.genus %}
@@ -11,8 +11,10 @@
             <code>{{ post.url }}</code>
           {% endif %}
         </h3>
+        {% set price = post.data.price %}
+        <span class="price">{{ price.toFixed(2) + ' CHF' }}</span>
         {% if post.data.excerpt %}
-          <div class="margin excerpt {% if post.color == url %}color {{ post.data.color }}{% endif %}">{{ post.data.excerpt }}</div>
+          <div itemprop="description" class="margin excerpt {% if post.color == url %}color {{ post.data.color }}{% endif %}">{{ post.data.excerpt }}</div>
         {% endif %}
         <time class="date {% if post.color == url %}color {{ post.data.color }}{% endif %}" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </a>
