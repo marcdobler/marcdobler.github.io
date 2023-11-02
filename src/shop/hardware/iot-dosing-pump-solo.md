@@ -2,15 +2,15 @@
 layout: product
 title: DoseMaster Solo
 ref: dm-solo-01
-excerpt: Le doseur individuel pour ceux qui aiment garder les choses simples, car qui a besoin de complications de toute façon ?
+excerpt: The individual doser for those who like to keep things simple, because who needs complications anyway?
 tags:
-    - Aquariophilie
-    - Pompes doseuses
+    - Aquaristics
+    - Dosing pumps
 color: green
-author: Trashy le Dévastateur
+author: Trashy the Devastator
 image: dosemaster-solo.jpg
 date: 2023-10-24
 price: 99.99
 ---
 
-Découvrez le DoseMaster Solo, la solution compacte pour vos besoins de dosage. Avec sa capacité à délivrer des quantités allant d'une goutte à 1 litre, cette pompe doseuse équipée d'un moteur pas à pas offre un contrôle précis sans compromettre la simplicité d'utilisation. Grâce à sa connectivité intégrée, surveillez et régulez les dosages de solutions liquides à distance, depuis n'importe où sur terre. Optez pour le DoseMaster Solo et simplifiez votre routine d'entretien dès aujourd'hui ! 
+Introducing the DoseMaster Solo, the compact solution for your dosing needs. With its ability to deliver quantities ranging from a drop to 1 liter, this dosing pump equipped with a stepper motor offers precise control without compromising ease of use. Thanks to its built-in connectivity, monitor and regulate liquid solution dosing remotely, from anywhere on earth. Choose the DoseMaster Solo and simplify your maintenance routine today!
